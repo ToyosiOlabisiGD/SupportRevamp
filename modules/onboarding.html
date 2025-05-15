@@ -12,126 +12,123 @@
   ← Return to Menu
 </a>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-success mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
-        Customer Support Training
-      </a>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container">
- <div class="card mb-4">
-  <div class="card-header bg-primary text-white">Onboarding Instructions</div>
-  <div class="card-body">
-    <div class="accordion" id="onboardingAccordion">
-
-      <!-- Section 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSetup">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSetup" aria-expanded="true" aria-controls="collapseSetup">
-            Day 0 – Setup & Access
-          </button>
-        </h2>
-        <div id="collapseSetup" class="accordion-collapse collapse" aria-labelledby="headingSetup" data-bs-parent="#onboardingAccordion">
-          <div class="accordion-body">
-            <ul>
-              <li>Set up Chrome profiles, Slack, and Gmail</li>
-              <li>Login to Salesforce and Omni</li>
-              <li>Understand training structure</li>
-              <li>Know who to go to for help</li>
-            </ul>
-
-            <form id="setupChecklist">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="chromeSlack" onchange="saveProgress()">
-                <label class="form-check-label" for="chromeSlack">✅ Chrome + Slack setup complete</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()">
-                <label class="form-check-label" for="logins">✅ Salesforce + Omni logins tested</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="helpContact" onchange="saveProgress()">
-                <label class="form-check-label" for="helpContact">✅ I know who to contact if I get stuck</label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCompliance">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompliance" aria-expanded="false" aria-controls="collapseCompliance">
-            Day 0 – Compliance & Orientation
-          </button>
-        </h2>
-        <div id="collapseCompliance" class="accordion-collapse collapse" aria-labelledby="headingCompliance" data-bs-parent="#onboardingAccordion">
-          <div class="accordion-body">
-            <form id="complianceChecklist">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="nho" onchange="saveProgress()">
-                <label class="form-check-label" for="nho">🧠 Attend NHO Sessions – HR, Payroll, Security, Facilities</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="sap" onchange="saveProgress()">
-                <label class="form-check-label" for="sap">🧠 Complete SAP Courses (if assigned)</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="policies" onchange="saveProgress()">
-                <label class="form-check-label" for="policies">🧠 Review Code of Ethics, Escalation, Privacy Policies</label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- end accordion -->
-
-    <!-- Submit -->
-    <!-- Section 3: Submit -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="headingSubmit">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubmit" aria-expanded="false" aria-controls="collapseSubmit">
-      📤 Submit Your Progress
-    </button>
-  </h2>
-  <div id="collapseSubmit" class="accordion-collapse collapse" aria-labelledby="headingSubmit" data-bs-parent="#onboardingAccordion">
-    <div class="accordion-body">
-      <p>Please submit this form once your onboarding is complete:</p>
-      <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-        Loading…
-      </iframe>
-    </div>
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-success mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+      Customer Support Training
+    </a>
   </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">Onboarding Instructions</div>
+    <div class="card-body">
+      <div class="accordion" id="onboardingAccordion">
+
+        <!-- Section 1: Setup -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSetup">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSetup" aria-expanded="true" aria-controls="collapseSetup">
+              🧰 Day 0 – Setup & Access
+            </button>
+          </h2>
+          <div id="collapseSetup" class="accordion-collapse collapse show" aria-labelledby="headingSetup" data-bs-parent="#onboardingAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>🛠️ Set up Chrome profiles, Slack, and Gmail</li>
+                <li>🔐 Log into Salesforce and Omni</li>
+                <li>🗂️ Understand how your training is structured</li>
+                <li>📣 Know who to go to for help</li>
+              </ul>
+
+              <form id="onboardingSetupChecklist">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="setupChromeSlack" onchange="saveProgress()">
+                  <label class="form-check-label" for="setupChromeSlack">✅ Chrome + Slack setup complete</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="setupLogins" onchange="saveProgress()">
+                  <label class="form-check-label" for="setupLogins">✅ Salesforce + Omni logins tested</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="setupContact" onchange="saveProgress()">
+                  <label class="form-check-label" for="setupContact">✅ I know who to contact if I get stuck</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Compliance -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCompliance">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompliance" aria-expanded="false" aria-controls="collapseCompliance">
+              📚 Day 0 – Compliance & Orientation
+            </button>
+          </h2>
+          <div id="collapseCompliance" class="accordion-collapse collapse" aria-labelledby="headingCompliance" data-bs-parent="#onboardingAccordion">
+            <div class="accordion-body">
+              <form id="onboardingComplianceChecklist">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="complianceNHO" onchange="saveProgress()">
+                  <label class="form-check-label" for="complianceNHO">🧠 Attend NHO Sessions – HR, Payroll, Security</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="complianceSAP" onchange="saveProgress()">
+                  <label class="form-check-label" for="complianceSAP">🧠 Complete SAP Courses (if assigned)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="compliancePolicies" onchange="saveProgress()">
+                  <label class="form-check-label" for="compliancePolicies">🧠 Review Code of Ethics, Privacy, Escalation Protocol</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Submit -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSubmit">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubmit" aria-expanded="false" aria-controls="collapseSubmit">
+              📤 Submit Your Progress
+            </button>
+          </h2>
+          <div id="collapseSubmit" class="accordion-collapse collapse" aria-labelledby="headingSubmit" data-bs-parent="#onboardingAccordion">
+            <div class="accordion-body">
+              <p>Please submit this form once your onboarding is complete:</p>
+              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+                Loading…
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end accordion -->
+    </div> <!-- end card-body -->
+  </div> <!-- end card -->
 </div>
 
-  </div> <!-- end card-body -->
-</div> <!-- end card -->
+<script>
+  function saveProgress() {
+    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+      localStorage.setItem(cb.id, cb.checked);
+    });
+  }
 
-  </div>
+  function loadProgress() {
+    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+      cb.checked = localStorage.getItem(cb.id) === "true";
+    });
+  }
 
-  <script>
-    function saveProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        localStorage.setItem(cb.id, cb.checked);
-      });
-    }
+  window.onload = loadProgress;
+</script>
 
-    function loadProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        cb.checked = localStorage.getItem(cb.id) === "true";
-      });
-    }
-
-    window.onload = loadProgress;
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
