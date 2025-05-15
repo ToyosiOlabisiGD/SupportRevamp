@@ -37,9 +37,17 @@
 				</div>
 			</div>
 
-			<div class="card mb-4">
-			<div class="card-header bg-primary text-white">Day 1 – Orientation & Culture</div>
-			<div class="card-body">
+			<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      📘 Day 1 – Orientation & Culture
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
+    <div class="accordion-body p-0">
+      <div class="card mb-4">
+        <!-- keep this inner card, it maintains your existing style -->
+        <div class="card-body">
 				<p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
 				<div class="accordion" id="day1Accordion">
 					<!-- Meet the Team -->
@@ -224,12 +232,23 @@
 					</div>
 				</div>
 				<!-- End Day 1 Accordion -->
-  </div> <!-- End .card-body -->
-</div> <!-- End Day 1 card -->
+         </div> <!-- End .card-body inside card -->
+      </div> <!-- End inner card -->
+    </div> <!-- End accordion-body -->
+  </div> <!-- End collapse -->
+</div> <!-- End accordion-item for Day 1 -->
+
 <!-- Day 2 -->
-<div class="card mb-4">
-  <div class="card-header bg-primary text-white">Day 2 – Tools, Docs & Expectations</div>
-  <div class="card-body">
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day2Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+      📗 Day 2 – Tools, Docs & Expectations
+    </button>
+  </h2>
+  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
+    <div class="accordion-body p-0">
+      <div class="card mb-4">
+        <div class="card-body">
     <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
     <div class="accordion" id="day2Accordion">
 
@@ -389,8 +408,12 @@
       </div>
 
     </div> <!-- End accordion -->
-  </div> <!-- End card-body -->
-</div> <!-- End Day 2 card -->
+        </div> <!-- End .card-body inside card -->
+      </div> <!-- End inner card -->
+    </div> <!-- End accordion-body -->
+  </div> <!-- End collapse -->
+</div> <!-- End accordion-item for Day 2 -->
+</div> <!-- End of #dayAccordion -->
 
 		<script>
 			function saveProgress() {
