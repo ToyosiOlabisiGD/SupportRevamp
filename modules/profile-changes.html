@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Changes (PC)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-success mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+        Customer Support Training
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-header bg-secondary text-white">Week 9: Profile Changes (PC)</div>
+      <div class="card-body">
+        <p>This module focuses on handling requests to update, verify, or edit company profile information.</p>
+
+        <p><strong>Topics include:</strong></p>
+        <ul>
+          <li>Request types: ownership, rebranding, logo/photo updates</li>
+          <li>Verification steps and required documentation</li>
+          <li>Tags, notes, and escalations for PC cases</li>
+        </ul>
+
+        <!-- Progress Checkboxes -->
+        <form id="profileChangesProgress">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pc-types" onchange="saveProgress()">
+            <label class="form-check-label" for="pc-types">Understood the types of Profile Change requests</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="verification" onchange="saveProgress()">
+            <label class="form-check-label" for="verification">Reviewed verification and approval process</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pc-escalations" onchange="saveProgress()">
+            <label class="form-check-label" for="pc-escalations">Completed tagging + note writing for PC cases</label>
+          </div>
+        </form>
+
+        <!-- Google Form Embed -->
+        <div class="mt-4">
+          <h5>Submit Your Progress</h5>
+          <p>Submit this form once you complete Profile Change training:</p>
+          <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                  width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function saveProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        localStorage.setItem(cb.id, cb.checked);
+      });
+    }
+
+    function loadProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        cb.checked = localStorage.getItem(cb.id) === "true";
+      });
+    }
+
+    window.onload = loadProgress;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
