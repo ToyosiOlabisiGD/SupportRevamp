@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jobseeker Moderation – Week 1</title>
+  <title>Jobseeker Support</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -12,7 +12,6 @@
   ← Return to Menu
 </a>
 
-<!-- Navbar -->
 <nav class="navbar navbar-dark bg-success mb-4">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="../index.html">
@@ -22,131 +21,199 @@
   </div>
 </nav>
 
-<!-- Page Content -->
 <div class="container">
+
+  <!-- Week 1 -->
   <div class="card mb-4">
-    <div class="card-header bg-warning text-dark">Jobseeker Moderation</div>
+    <div class="card-header bg-info text-white">Jobseeker Support – Week 1: Core Foundations & Tools</div>
     <div class="card-body">
-      <div class="accordion" id="jsModAccordion">
+      <div class="accordion" id="jsSupportWeek1">
 
-        <!-- Reviews Section -->
+        <!-- 1: Case Overview -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingReviews">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReviews" aria-expanded="false" aria-controls="collapseReviews">
-              📝 Reviews Moderation
+          <h2 class="accordion-header" id="w1_case">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w1_caseCollapse" aria-expanded="false" aria-controls="w1_caseCollapse">
+              📁 Overview of Common Jobseeker Cases
             </button>
           </h2>
-          <div id="collapseReviews" class="accordion-collapse collapse" aria-labelledby="headingReviews" data-bs-parent="#jsModAccordion">
+          <div id="w1_caseCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek1">
             <div class="accordion-body">
-              <ul>
-                <li>Understand how to identify personal attacks, discrimination, and PII in reviews</li>
-                <li>Know which flags to use and when to escalate</li>
-              </ul>
-              <form id="reviewsChecklist">
+              <form id="w1_caseChecklist">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="reviewsCriteria" onchange="saveProgress()">
-                  <label class="form-check-label" for="reviewsCriteria">🧠 Reviewed moderation criteria for reviews</label>
+                  <input class="form-check-input" type="checkbox" id="w1_case_types" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_case_types">🧾 Reviewed top 5 Jobseeker case types</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="reviewsFlags" onchange="saveProgress()">
-                  <label class="form-check-label" for="reviewsFlags">🏷️ Practiced flagging and escalation scenarios</label>
+                  <input class="form-check-input" type="checkbox" id="w1_case_shadow" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_case_shadow">👀 Shadowed 3+ Jobseeker cases</label>
                 </div>
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Interviews Section -->
+        <!-- 2: Tools + Templates -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingInterviews">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInterviews" aria-expanded="false" aria-controls="collapseInterviews">
-              🎙️ Interview Moderation
+          <h2 class="accordion-header" id="w1_tools">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w1_toolsCollapse" aria-expanded="false" aria-controls="w1_toolsCollapse">
+              🧰 Tools & Templates
             </button>
           </h2>
-          <div id="collapseInterviews" class="accordion-collapse collapse" aria-labelledby="headingInterviews" data-bs-parent="#jsModAccordion">
+          <div id="w1_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek1">
             <div class="accordion-body">
-              <form id="interviewsChecklist">
+              <form id="w1_toolsChecklist">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="interviewScenarios" onchange="saveProgress()">
-                  <label class="form-check-label" for="interviewScenarios">📌 Reviewed tagging & escalation for inappropriate content</label>
+                  <input class="form-check-input" type="checkbox" id="w1_macro_use" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_macro_use">🛠️ Practiced with macros + canned responses</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="interviewConfidential" onchange="saveProgress()">
-                  <label class="form-check-label" for="interviewConfidential">🔒 Identified confidential or internal content</label>
+                  <input class="form-check-input" type="checkbox" id="w1_tool_review" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_tool_review">📂 Reviewed Omni + internal tools</label>
                 </div>
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Photos Section -->
+        <!-- 3: Tone & Writing -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingPhotos">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhotos" aria-expanded="false" aria-controls="collapsePhotos">
-              📷 Photo Moderation
+          <h2 class="accordion-header" id="w1_tone">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w1_toneCollapse" aria-expanded="false" aria-controls="w1_toneCollapse">
+              ✍️ Tone & Writing Basics
             </button>
           </h2>
-          <div id="collapsePhotos" class="accordion-collapse collapse" aria-labelledby="headingPhotos" data-bs-parent="#jsModAccordion">
+          <div id="w1_toneCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek1">
             <div class="accordion-body">
-              <form id="photosChecklist">
+              <form id="w1_toneChecklist">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="photoCriteria" onchange="saveProgress()">
-                  <label class="form-check-label" for="photoCriteria">🖼️ Learned what types of photos are not allowed</label>
+                  <input class="form-check-input" type="checkbox" id="w1_tone_read" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_tone_read">📖 Read writing guide + tone best practices</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="photoNotes" onchange="saveProgress()">
-                  <label class="form-check-label" for="photoNotes">📝 Practiced tagging + note writing</label>
+                  <input class="form-check-input" type="checkbox" id="w1_tone_practice" onchange="saveProgress()">
+                  <label class="form-check-label" for="w1_tone_practice">✍️ Practiced 2 sample responses</label>
                 </div>
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Flags Section -->
+        <!-- 4: Submit -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFlags">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFlags" aria-expanded="false" aria-controls="collapseFlags">
-              🚩 Flag Use & Case Notes
-            </button>
-          </h2>
-          <div id="collapseFlags" class="accordion-collapse collapse" aria-labelledby="headingFlags" data-bs-parent="#jsModAccordion">
-            <div class="accordion-body">
-              <form id="flagsChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="flagPractice" onchange="saveProgress()">
-                  <label class="form-check-label" for="flagPractice">🚨 Completed tagging and flagging quiz</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="flagShadowing" onchange="saveProgress()">
-                  <label class="form-check-label" for="flagShadowing">👀 Shadowed at least 3 moderation cases</label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Submit Section -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingSubmit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubmit" aria-expanded="false" aria-controls="collapseSubmit">
+          <h2 class="accordion-header" id="w1_submit">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w1_submitCollapse" aria-expanded="false" aria-controls="w1_submitCollapse">
               📤 Submit Your Progress
             </button>
           </h2>
-          <div id="collapseSubmit" class="accordion-collapse collapse" aria-labelledby="headingSubmit" data-bs-parent="#jsModAccordion">
+          <div id="w1_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek1">
             <div class="accordion-body">
-              <p>Please submit this form once you've completed all moderation sections:</p>
+              <p>Submit this form once you've completed Week 1:</p>
               <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-                Loading…
-              </iframe>
+                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </div>
 
-      </div> <!-- end accordion -->
-    </div> <!-- end card-body -->
-  </div> <!-- end card -->
-</div>
+      </div> <!-- end Week 1 accordion -->
+    </div>
+  </div>
+
+  <!-- Week 2 -->
+  <div class="card mb-4">
+    <div class="card-header bg-info text-white">Jobseeker Support – Week 2: Quality, Tools & Support Skills</div>
+    <div class="card-body">
+      <div class="accordion" id="jsSupportWeek2">
+
+        <!-- 1: Case Escalation -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="w2_escalation">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2_escalationCollapse" aria-expanded="false" aria-controls="w2_escalationCollapse">
+              🚨 Escalation & Bug Reporting
+            </button>
+          </h2>
+          <div id="w2_escalationCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek2">
+            <div class="accordion-body">
+              <form id="w2_escalationChecklist">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_escalation_read" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_escalation_read">🛎️ Reviewed escalation policies and Jira process</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_escalation_submit" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_escalation_submit">🐞 Submitted mock escalation</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Shadowing -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="w2_shadowing">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2_shadowingCollapse" aria-expanded="false" aria-controls="w2_shadowingCollapse">
+              👀 Queue Shadowing & Guided Practice
+            </button>
+          </h2>
+          <div id="w2_shadowingCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek2">
+            <div class="accordion-body">
+              <form id="w2_shadowingChecklist">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_shadowing_done" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_shadowing_done">📺 Completed live queue shadowing</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_shadowing_notes" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_shadowing_notes">📝 Logged learnings from guided walkthroughs</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Feedback Practice -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="w2_feedback">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2_feedbackCollapse" aria-expanded="false" aria-controls="w2_feedbackCollapse">
+              📣 Feedback & Communication
+            </button>
+          </h2>
+          <div id="w2_feedbackCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek2">
+            <div class="accordion-body">
+              <form id="w2_feedbackChecklist">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_feedback_review" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_feedback_review">🔍 Reviewed feedback examples and action steps</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="w2_feedback_respond" onchange="saveProgress()">
+                  <label class="form-check-label" for="w2_feedback_respond">💬 Practiced responding to mock feedback</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4: Submit -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="w2_submit">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#w2_submitCollapse" aria-expanded="false" aria-controls="w2_submitCollapse">
+              📤 Submit Your Progress
+            </button>
+          </h2>
+          <div id="w2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#jsSupportWeek2">
+            <div class="accordion-body">
+              <p>Submit this form once you've completed Week 2:</p>
+              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- end Week 2 accordion -->
+    </div>
+  </div>
+
+</div> <!-- end container -->
 
 <script>
   function saveProgress() {
