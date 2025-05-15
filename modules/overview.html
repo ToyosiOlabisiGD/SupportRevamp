@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training Overview</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-success mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+        Customer Support Training
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-header bg-secondary text-white">Training Overview</div>
+      <div class="card-body">
+        <p>This training program will take you through a structured 6–8 week path to prepare you for live case handling in your assigned support role.</p>
+
+        <p><strong>Your path includes:</strong></p>
+        <ul>
+          <li><strong>Onboarding</strong> – setup and orientation</li>
+          <li><strong>Core Training</strong> – tools, tags, case flow</li>
+          <li><strong>Moderation</strong> – Jobseeker or Employer content rules</li>
+          <li><strong>Support</strong> – Jobseeker or Employer workflows</li>
+          <li><strong>Profile Changes</strong> – for Employer path only</li>
+        </ul>
+
+        <p><strong>What success looks like:</strong></p>
+        <ul>
+          <li>Completing weekly progress checklists</li>
+          <li>Shadowing and being shadowed</li>
+          <li>Passing quizzes and trainer reviews</li>
+        </ul>
+
+        <!-- Progress Checkboxes -->
+        <form id="overviewProgress">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="understand-path" onchange="saveProgress()">
+            <label class="form-check-label" for="understand-path">I understand which training path I'm on (Jobseeker or Employer)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="understand-flow" onchange="saveProgress()">
+            <label class="form-check-label" for="understand-flow">I understand how training will be structured week-by-week</label>
+          </div>
+        </form>
+
+        <!-- Google Form Embed -->
+        <div class="mt-4">
+          <h5>Submit Your Progress</h5>
+          <p>Submit this form once you've reviewed the training roadmap:</p>
+          <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                  width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function saveProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        localStorage.setItem(cb.id, cb.checked);
+      });
+    }
+
+    function loadProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        cb.checked = localStorage.getItem(cb.id) === "true";
+      });
+    }
+
+    window.onload = loadProgress;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
