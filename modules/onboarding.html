@@ -24,45 +24,87 @@
 
   <!-- Page Content -->
   <div class="container">
-    <div class="card mb-4">
-      <div class="card-header bg-primary text-white">Onboarding Instructions</div>
-      <div class="card-body">
-        <p>Welcome to Customer Support Training! 🎉</p>
-        <p>This section covers your basic setup and orientation:</p>
-        <ul>
-          <li>Setting up Chrome profiles, Slack, and Gmail</li>
-          <li>Logging into Salesforce and Omni</li>
-          <li>Understanding how your training is structured</li>
-          <li>Knowing who to go to for help</li>
-        </ul>
+ <div class="card mb-4">
+  <div class="card-header bg-primary text-white">Onboarding Instructions</div>
+  <div class="card-body">
+    <div class="accordion" id="onboardingAccordion">
 
-        <!-- Progress Checkboxes -->
-        <form id="onboardingProgress">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="chrome" onchange="saveProgress()">
-            <label class="form-check-label" for="chrome">Chrome profile + Slack setup complete</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()">
-            <label class="form-check-label" for="logins">Salesforce + Omni logins tested</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="team" onchange="saveProgress()">
-            <label class="form-check-label" for="team">I know who to contact if I get stuck</label>
-          </div>
-        </form>
+      <!-- Section 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSetup">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSetup" aria-expanded="true" aria-controls="collapseSetup">
+            Day 0 – Setup & Access
+          </button>
+        </h2>
+        <div id="collapseSetup" class="accordion-collapse collapse" aria-labelledby="headingSetup" data-bs-parent="#onboardingAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Set up Chrome profiles, Slack, and Gmail</li>
+              <li>Login to Salesforce and Omni</li>
+              <li>Understand training structure</li>
+              <li>Know who to go to for help</li>
+            </ul>
 
-        <!-- Google Form Embed -->
-        <div class="mt-4">
-          <h5>Submit Your Progress</h5>
-          <p>Please submit this form once your onboarding is complete:</p>
-          <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                  width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-            Loading…
-          </iframe>
+            <form id="setupChecklist">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="chromeSlack" onchange="saveProgress()">
+                <label class="form-check-label" for="chromeSlack">✅ Chrome + Slack setup complete</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()">
+                <label class="form-check-label" for="logins">✅ Salesforce + Omni logins tested</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="helpContact" onchange="saveProgress()">
+                <label class="form-check-label" for="helpContact">✅ I know who to contact if I get stuck</label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+
+      <!-- Section 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCompliance">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompliance" aria-expanded="false" aria-controls="collapseCompliance">
+            Day 0 – Compliance & Orientation
+          </button>
+        </h2>
+        <div id="collapseCompliance" class="accordion-collapse collapse" aria-labelledby="headingCompliance" data-bs-parent="#onboardingAccordion">
+          <div class="accordion-body">
+            <form id="complianceChecklist">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nho" onchange="saveProgress()">
+                <label class="form-check-label" for="nho">🧠 Attend NHO Sessions – HR, Payroll, Security, Facilities</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="sap" onchange="saveProgress()">
+                <label class="form-check-label" for="sap">🧠 Complete SAP Courses (if assigned)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="policies" onchange="saveProgress()">
+                <label class="form-check-label" for="policies">🧠 Review Code of Ethics, Escalation, Privacy Policies</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end accordion -->
+
+    <!-- Submit -->
+    <div class="mt-4">
+      <h5>Submit Your Progress</h5>
+      <p>Please submit this form once your onboarding is complete:</p>
+      <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+        Loading…
+      </iframe>
     </div>
+
+  </div> <!-- end card-body -->
+</div> <!-- end card -->
+
   </div>
 
   <script>
