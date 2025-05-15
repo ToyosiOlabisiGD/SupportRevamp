@@ -223,174 +223,172 @@
 					</div>
 				</div>
 				<!-- End Day 1 Accordion -->
-			</div>
-		</div>
 
-		<!-- Day 2 -->
-		<div class="card mb-4">
-			<div class="card-header bg-primary text-white">Day 2 – Tools, Docs & Expectations</div>
-			<div class="card-body">
-				<p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-				<div class="accordion" id="day2Accordion">
-					<!-- Training Overview -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_overview">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_overviewCollapse" aria-expanded="false" aria-controls="d2_overviewCollapse">
-								🎯 Training Path & Performance Expectations
-							</button>
-						</h2>
-						<div id="d2_overviewCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<form>
-									<div class="form-check mb-2">
-										<input class="form-check-input" type="checkbox" id="trainingPath" onchange="saveProgress()" />
-										<label class="form-check-label" for="trainingPath">
-											<a href="https://docs.google.com/document/d/EXAMPLE" target="_blank">Reviewed Your Training Path</a>
-										</label>
-									</div>
-									<div class="form-check mb-2">
-										<input class="form-check-input" type="checkbox" id="productionRates" onchange="saveProgress()" />
-										<label class="form-check-label" for="productionRates">
-											Reviewed Ramp-up Timelines & Production Rates
-										</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()" />
-										<label class="form-check-label" for="qaScorecard">
-											<a href="https://yourguru.link/qa-scorecard" target="_blank">Reviewed QA Scorecard (Looking Glass)</a>
-										</label>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+<!-- Day 2 -->
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">Day 2 – Tools, Docs & Expectations</div>
+  <div class="card-body">
+    <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
+    <div class="accordion" id="day2Accordion">
 
-					<!-- Work Logistics -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_logistics">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_logisticsCollapse" aria-expanded="false" aria-controls="d2_logisticsCollapse">
-								📅 Work Logistics & Scheduling
-							</button>
-						</h2>
-						<div id="d2_logisticsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<form>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="staggeredShift" onchange="saveProgress()" />
-										<label class="form-check-label" for="staggeredShift">
-											<a href="https://yourguru.link/staggered-shifts" target="_blank">Read the Staggered Shift Overview</a>
-										</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="createDoc" onchange="saveProgress()" />
-										<label class="form-check-label" for="createDoc">Created 1:1 Doc to share with TL</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="expectations" onchange="saveProgress()" />
-										<label class="form-check-label" for="expectations">Reviewed Training Expectations (Engagement, Questions, Notes)</label>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+      <!-- Training Overview -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_overview">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_overviewCollapse" aria-expanded="false" aria-controls="d2_overviewCollapse">
+            🎯 Training Path & Performance Expectations
+          </button>
+        </h2>
+        <div id="d2_overviewCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <form>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="trainingPath" onchange="saveProgress()">
+                <label class="form-check-label" for="trainingPath">
+                  <a href="https://docs.google.com/document/d/EXAMPLE" target="_blank">Reviewed Your Training Path</a>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="productionRates" onchange="saveProgress()">
+                <label class="form-check-label" for="productionRates">
+                  Reviewed Ramp-up Timelines & Production Rates
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()">
+                <label class="form-check-label" for="qaScorecard">
+                  <a href="https://yourguru.link/qa-scorecard" target="_blank">Reviewed QA Scorecard (Looking Glass)</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-					<!-- Helpdesk + ServiceNow -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_support">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_supportCollapse" aria-expanded="false" aria-controls="d2_supportCollapse">
-								🆘 HelpDesk, Tickets & ServiceNow
-							</button>
-						</h2>
-						<div id="d2_supportCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<form>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="glassdoorHelpdesk" onchange="saveProgress()" />
-										<label class="form-check-label" for="glassdoorHelpdesk">Learned When & How to Submit a HelpDesk Ticket</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="serviceNow" onchange="saveProgress()" />
-										<label class="form-check-label" for="serviceNow">Completed ServiceNow Walkthrough</label>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+      <!-- Work Logistics -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_logistics">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_logisticsCollapse" aria-expanded="false" aria-controls="d2_logisticsCollapse">
+            📅 Work Logistics & Scheduling
+          </button>
+        </h2>
+        <div id="d2_logisticsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <form>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="staggeredShift" onchange="saveProgress()">
+                <label class="form-check-label" for="staggeredShift">
+                  <a href="https://yourguru.link/staggered-shifts" target="_blank">Read the Staggered Shift Overview</a>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="createDoc" onchange="saveProgress()">
+                <label class="form-check-label" for="createDoc">Created 1:1 Doc to share with TL</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="expectations" onchange="saveProgress()">
+                <label class="form-check-label" for="expectations">Reviewed Training Expectations (Engagement, Questions, Notes)</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-					<!-- Tool Testing Block -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_tools">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_toolsCollapse" aria-expanded="false" aria-controls="d2_toolsCollapse">
-								🧪 Tools Testing Checklist
-							</button>
-						</h2>
-						<div id="d2_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<p>Test and verify access to each of the tools below:</p>
-								<form>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="jira" onchange="saveProgress()" /><label class="form-check-label" for="jira">Jira</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="lessonly" onchange="saveProgress()" /><label class="form-check-label" for="lessonly">Lessonly</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="tick" onchange="saveProgress()" /><label class="form-check-label" for="tick">TICK</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlass" onchange="saveProgress()" /><label class="form-check-label" for="lookingGlass">Looking Glass</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="zoom" onchange="saveProgress()" /><label class="form-check-label" for="zoom">Zoom / Google Meet</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="slack" onchange="saveProgress()" /><label class="form-check-label" for="slack">Slack</label></div>
-									<div class="form-check"><input class="form-check-input" type="checkbox" id="guru" onchange="saveProgress()" /><label class="form-check-label" for="guru">Guru</label></div>
-								</form>
-							</div>
-						</div>
-					</div>
+      <!-- Helpdesk + ServiceNow -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_support">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_supportCollapse" aria-expanded="false" aria-controls="d2_supportCollapse">
+            🆘 HelpDesk, Tickets & ServiceNow
+          </button>
+        </h2>
+        <div id="d2_supportCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <form>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="glassdoorHelpdesk" onchange="saveProgress()">
+                <label class="form-check-label" for="glassdoorHelpdesk">Learned When & How to Submit a HelpDesk Ticket</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="serviceNow" onchange="saveProgress()">
+                <label class="form-check-label" for="serviceNow">Completed ServiceNow Walkthrough</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-					<!-- 📄 Training Policies & Docs -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_policies">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_policiesCollapse" aria-expanded="false" aria-controls="d2_policiesCollapse">
-								📄 Training Policies & Docs
-							</button>
-						</h2>
-						<div id="d2_policiesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<form>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="codeOfEthics" onchange="saveProgress()" />
-										<label class="form-check-label" for="codeOfEthics">
-											<a href="https://guru.com/YOUR_LINK_HERE" target="_blank">OAM / Glassdoor Code of Ethics</a>
-											<span class="text-muted">(Link coming soon)</span>
-										</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="partnerPolicy" onchange="saveProgress()" />
-										<label class="form-check-label" for="partnerPolicy">
-											<a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Policy for Partner Content & GD Admin Account Usage</a>
-											<span class="text-muted">(Link coming soon)</span>
-										</label>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+      <!-- Tool Testing Block -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_tools">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_toolsCollapse" aria-expanded="false" aria-controls="d2_toolsCollapse">
+            🧪 Tools Testing Checklist
+          </button>
+        </h2>
+        <div id="d2_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <p>Test and verify access to each of the tools below:</p>
+            <form>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="jira" onchange="saveProgress()"><label class="form-check-label" for="jira">Jira</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="lessonly" onchange="saveProgress()"><label class="form-check-label" for="lessonly">Lessonly</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="tick" onchange="saveProgress()"><label class="form-check-label" for="tick">TICK</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlass" onchange="saveProgress()"><label class="form-check-label" for="lookingGlass">Looking Glass</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="zoom" onchange="saveProgress()"><label class="form-check-label" for="zoom">Zoom / Google Meet</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="slack" onchange="saveProgress()"><label class="form-check-label" for="slack">Slack</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="guru" onchange="saveProgress()"><label class="form-check-label" for="guru">Guru</label></div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-					<!-- Submit -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="d2_submit">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_submitCollapse" aria-expanded="false" aria-controls="d2_submitCollapse">
-								✅ Day 2 Wrap-Up & Submit
-							</button>
-						</h2>
-						<div id="d2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-							<div class="accordion-body">
-								<p>Please submit this form once your Day 2 checklist is complete:</p>
-								<iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-									Loading…
-								</iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End accordion -->
-			</div>
-			<!-- End card-body -->
-		</div>
-		<!-- End Day 2 card -->
+      <!-- Training Policies & Docs -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_policies">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_policiesCollapse" aria-expanded="false" aria-controls="d2_policiesCollapse">
+            📄 Training Policies & Docs
+          </button>
+        </h2>
+        <div id="d2_policiesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <form>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="codeOfEthics" onchange="saveProgress()">
+                <label class="form-check-label" for="codeOfEthics">
+                  <a href="https://guru.com/YOUR_LINK_HERE" target="_blank">OAM / Glassdoor Code of Ethics</a>
+                  <span class="text-muted">(Link coming soon)</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="partnerPolicy" onchange="saveProgress()">
+                <label class="form-check-label" for="partnerPolicy">
+                  <a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Policy for Partner Content & GD Admin Account Usage</a>
+                  <span class="text-muted">(Link coming soon)</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="d2_submit">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_submitCollapse" aria-expanded="false" aria-controls="d2_submitCollapse">
+            ✅ Day 2 Wrap-Up & Submit
+          </button>
+        </h2>
+        <div id="d2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+          <div class="accordion-body">
+            <p>Please submit this form once your Day 2 checklist is complete:</p>
+            <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                    width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End accordion -->
+  </div> <!-- End card-body -->
+</div> <!-- End Day 2 card -->
 
 		<script>
 			function saveProgress() {
