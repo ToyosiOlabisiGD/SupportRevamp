@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Customer Support Training</title>
+  <title>Customer Support Training – Start Here</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,125 +12,22 @@
   <!-- Navbar -->
   <nav class="navbar navbar-dark bg-success mb-4">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="navbar-brand d-flex align-items-center">
         <img src="assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
         Customer Support Training
-      </a>
+      </span>
     </div>
   </nav>
 
-  <!-- Main Container -->
+  <!-- Menu -->
   <div class="container">
-
-    <!-- ✅ SECTION 1: Onboarding Instructions will go here -->
-<div class="card mb-4">
-  <div class="card-header bg-primary text-white">Onboarding Instructions</div>
-  <div class="card-body">
-    <p>Welcome to Customer Support Training! 🎉</p>
-    <p>This section covers your basic setup and orientation:</p>
-    <ul>
-      <li>Setting up Chrome profiles, Slack, and Gmail</li>
-      <li>Logging into Salesforce and Omni</li>
-      <li>Understanding how your training is structured</li>
-      <li>Knowing who to go to for help</li>
-    </ul>
-    
-    <!-- Progress Checkboxes -->
-    <form id="onboardingProgress">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="chrome" onchange="saveProgress()">
-        <label class="form-check-label" for="chrome">Chrome profile + Slack setup complete</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()">
-        <label class="form-check-label" for="logins">Salesforce + Omni logins tested</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="team" onchange="saveProgress()">
-        <label class="form-check-label" for="team">I know who to contact if I get stuck</label>
-      </div>
-    </form>
-
-    <!-- Google Form Embed -->
-    <div class="mt-4">
-      <h5>Submit Your Progress</h5>
-      <p>Please submit this form once your onboarding is complete:</p>
-      <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-        Loading…
-      </iframe>
+    <h2 class="mb-4">Start Your Training</h2>
+    <div class="list-group">
+      <a href="modules/onboarding.html" class="list-group-item list-group-item-action">1️⃣ Onboarding Instructions</a>
+      <a href="modules/overview.html" class="list-group-item list-group-item-action">2️⃣ Training Overview</a>
+      <!-- Core Training and more to come... -->
     </div>
   </div>
-</div>
-    
-    <!-- ✅ SECTION 2: Training Overview will go here -->
-<div class="card mb-4">
-  <div class="card-header bg-secondary text-white">Training Overview</div>
-  <div class="card-body">
-    <p>This training program will take you through a structured 6–8 week path to prepare you for live case handling in your assigned support role.</p>
-
-    <p><strong>Your path includes:</strong></p>
-    <ul>
-      <li><strong>Onboarding</strong> – setup and orientation</li>
-      <li><strong>Core Training</strong> – tools, tags, case flow</li>
-      <li><strong>Moderation</strong> – Jobseeker or Employer content rules</li>
-      <li><strong>Support</strong> – Jobseeker or Employer workflows</li>
-      <li><strong>Profile Changes</strong> – for Employer path only</li>
-    </ul>
-
-    <p><strong>What success looks like:</strong></p>
-    <ul>
-      <li>Completing weekly progress checklists</li>
-      <li>Shadowing and being shadowed</li>
-      <li>Passing quizzes and trainer reviews</li>
-    </ul>
-
-    <!-- Progress Checkboxes -->
-    <form id="overviewProgress">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="understand-path" onchange="saveProgress()">
-        <label class="form-check-label" for="understand-path">I understand which training path I'm on (Jobseeker or Employer)</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="understand-flow" onchange="saveProgress()">
-        <label class="form-check-label" for="understand-flow">I understand how training will be structured week-by-week</label>
-      </div>
-    </form>
-
-    <!-- Google Form Embed -->
-    <div class="mt-4">
-      <h5>Submit Your Progress</h5>
-      <p>Submit this form once you've reviewed the training roadmap:</p>
-      <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-        Loading…
-      </iframe>
-    </div>
-  </div>
-</div>
-
-    <!-- ✅ SECTION 3: Core Training will go here -->
-
-    <!-- More sections will be added below... -->
-
-  </div>
-
-  <!-- Progress Tracker Script -->
-  <script>
-    function saveProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        localStorage.setItem(cb.id, cb.checked);
-      });
-    }
-
-    function loadProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        cb.checked = localStorage.getItem(cb.id) === "true";
-      });
-    }
-
-    window.onload = loadProgress;
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
