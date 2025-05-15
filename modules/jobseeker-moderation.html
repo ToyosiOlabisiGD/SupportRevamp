@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jobseeker Moderation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-success mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+        Customer Support Training
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-header bg-warning text-dark">Week 3: Jobseeker Moderation</div>
+      <div class="card-body">
+        <p>This module focuses on how to identify and escalate content violations submitted by Jobseekers.</p>
+        
+        <p><strong>Topics include:</strong></p>
+        <ul>
+          <li>Flag types (PII, harassment, threats, etc.)</li>
+          <li>Escalation criteria for Mod review</li>
+          <li>Note writing and tagging guidelines</li>
+        </ul>
+
+        <!-- Progress Checkboxes -->
+        <form id="jsModProgress">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="flag-types" onchange="saveProgress()">
+            <label class="form-check-label" for="flag-types">Reviewed types of Jobseeker flags</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="mod-escalation" onchange="saveProgress()">
+            <label class="form-check-label" for="mod-escalation">Understand when to escalate to Mods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="notes-tagging" onchange="saveProgress()">
+            <label class="form-check-label" for="notes-tagging">Completed notes & tagging best practices</label>
+          </div>
+        </form>
+
+        <!-- Google Form Embed -->
+        <div class="mt-4">
+          <h5>Submit Your Progress</h5>
+          <p>Submit this form after completing the Jobseeker Moderation training:</p>
+          <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                  width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function saveProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        localStorage.setItem(cb.id, cb.checked);
+      });
+    }
+
+    function loadProgress() {
+      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+        cb.checked = localStorage.getItem(cb.id) === "true";
+      });
+    }
+
+    window.onload = loadProgress;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
