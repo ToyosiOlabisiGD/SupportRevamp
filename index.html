@@ -23,6 +23,45 @@
   <div class="container">
 
     <!-- ✅ SECTION 1: Onboarding Instructions will go here -->
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">Onboarding Instructions</div>
+  <div class="card-body">
+    <p>Welcome to Customer Support Training! 🎉</p>
+    <p>This section covers your basic setup and orientation:</p>
+    <ul>
+      <li>Setting up Chrome profiles, Slack, and Gmail</li>
+      <li>Logging into Salesforce and Omni</li>
+      <li>Understanding how your training is structured</li>
+      <li>Knowing who to go to for help</li>
+    </ul>
+
+    <!-- Progress Checkboxes -->
+    <form id="onboardingProgress">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="chrome" onchange="saveProgress()">
+        <label class="form-check-label" for="chrome">Chrome profile + Slack setup complete</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()">
+        <label class="form-check-label" for="logins">Salesforce + Omni logins tested</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="team" onchange="saveProgress()">
+        <label class="form-check-label" for="team">I know who to contact if I get stuck</label>
+      </div>
+    </form>
+
+    <!-- Google Form Embed -->
+    <div class="mt-4">
+      <h5>Submit Your Progress</h5>
+      <p>Please submit this form once your onboarding is complete:</p>
+      <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+        Loading…
+      </iframe>
+    </div>
+  </div>
+</div>
 
     <!-- ✅ SECTION 2: Training Overview will go here -->
 
