@@ -186,7 +186,38 @@
           </div>
         </div>
       </div>
-
+      <!-- Regional Setup (Optional) -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="d1_region">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_regionCollapse" aria-expanded="false" aria-controls="d1_regionCollapse">
+      🌍 Regional Setup Tasks (If Applicable)
+    </button>
+  </h2>
+  <div id="d1_regionCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+    <div class="accordion-body">
+      <form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="colombiaId" onchange="saveProgress()">
+          <label class="form-check-label" for="colombiaId">
+            Activated access card + photo ID (Colombia only)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bulgariaVpn" onchange="saveProgress()">
+          <label class="form-check-label" for="bulgariaVpn">
+            Verified VPN access (Bulgaria only)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sapCourses" onchange="saveProgress()">
+          <label class="form-check-label" for="sapCourses">
+            Completed SAP regional courses (if required)
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
     </div> <!-- End Day 1 Accordion -->
   </div>
 </div>
