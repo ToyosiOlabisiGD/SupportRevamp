@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Employer Support – Days 1–2</title>
+  <title>Employer Support – Days 1–4</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -20,190 +20,177 @@
 </nav>
 
 <div class="container">
-  <div class="accordion" id="empSupportAccordion">
+  <div class="accordion" id="employerSupportDays1to4">
 
-    <!-- Day 1 -->
+    <!-- 📘 Day 1 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="day1Heading">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-          📘 Day 1 – Employer Support Path + Profile Changes
+          📘 Day 1 – Intro to Employer Support
         </button>
       </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#empSupportAccordion">
-        <div class="accordion-body">
+      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#employerSupportDays1to4">
+        <div class="accordion-body p-3">
           <form>
-
             <p class="fw-bold">🧭 Recap & Intro</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
-              <label class="form-check-label" for="d1Recap">Recap & warm-up Q&A <span class="badge bg-secondary">TL-led</span></label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
-              <label class="form-check-label" for="d1Intro">Intro to Employer Support training path <span class="badge bg-secondary">TL-led</span></label>
+              <label class="form-check-label" for="d1Recap">TL-led Recap + Path Overview <span class="badge bg-secondary">TL-led</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📘 Sensitive Profile Changes</p>
+            <p class="fw-bold mt-3">🔍 Sensitive Case Types</p>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1LessonlyProfile" onchange="saveProgress()">
-              <label class="form-check-label" for="d1LessonlyProfile">Complete: “Sensitive Case Types – Employer Profile Changes” <span class="badge bg-info text-dark">Self-paced</span></label>
+              <input class="form-check-input" type="checkbox" id="d1SensitiveIntro" onchange="saveProgress()">
+              <label class="form-check-label" for="d1SensitiveIntro">Review: Sensitive Profile Change Scenarios <span class="badge bg-secondary">TL-led</span></label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1GuruProfileChange" onchange="saveProgress()">
-              <label class="form-check-label" for="d1GuruProfileChange">Read Guru: Employer Profile Edits & Approvals <span class="badge bg-info text-dark">Self-paced</span></label>
-            </div>
-
-            <p class="fw-bold mt-3">🧪 Practice</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1ProfilePractice" onchange="saveProgress()">
-              <label class="form-check-label" for="d1ProfilePractice">Complete 14 practice cases: Profile Changes <span class="badge bg-primary">Practice</span></label>
+              <input class="form-check-input" type="checkbox" id="d1SensitivePractice" onchange="saveProgress()">
+              <label class="form-check-label" for="d1SensitivePractice">Practice: 6 Sensitive Profile Change Cases <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
 
+            <p class="fw-bold mt-3">📘 Lessonly & Guru</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1LessonlyFAQs" onchange="saveProgress()">
+              <label class="form-check-label" for="d1LessonlyFAQs">Complete: “Employer Content FAQs” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+
+            <p class="fw-bold mt-3">🆕 Article Exploration</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1BrandingArticle" onchange="saveProgress()">
+              <label class="form-check-label" for="d1BrandingArticle">Read: “Branding Support Overview” <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- Day 2 -->
+    <!-- 📘 Day 2 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="day2Heading">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-          📘 Day 2 – Branding & Employer FAQs
+          📘 Day 2 – Employer FAQs & Branding
         </button>
       </h2>
-      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#empSupportAccordion">
-        <div class="accordion-body">
+      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#employerSupportDays1to4">
+        <div class="accordion-body p-3">
           <form>
-
-            <p class="fw-bold">🧭 Recap & Employer FAQ Deep Dive</p>
+            <p class="fw-bold">🧭 TL-led QA</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
-              <label class="form-check-label" for="d2Recap">Daily recap & trainer-led discussion <span class="badge bg-secondary">TL-led</span></label>
+              <label class="form-check-label" for="d2Recap">Recap + FAQ Deep Dive <span class="badge bg-secondary">TL-led</span></label>
             </div>
+
+            <p class="fw-bold mt-3">📘 Guru + Help Center Review</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="d2GuruFAQs" onchange="saveProgress()">
-              <label class="form-check-label" for="d2GuruFAQs">Review: Guru Collection – Employer FAQs <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="d2GuruFAQs">Review: “Employer FAQ” Guru Docs <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📘 Help Center: Branding & Profile Content</p>
+            <p class="fw-bold mt-3">📚 Help Center Articles</p>
+            <ul>
+              <li>Employer Center Overview</li>
+              <li>What to do about negative reviews</li>
+              <li>Review moderation + visibility issues</li>
+              <li>Company Review Highlights</li>
+              <li>@Company Conversations Page</li>
+            </ul>
+
+            <p class="fw-bold mt-3">🎭 Role Play</p>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d2HCEmpBranding" onchange="saveProgress()">
-              <label class="form-check-label" for="d2HCEmpBranding">Read: Help Center – Branding, Reviews, and Photos articles <span class="badge bg-info text-dark">Self-paced</span></label>
+              <input class="form-check-input" type="checkbox" id="d2RoleplayProfile" onchange="saveProgress()">
+              <label class="form-check-label" for="d2RoleplayProfile">Explore Employer Profiles (e.g., Amazon, Okta) <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">🧪 Practice & Roleplay</p>
+            <p class="fw-bold mt-3">📂 Practice Cases</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2FAQCases" onchange="saveProgress()">
+              <label class="form-check-label" for="d2FAQCases">Complete 3 FAQ-related cases <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="d2BrandingCases" onchange="saveProgress()">
-              <label class="form-check-label" for="d2BrandingCases">Complete 12 practice cases: Branding + FAQ support <span class="badge bg-primary">Practice</span></label>
+              <label class="form-check-label" for="d2BrandingCases">Complete 5 Branding Support Cases <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d2RoleplayBrands" onchange="saveProgress()">
-              <label class="form-check-label" for="d2RoleplayBrands">Explore real employer profiles (e.g., Google, Okta) <span class="badge bg-info text-dark">Self-paced</span></label>
-            </div>
-
           </form>
         </div>
       </div>
     </div>
-<!-- Days 3–4 of Employer Support Module -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day3Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
-      📘 Day 3 – Deeper Dive: Employer Center + FAQs
-    </button>
-  </h2>
-  <div id="day3Collapse" class="accordion-collapse collapse" aria-labelledby="day3Heading" data-bs-parent="#empSupportAccordion">
-    <div class="accordion-body">
-      <form>
 
-        <p class="fw-bold">🧭 Recap & Discussion</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d3Recap">Daily recap & Q&A <span class="badge bg-secondary">TL-led</span></label>
-        </div>
+    <!-- 📘 Day 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day3Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
+          📘 Day 3 – Jobs, FEAs & Community
+        </button>
+      </h2>
+      <div id="day3Collapse" class="accordion-collapse collapse" aria-labelledby="day3Heading" data-bs-parent="#employerSupportDays1to4">
+        <div class="accordion-body p-3">
+          <form>
+            <p class="fw-bold">📘 Lessonly Modules</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d3LessonlyFEA" onchange="saveProgress()">
+              <label class="form-check-label" for="d3LessonlyFEA">Complete: Free Employer Accounts (FEA) Modules <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <p class="fw-bold mt-3">📘 Help Center Exploration</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3HCEmpCenter" onchange="saveProgress()">
-          <label class="form-check-label" for="d3HCEmpCenter">Review Employer Center Help Articles <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Tabs Overview + EC Webinar</li>
-          <li>Review and Content Visibility Issues</li>
-          <li>Content Guidelines + Demo FAQs</li>
-        </ul>
+            <p class="fw-bold mt-3">📚 Help Center Exploration</p>
+            <ul>
+              <li>How Glassdoor Job Search works for employers</li>
+              <li>Why don't all jobs show?</li>
+              <li>Will Glassdoor remove jobs?</li>
+              <li>Glassdoor + Indeed aggregation</li>
+            </ul>
 
-        <p class="fw-bold mt-3">🧪 Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3FAQCases" onchange="saveProgress()">
-          <label class="form-check-label" for="d3FAQCases">Practice: 3 Employer FAQ Cases <span class="badge bg-primary">Practice</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3BrandingCases" onchange="saveProgress()">
-          <label class="form-check-label" for="d3BrandingCases">Practice: 9 Branding Support Cases <span class="badge bg-primary">Practice</span></label>
-        </div>
+            <p class="fw-bold mt-3">🎯 Practice Cases</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d3FEACases" onchange="saveProgress()">
+              <label class="form-check-label" for="d3FEACases">Complete 5 FEA-related cases <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <p class="fw-bold mt-3">👀 Shadowing</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3Shadowing1" onchange="saveProgress()">
-          <label class="form-check-label" for="d3Shadowing1">Live queue shadowing (120 min) <span class="badge bg-info text-dark">Agent-led</span></label>
+            <p class="fw-bold mt-3">👀 Shadowing + Live Queue</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d3ShadowFEA" onchange="saveProgress()">
+              <label class="form-check-label" for="d3ShadowFEA">Live Queue: Shadow FEA cases <span class="badge bg-secondary">Agent-led</span></label>
+            </div>
+          </form>
         </div>
-
-      </form>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Day 4 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day4Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
-      📘 Day 4 – FEA Training + Queue Work
-    </button>
-  </h2>
-  <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#empSupportAccordion">
-    <div class="accordion-body">
-      <form>
+    <!-- 📘 Day 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day4Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
+          📘 Day 4 – Company Changes + Deep Dive
+        </button>
+      </h2>
+      <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#employerSupportDays1to4">
+        <div class="accordion-body p-3">
+          <form>
+            <p class="fw-bold">📘 Lessonly + Guru</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d4LessonlyCompany" onchange="saveProgress()">
+              <label class="form-check-label" for="d4LessonlyCompany">Complete: Verified Company Changes (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <p class="fw-bold">🧭 Recap & TL Q&A</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Recap">Daily recap + trainer insights <span class="badge bg-secondary">TL-led</span></label>
-        </div>
+            <p class="fw-bold mt-3">📚 Help Center Topics</p>
+            <ul>
+              <li>Update CEO Information</li>
+              <li>Default / Grouped / Localized Profiles</li>
+              <li>Employer Center Analytics</li>
+              <li>OpenCompany + Certifications</li>
+            </ul>
 
-        <p class="fw-bold mt-3">📘 Learning: Free Employer Accounts</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4LessonlyFEA" onchange="saveProgress()">
-          <label class="form-check-label" for="d4LessonlyFEA">Complete Lessonly: Free Employer Accounts (FEA) <span class="badge bg-info text-dark">Self-paced</span></label>
+            <p class="fw-bold mt-3">🎭 Role Play</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d4ProfileEdit" onchange="saveProgress()">
+              <label class="form-check-label" for="d4ProfileEdit">Explore Employer Center: Add/update test info <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+          </form>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4GuruFEA" onchange="saveProgress()">
-          <label class="form-check-label" for="d4GuruFEA">Read: Guru Collection – FEAs <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧪 Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4PracticeFEA" onchange="saveProgress()">
-          <label class="form-check-label" for="d4PracticeFEA">Complete 5 FEA practice cases <span class="badge bg-primary">Practice</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Shadow & Queue</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4ShadowFEA" onchange="saveProgress()">
-          <label class="form-check-label" for="d4ShadowFEA">Shadow FEA agent (2 hrs) <span class="badge bg-info text-dark">Agent-led</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4QueueFEA" onchange="saveProgress()">
-          <label class="form-check-label" for="d4QueueFEA">Live queue support + Q&A with TL (2 hrs) <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
+      </div>
     </div>
-  </div>
-</div>
 
-  </div> <!-- End Accordion -->
-</div> <!-- End Container -->
+  </div> <!-- end accordion -->
+</div> <!-- end container -->
 
 <script>
   function saveProgress() {
