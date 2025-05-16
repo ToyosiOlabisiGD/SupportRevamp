@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Employer Support</title>
+  <title>Employer Support – Days 1–2</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
-  ← Return to Menu
-</a>
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">← Return to Menu</a>
 
 <nav class="navbar navbar-dark bg-success mb-4">
   <div class="container-fluid">
@@ -22,198 +20,94 @@
 </nav>
 
 <div class="container">
+  <div class="accordion" id="empSupportAccordion">
 
-  <!-- Week 1 -->
-  <div class="card mb-4">
-    <div class="card-header bg-info text-white">Employer Support – Week 1: Case Types & Tools</div>
-    <div class="card-body">
-      <div class="accordion" id="emSupportWeek1">
+    <!-- Day 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day1Heading">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
+          📘 Day 1 – Employer Support Path + Profile Changes
+        </button>
+      </h2>
+      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#empSupportAccordion">
+        <div class="accordion-body">
+          <form>
 
-        <!-- Section 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_cases">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_casesCollapse" aria-expanded="false" aria-controls="em1_casesCollapse">
-              📂 Employer Case Types Overview
-            </button>
-          </h2>
-          <div id="em1_casesCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek1">
-            <div class="accordion-body">
-              <form id="em1_casesChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_review_case_types" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_review_case_types">🧾 Reviewed common Employer case types</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_shadow_case_types" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_shadow_case_types">👀 Shadowed 3+ Employer support tickets</label>
-                </div>
-              </form>
+            <p class="fw-bold">🧭 Recap & Intro</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+              <label class="form-check-label" for="d1Recap">Recap & warm-up Q&A <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
-
-        <!-- Section 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_tools">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_toolsCollapse" aria-expanded="false" aria-controls="em1_toolsCollapse">
-              🛠️ Tools + Macros
-            </button>
-          </h2>
-          <div id="em1_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek1">
-            <div class="accordion-body">
-              <form id="em1_toolsChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_macros" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_macros">📄 Reviewed Employer-specific macros/templates</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_tools" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_tools">🧰 Practiced tools specific to Employer case resolution</label>
-                </div>
-              </form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
+              <label class="form-check-label" for="d1Intro">Intro to Employer Support training path <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
 
-        <!-- Section 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_tone">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_toneCollapse" aria-expanded="false" aria-controls="em1_toneCollapse">
-              ✍️ Tone + Comms
-            </button>
-          </h2>
-          <div id="em1_toneCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek1">
-            <div class="accordion-body">
-              <form id="em1_toneChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_comms" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_comms">📣 Practiced tone for employer vs internal messages</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_practice_responses" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_practice_responses">💬 Wrote 2 sample replies using templates</label>
-                </div>
-              </form>
+            <p class="fw-bold mt-3">📘 Sensitive Profile Changes</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1LessonlyProfile" onchange="saveProgress()">
+              <label class="form-check-label" for="d1LessonlyProfile">Complete: “Sensitive Case Types – Employer Profile Changes” <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
-          </div>
-        </div>
-
-        <!-- Section 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_submit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_submitCollapse" aria-expanded="false" aria-controls="em1_submitCollapse">
-              📤 Submit Your Progress
-            </button>
-          </h2>
-          <div id="em1_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek1">
-            <div class="accordion-body">
-              <p>Submit this form once you've completed Week 1:</p>
-              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1GuruProfileChange" onchange="saveProgress()">
+              <label class="form-check-label" for="d1GuruProfileChange">Read Guru: Employer Profile Edits & Approvals <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
-          </div>
-        </div>
 
-      </div> <!-- end accordion -->
-    </div> <!-- end card-body -->
-  </div> <!-- end card -->
-
-  <!-- Week 2 -->
-  <div class="card mb-4">
-    <div class="card-header bg-info text-white">Employer Support – Week 2: Practice, Feedback & Escalations</div>
-    <div class="card-body">
-      <div class="accordion" id="emSupportWeek2">
-
-        <!-- Section 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_shadowing">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_shadowingCollapse" aria-expanded="false" aria-controls="em2_shadowingCollapse">
-              👀 Shadowing & Practice
-            </button>
-          </h2>
-          <div id="em2_shadowingCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek2">
-            <div class="accordion-body">
-              <form id="em2_shadowingChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_shadowing_sessions" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_shadowing_sessions">👓 Shadowed live cases + wrote case notes</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_practice_cases" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_practice_cases">🧪 Practiced 2 real scenarios with trainer feedback</label>
-                </div>
-              </form>
+            <p class="fw-bold mt-3">🧪 Practice</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1ProfilePractice" onchange="saveProgress()">
+              <label class="form-check-label" for="d1ProfilePractice">Complete 14 practice cases: Profile Changes <span class="badge bg-primary">Practice</span></label>
             </div>
-          </div>
-        </div>
 
-        <!-- Section 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_feedback">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_feedbackCollapse" aria-expanded="false" aria-controls="em2_feedbackCollapse">
-              📣 Feedback & Communication
-            </button>
-          </h2>
-          <div id="em2_feedbackCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek2">
-            <div class="accordion-body">
-              <form id="em2_feedbackChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_read_feedback" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_read_feedback">🧠 Reviewed peer feedback and tone edits</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_adjusted_responses" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_adjusted_responses">✍️ Updated 2 replies based on coaching</label>
-                </div>
-              </form>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day2Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+          📘 Day 2 – Branding & Employer FAQs
+        </button>
+      </h2>
+      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#empSupportAccordion">
+        <div class="accordion-body">
+          <form>
+
+            <p class="fw-bold">🧭 Recap & Employer FAQ Deep Dive</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
+              <label class="form-check-label" for="d2Recap">Daily recap & trainer-led discussion <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
-
-        <!-- Section 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_escalations">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_escalationsCollapse" aria-expanded="false" aria-controls="em2_escalationsCollapse">
-              🚨 Escalations & Edge Cases
-            </button>
-          </h2>
-          <div id="em2_escalationsCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek2">
-            <div class="accordion-body">
-              <form id="em2_escalationsChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_read_scenarios" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_read_scenarios">📚 Reviewed tricky escalation scenarios</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_escalated_case" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_escalated_case">📎 Escalated a mock case with proper notes</label>
-                </div>
-              </form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2GuruFAQs" onchange="saveProgress()">
+              <label class="form-check-label" for="d2GuruFAQs">Review: Guru Collection – Employer FAQs <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
-          </div>
-        </div>
 
-        <!-- Section 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_submit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_submitCollapse" aria-expanded="false" aria-controls="em2_submitCollapse">
-              📤 Submit Your Progress
-            </button>
-          </h2>
-          <div id="em2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#emSupportWeek2">
-            <div class="accordion-body">
-              <p>Submit this form once you've completed Week 2:</p>
-              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <p class="fw-bold mt-3">📘 Help Center: Branding & Profile Content</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2HCEmpBranding" onchange="saveProgress()">
+              <label class="form-check-label" for="d2HCEmpBranding">Read: Help Center – Branding, Reviews, and Photos articles <span class="badge bg-info text-dark">Self-paced</span></label>
             </div>
-          </div>
+
+            <p class="fw-bold mt-3">🧪 Practice & Roleplay</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2BrandingCases" onchange="saveProgress()">
+              <label class="form-check-label" for="d2BrandingCases">Complete 12 practice cases: Branding + FAQ support <span class="badge bg-primary">Practice</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d2RoleplayBrands" onchange="saveProgress()">
+              <label class="form-check-label" for="d2RoleplayBrands">Explore real employer profiles (e.g., Google, Okta) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+
+          </form>
         </div>
+      </div>
+    </div>
 
-      </div> <!-- end accordion -->
-    </div> <!-- end card-body -->
-  </div> <!-- end card -->
-
-</div> <!-- end container -->
+  </div> <!-- End Accordion -->
+</div> <!-- End Container -->
 
 <script>
   function saveProgress() {
