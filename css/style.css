@@ -19,3 +19,66 @@ body {
   font-size: 0.75rem;
   margin-left: 5px;
 }
+
+/* ====== GLOBAL ====== */
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 900px;
+}
+
+/* ====== ACCORDIONS & HEADINGS ====== */
+.card-header {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.accordion-button {
+  font-weight: 500;
+}
+
+.badge {
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+
+/* ====== INDEX MODULE CARDS ====== */
+.training-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+}
+
+.training-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.08);
+}
+
+.training-card i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* ====== OPTIONAL COLOR VARIANTS ====== */
+.bg-core {
+  background-color: #d1ecf1;
+}
+
+.bg-onboarding {
+  background-color: #e2f7e1;
+}
+
+.bg-mod {
+  background-color: #fff3cd;
+}
+
+.bg-support {
+  background-color: #f8d7da;
+}
+
+.bg-profile {
+  background-color: #f0e5ff;
+}
