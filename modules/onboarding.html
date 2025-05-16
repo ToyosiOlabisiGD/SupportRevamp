@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onboarding Training</title>
+  <title>Onboarding</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; right: 20px; z-index: 999;">
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
   ← Return to Menu
 </a>
 
@@ -22,92 +22,172 @@
 </nav>
 
 <div class="container">
+  <!-- Week Overview -->
   <div class="card mb-4">
-    <div class="card-header bg-info text-white">Onboarding Overview</div>
+    <div class="card-header bg-warning text-dark fw-bold">Onboarding – Week Overview</div>
     <div class="card-body">
-      <p>This module introduces new agents to the team, tools, values, and expectations.</p>
-      <p><strong>Estimated Time:</strong> 2 Days (8 hrs/day)</p>
+      <form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="emailSlack" onchange="saveProgress()">
+          <label class="form-check-label" for="emailSlack">Confirmed access to email, Slack, and logins</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="cultureMission" onchange="saveProgress()">
+          <label class="form-check-label" for="cultureMission">Learned about Glassdoor’s culture, mission, and privacy principles</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="toolsOverview" onchange="saveProgress()">
+          <label class="form-check-label" for="toolsOverview">Explored tools like Salesforce, Guru, and Looking Glass</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="trainingExpectations" onchange="saveProgress()">
+          <label class="form-check-label" for="trainingExpectations">Reviewed expectations for training and performance</label>
+        </div>
+      </form>
+      <p class="fw-bold mt-3">Estimated Time: 2 days (8 hrs/day)</p>
     </div>
   </div>
 
+  <!-- Accordion Container -->
   <div class="accordion" id="onboardingAccordion">
 
-    <!-- Day 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day1Header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Content" aria-expanded="false" aria-controls="day1Content">
-          Day 1 – Orientation & Culture
-        </button>
-      </h2>
-      <div id="day1Content" class="accordion-collapse collapse">
-        <div class="accordion-body">
+   <!-- Day 1 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      Day 1 – Orientation & Culture
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse">
+    <div class="accordion-body p-0">
+      <div class="card m-3">
+        <div class="card-body">
+          <p class="text-muted mb-3"><strong>Estimated Time:</strong> 8 hours</p>
           <form>
-            <p class="fw-bold">Meet the Team</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="teamWelcome" onchange="saveProgress()"><label class="form-check-label" for="teamWelcome">Attended TL & Team Welcome Session</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="vendorBio" onchange="saveProgress()"><label class="form-check-label" for="vendorBio">Completed Vendor Bio Book</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="nhoSession" onchange="saveProgress()"><label class="form-check-label" for="nhoSession">Joined NHO or Regional Orientation</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="welcomeSession" onchange="saveProgress()">
+              <label class="form-check-label" for="welcomeSession">Attended TL & Team Welcome Session</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="vendorBio" onchange="saveProgress()">
+              <label class="form-check-label" for="vendorBio">Completed Vendor Bio Book</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="nhoSession" onchange="saveProgress()">
+              <label class="form-check-label" for="nhoSession">Joined NHO or Regional Orientation</label>
+            </div>
 
-            <p class="fw-bold mt-3">Company Mission, Values & Privacy</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="overview" onchange="saveProgress()"><label class="form-check-label" for="overview"><a href="https://www.glassdoor.com/about-us/" target="_blank">Glassdoor Overview</a></label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="values" onchange="saveProgress()"><label class="form-check-label" for="values"><a href="https://www.glassdoor.com/about-us/company-values/" target="_blank">Company Values</a></label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="culture" onchange="saveProgress()"><label class="form-check-label" for="culture"><a href="https://www.glassdoor.com/employers/blog/inside-glassdoor-our-culture-code/" target="_blank">Culture Code</a></label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="integrity" onchange="saveProgress()"><label class="form-check-label" for="integrity"><a href="https://help.glassdoor.com/s/article/Review-Integrity-Fraud-Detection" target="_blank">Review Integrity & Fraud Detection</a></label></div>
+            <hr>
 
-            <p class="fw-bold mt-3">Security, GDPR & Safety</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="gdpr" onchange="saveProgress()"><label class="form-check-label" for="gdpr">Completed GDPR + Anonymity Training (Lessonly)</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="sensitive" onchange="saveProgress()"><label class="form-check-label" for="sensitive">Reviewed Sensitive Case Types</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="securityTraining" onchange="saveProgress()"><label class="form-check-label" for="securityTraining">Completed C&C Security Training (Lessonly)</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="glassdoorOverview" onchange="saveProgress()">
+              <label class="form-check-label" for="glassdoorOverview">
+                <a href="https://www.glassdoor.com/about-us/" target="_blank">Glassdoor Company Overview</a>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="cultureCode" onchange="saveProgress()">
+              <label class="form-check-label" for="cultureCode">
+                <a href="https://www.glassdoor.com/employers/blog/inside-glassdoor-our-culture-code/" target="_blank">Culture Code</a>
+              </label>
+            </div>
 
-            <p class="fw-bold mt-3">Access Setup</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="chromeSetup" onchange="saveProgress()"><label class="form-check-label" for="chromeSetup">Chrome Profile, Slack, Gmail Setup</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="toolsAccess" onchange="saveProgress()"><label class="form-check-label" for="toolsAccess">Tested Salesforce, Guru, Omni Logins</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gdprTraining" onchange="saveProgress()">
+              <label class="form-check-label" for="gdprTraining">Completed GDPR + Anonymity Training (Lessonly)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="securityTraining" onchange="saveProgress()">
+              <label class="form-check-label" for="securityTraining">Completed C&C Security Training</label>
+            </div>
 
-            <p class="fw-bold mt-3">Regional Setup (If Applicable)</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="colombiaCard" onchange="saveProgress()"><label class="form-check-label" for="colombiaCard">Colombia: Activated access card + ID</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="vpnAccess" onchange="saveProgress()"><label class="form-check-label" for="vpnAccess">Bulgaria: Verified VPN access</label></div>
+            <hr>
 
-            <p class="fw-bold mt-3">Wrap-Up</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="day1Submit" onchange="saveProgress()"><label class="form-check-label" for="day1Submit">Submitted Day 1 Form</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="chromeSlackGmail" onchange="saveProgress()">
+              <label class="form-check-label" for="chromeSlackGmail">Setup Chrome Profile, Slack & Gmail</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="loginsCheck" onchange="saveProgress()">
+              <label class="form-check-label" for="loginsCheck">Tested Salesforce, Guru, and Omni logins</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="guruIntro" onchange="saveProgress()">
+              <label class="form-check-label" for="guruIntro">
+                Watched <a href="https://app.getguru.com/" target="_blank">Guru Intro</a> and completed setup
+              </label>
+            </div>
           </form>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Day 2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day2Header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Content" aria-expanded="false" aria-controls="day2Content">
-          Day 2 – Tools, Docs & Expectations
-        </button>
-      </h2>
-      <div id="day2Content" class="accordion-collapse collapse">
-        <div class="accordion-body">
+<!-- Day 2 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day2Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+      Day 2 – Tools, Docs & Expectations
+    </button>
+  </h2>
+  <div id="day2Collapse" class="accordion-collapse collapse">
+    <div class="accordion-body p-0">
+      <div class="card m-3">
+        <div class="card-body">
+          <p class="text-muted mb-3"><strong>Estimated Time:</strong> 8 hours</p>
           <form>
-            <p class="fw-bold">Training Path & Expectations</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="trainingDoc" onchange="saveProgress()"><label class="form-check-label" for="trainingDoc">Reviewed Training Path</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="productionGoals" onchange="saveProgress()"><label class="form-check-label" for="productionGoals">Reviewed Production Goals</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="trainingPath" onchange="saveProgress()">
+              <label class="form-check-label" for="trainingPath">Reviewed Training Path Overview (Link TBD)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rampTimeline" onchange="saveProgress()">
+              <label class="form-check-label" for="rampTimeline">Reviewed Ramp-up Timeline & Production Rates</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="qaReview" onchange="saveProgress()">
+              <label class="form-check-label" for="qaReview">Reviewed QA Scorecard (Guru)</label>
+            </div>
 
-            <p class="fw-bold mt-3">Work Logistics</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="shiftPolicy" onchange="saveProgress()"><label class="form-check-label" for="shiftPolicy">Reviewed Shift Policy</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="docCreated" onchange="saveProgress()"><label class="form-check-label" for="docCreated">Created 1:1 TL Doc</label></div>
+            <hr>
 
-            <p class="fw-bold mt-3">Tool Access</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="jiraTest" onchange="saveProgress()"><label class="form-check-label" for="jiraTest">Tested Jira Access</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="guruTest" onchange="saveProgress()"><label class="form-check-label" for="guruTest">Tested Guru Access</label></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="create1on1" onchange="saveProgress()">
+              <label class="form-check-label" for="create1on1">Created 1:1 document for TL</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="scheduleReview" onchange="saveProgress()">
+              <label class="form-check-label" for="scheduleReview">Reviewed Staggered Shift & Schedule Policies</label>
+            </div>
 
-            <p class="fw-bold mt-3">Policies</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="ethics" onchange="saveProgress()"><label class="form-check-label" for="ethics">Reviewed Code of Ethics</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="partnerContent" onchange="saveProgress()"><label class="form-check-label" for="partnerContent">Read Partner Content Policy</label></div>
+            <hr>
 
-            <p class="fw-bold mt-3">Wrap-Up</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="day2Submit" onchange="saveProgress()"><label class="form-check-label" for="day2Submit">Submitted Day 2 Form</label></div>
+            <p class="fw-bold">Tool Access Checks</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="jiraCheck" onchange="saveProgress()"><label class="form-check-label" for="jiraCheck">Jira</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="guruCheck" onchange="saveProgress()"><label class="form-check-label" for="guruCheck">Guru</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="tickCheck" onchange="saveProgress()"><label class="form-check-label" for="tickCheck">TICK</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlassCheck" onchange="saveProgress()"><label class="form-check-label" for="lookingGlassCheck">Looking Glass</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="zoomCheck" onchange="saveProgress()"><label class="form-check-label" for="zoomCheck">Zoom / Meet</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="slackCheck" onchange="saveProgress()"><label class="form-check-label" for="slackCheck">Slack</label></div>
+
+            <hr>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="submitForm" onchange="saveProgress()">
+              <label class="form-check-label" for="submitForm">Submitted Day 2 Wrap-Up Form</label>
+            </div>
           </form>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-  </div> <!-- end accordion -->
-</div> <!-- end container -->
+    <!-- Make sure each accordion-item uses a unique collapse ID and remove data-bs-parent to allow multiple open -->
+
+  </div>
+</div>
 
 <script>
   function saveProgress() {
@@ -115,11 +195,13 @@
       localStorage.setItem(cb.id, cb.checked);
     });
   }
+
   function loadProgress() {
     document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
       cb.checked = localStorage.getItem(cb.id) === "true";
     });
   }
+
   window.onload = loadProgress;
 </script>
 
