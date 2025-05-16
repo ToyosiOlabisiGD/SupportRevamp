@@ -4,309 +4,223 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Core Training</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
-    ← Return to Menu
-  </a>
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
+  ← Return to Menu
+</a>
 
-  <nav class="navbar navbar-dark bg-success mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
-        Customer Support Training
-      </a>
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-primary mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+      Customer Support Training
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <!-- Core Overview Card -->
+  <div class="card mb-4">
+    <div class="card-header bg-info text-white fw-bold">💼 Core Training – Week Overview</div>
+    <div class="card-body bg-light">
+      <p>This week, you’ll dive deeper into Salesforce, support structure, and communication quality.</p>
+      <ul>
+        <li>🛠️ Learn and practice Salesforce tools & queues</li>
+        <li>📄 Improve tagging, summarization, and formatting</li>
+        <li>✉️ Strengthen writing, empathy, and scripting</li>
+        <li>🔍 Understand quality, QA feedback, and CSAT expectations</li>
+      </ul>
+      <p class="fw-bold">⏱️ Estimated Time: 4 days (8 hrs/day)</p>
     </div>
-  </nav>
+  </div>
 
-  <div class="container">
-    <div class="card mb-4">
-      <div class="card-header bg-primary text-white">🧰 Core Training – Day 1: Tools & Systems</div>
-      <div class="card-body">
-        <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-        <div class="accordion" id="coreDay1Accordion">
+  <!-- Begin Day Accordion -->
+  <div class="accordion" id="dayAccordion">
 
-<!-- Day 1 – Core Foundations & Tools -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day1Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
-      📘 Day 1 – Core Foundations & Tools
-    </button>
-  </h2>
-  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
-    <div class="accordion-body p-0">
-      <div class="card mb-4">
-        <div class="card-body">
-          <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-          <div class="accordion" id="day1Accordion">
+    <!-- Day 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day1Heading">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
+          📘 Day 1 – Core Foundations & Tools
+        </button>
+      </h2>
+      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
+        <div class="accordion-body p-0">
+          <div class="card m-3">
+            <div class="card-body">
+              <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
+              <div class="accordion" id="day1Accordion">
 
-            <!-- Salesforce Training (Lessonly) -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d1_sfTraining">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_sfTrainingCollapse" aria-expanded="false" aria-controls="d1_sfTrainingCollapse">
-                  🧭 Salesforce Training Overview
-                </button>
-              </h2>
-              <div id="d1_sfTrainingCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()" />
-                      <label class="form-check-label" for="sfModule">
-                        Completed <a href="https://your-lessonly-link-here.com" target="_blank">Salesforce Training Module (Lessonly)</a>
-                      </label>
+                <!-- Salesforce Training -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d1_sf">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_sfCollapse" aria-expanded="false" aria-controls="d1_sfCollapse">
+                      🛠️ Salesforce Training Module
+                    </button>
+                  </h2>
+                  <div id="d1_sfCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()" />
+                          <label class="form-check-label" for="sfModule">
+                            <a href="#" target="_blank">Complete Salesforce Module in Lessonly</a> <span class="text-muted">(Link coming soon)</span>
+                          </label>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="omniWalkthrough" onchange="saveProgress()" />
-                      <label class="form-check-label" for="omniWalkthrough">Completed Omni + Case View Walkthrough</label>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Community Support: Tier 1 Guru -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d1_tier1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_tier1Collapse" aria-expanded="false" aria-controls="d1_tier1Collapse">
-                  📚 Community Support: Tier 1 Overview
-                </button>
-              </h2>
-              <div id="d1_tier1Collapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="tier1Guru" onchange="saveProgress()" />
-                      <label class="form-check-label" for="tier1Guru">
-                        Reviewed <a href="https://guru.com/community-support-tier1" target="_blank">Community Support: Tier 1 Guru Card</a>
-                      </label>
+                <!-- Salesforce Practice -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d1_practice">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_practiceCollapse" aria-expanded="false" aria-controls="d1_practiceCollapse">
+                      💼 Salesforce Practice Cases
+                    </button>
+                  </h2>
+                  <div id="d1_practiceCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+                    <div class="accordion-body">
+                      <p>Practice using Salesforce by working 3 sample cases from your queue:</p>
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sfOmni" onchange="saveProgress()" />
+                          <label class="form-check-label" for="sfOmni">Omni setup and status changes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sfFormat" onchange="saveProgress()" />
+                          <label class="form-check-label" for="sfFormat">Case summary, subject line, formatting</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sfHistory" onchange="saveProgress()" />
+                          <label class="form-check-label" for="sfHistory">Locating case history</label>
+                        </div>
+                        <div class="form-check mt-3">
+                          <input class="form-check-input" type="checkbox" id="sfCompleted" onchange="saveProgress()" />
+                          <label class="form-check-label" for="sfCompleted">Completed 3 Salesforce Practice Cases</label>
+                        </div>
+                      </form>
                     </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Practice Cases: Salesforce Basics -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d1_practice">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_practiceCollapse" aria-expanded="false" aria-controls="d1_practiceCollapse">
-                  🧪 Practice Cases – Salesforce Navigation
-                </button>
-              </h2>
-              <div id="d1_practiceCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                <div class="accordion-body">
-                  <p>Practice using Salesforce by working 3 sample cases from your queue:</p>
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="omniSetup" onchange="saveProgress()" />
-                      <label class="form-check-label" for="omniSetup">Omni setup and status changes</label>
+                <!-- Community Support: Tier 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d1_cs">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_csCollapse" aria-expanded="false" aria-controls="d1_csCollapse">
+                      🧠 Community Support Tools (Tier 1)
+                    </button>
+                  </h2>
+                  <div id="d1_csCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()" />
+                          <label class="form-check-label" for="csGuru">
+                            <a href="#" target="_blank">Reviewed Community Support Tier 1 Collection (Guru)</a> <span class="text-muted">(Link coming soon)</span>
+                          </label>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="caseFormat" onchange="saveProgress()" />
-                      <label class="form-check-label" for="caseFormat">Case summary, subject line, formatting</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="caseHistory" onchange="saveProgress()" />
-                      <label class="form-check-label" for="caseHistory">Locating case history</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="casePracticeComplete" onchange="saveProgress()" />
-                      <label class="form-check-label" for="casePracticeComplete">✅ Completed 3 Salesforce practice cases</label>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Day 1 Submit -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d1_submit">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_submitCollapse" aria-expanded="false" aria-controls="d1_submitCollapse">
-                  ✅ Day 1 Wrap-Up & Submit
-                </button>
-              </h2>
-              <div id="d1_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                <div class="accordion-body">
-                  <p>You're almost done! Please complete the Day 1 checklist and submit your progress below:</p>
-                  <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-                    Loading…
-                  </iframe>
+              </div> <!-- end inner day1Accordion -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Day 1 -->
+
+    <!-- Day 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day2Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+          📗 Day 2 – Communication, Tagging & Support Skills
+        </button>
+      </h2>
+      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
+        <div class="accordion-body p-0">
+          <div class="card m-3">
+            <div class="card-body">
+              <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
+              <div class="accordion" id="day2Accordion">
+
+                <!-- Email Writing -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d2_email">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_emailCollapse" aria-expanded="false" aria-controls="d2_emailCollapse">
+                      ✉️ Support Writing Essentials
+                    </button>
+                  </h2>
+                  <div id="d2_emailCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="emailTips" onchange="saveProgress()" />
+                          <label class="form-check-label" for="emailTips">Writing Emails in Support: 6 Tips</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="perfectEmail" onchange="saveProgress()" />
+                          <label class="form-check-label" for="perfectEmail">How to Write a PERFECT Customer Service Email?</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-          </div> <!-- End of day1Accordion -->
-        </div> <!-- End card-body -->
-      </div> <!-- End card -->
-    </div> <!-- End accordion-body -->
-  </div> <!-- End collapse -->
-</div> <!-- End Day 1 accordion-item -->
-
-<!-- Day 2 – Communication, Tagging & Support Skills -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day2Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-      📗 Day 2 – Communication, Tagging & Support Skills
-    </button>
-  </h2>
-  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
-    <div class="accordion-body p-0">
-      <div class="card mb-4">
-        <div class="card-body">
-          <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-          <div class="accordion" id="day2Accordion">
-
-            <!-- Tagging Standards & Case Notes -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d2_tags">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_tagsCollapse" aria-expanded="false" aria-controls="d2_tagsCollapse">
-                  🏷️ Tagging Standards & Case Notes
-                </button>
-              </h2>
-              <div id="d2_tagsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="tagStandards" onchange="saveProgress()" />
-                      <label class="form-check-label" for="tagStandards">
-                        Reviewed <a href="https://guru.com/YOUR_TAGGING_GUIDE_LINK" target="_blank">Tagging Guide (Guru)</a>
-                      </label>
+                <!-- Empathy & Tone -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d2_empathy">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_empathyCollapse" aria-expanded="false" aria-controls="d2_empathyCollapse">
+                      🧡 Empathy, Language & Tone
+                    </button>
+                  </h2>
+                  <div id="d2_empathyCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="empathy" onchange="saveProgress()" />
+                          <label class="form-check-label" for="empathy">This is How You Communicate Empathy</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="phrases" onchange="saveProgress()" />
+                          <label class="form-check-label" for="phrases">Openers, Closers & Empathetic Phrases</label>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="noteGuidelines" onchange="saveProgress()" />
-                      <label class="form-check-label" for="noteGuidelines">
-                        Practiced writing case notes and internal comments
-                      </label>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
+
+              </div> <!-- end inner accordion -->
             </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Day 2 -->
 
-            <!-- Email Writing Skills -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d2_emailSkills">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_emailSkillsCollapse" aria-expanded="false" aria-controls="d2_emailSkillsCollapse">
-                  ✉️ Email Composition & Tone
-                </button>
-              </h2>
-              <div id="d2_emailSkillsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="emailTips" onchange="saveProgress()" />
-                      <label class="form-check-label" for="emailTips">
-                        Reviewed <a href="https://www.guru.com/YOUR_EMAIL_TIPS_LINK" target="_blank">Email Writing Tips (Guru or external link)</a>
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="openersClosers" onchange="saveProgress()" />
-                      <label class="form-check-label" for="openersClosers">Practiced openers, closers, and tone personalization</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="emailExamples" onchange="saveProgress()" />
-                      <label class="form-check-label" for="emailExamples">Reviewed support email examples and best practices</label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+  </div> <!-- end dayAccordion -->
+</div> <!-- end container -->
 
-            <!-- Empathy & Difficult Situations -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d2_empathy">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_empathyCollapse" aria-expanded="false" aria-controls="d2_empathyCollapse">
-                  💬 Empathy & Difficult Conversations
-                </button>
-              </h2>
-              <div id="d2_empathyCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="empathyTraining" onchange="saveProgress()" />
-                      <label class="form-check-label" for="empathyTraining">Completed <a href="https://lessonly.com/YOUR_EMPATHY_MODULE" target="_blank">Empathy Training (Lessonly)</a></label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="positiveLanguage" onchange="saveProgress()" />
-                      <label class="form-check-label" for="positiveLanguage">Reviewed positive scripting techniques for support</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="empathyExamples" onchange="saveProgress()" />
-                      <label class="form-check-label" for="empathyExamples">Practiced acknowledging frustration and redirecting tone</label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+<!-- Save Progress -->
+<script>
+function saveProgress() {
+  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+    localStorage.setItem(cb.id, cb.checked);
+  });
+}
+function loadProgress() {
+  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+    cb.checked = localStorage.getItem(cb.id) === "true";
+  });
+}
+window.onload = loadProgress;
+</script>
 
-            <!-- QA Scorecard & CSAT -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d2_quality">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_qualityCollapse" aria-expanded="false" aria-controls="d2_qualityCollapse">
-                  📊 QA Scorecard & CSAT
-                </button>
-              </h2>
-              <div id="d2_qualityCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                <div class="accordion-body">
-                  <form>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()" />
-                      <label class="form-check-label" for="qaScorecard">
-                        Reviewed <a href="https://guru.com/YOUR_QA_SCORECARD" target="_blank">QA Scorecard Criteria (Guru)</a>
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="csatIntro" onchange="saveProgress()" />
-                      <label class="form-check-label" for="csatIntro">Completed CSAT Overview (Lessonly)</label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <!-- Day 2 Submit -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="d2_submit">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_submitCollapse" aria-expanded="false" aria-controls="d2_submitCollapse">
-                  ✅ Day 2 Wrap-Up & Submit
-                </button>
-              </h2>
-              <div id="d2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                <div class="accordion-body">
-                  <p>Please submit this form once your Day 2 checklist is complete:</p>
-                  <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                          width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-                    Loading…
-                  </iframe>
-                </div>
-              </div>
-            </div>
-
-          </div> <!-- End day2Accordion -->
-        </div> <!-- End card-body -->
-      </div> <!-- End card -->
-    </div> <!-- End accordion-body -->
-  </div> <!-- End collapse -->
-</div> <!-- End Day 2 accordion-item -->
-
-  <script>
-    function saveProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        localStorage.setItem(cb.id, cb.checked);
-      });
-    }
-
-    function loadProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        cb.checked = localStorage.getItem(cb.id) === "true";
-      });
-    }
-
-    window.onload = loadProgress;
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
