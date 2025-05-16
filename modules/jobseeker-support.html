@@ -231,23 +231,121 @@
   </div>
 </div>
 
-<!-- Day 4: Job Alerts, Product Support & FAQs -->
+<!-- Day 4 – FAQs, Salary Tools & Product Support -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="day4Heading">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
-      📕 Day 4 – Job Alerts, Product Support & Jobseeker FAQs
+      📕 Day 4 – FAQs, Salary Tools & Product Support
     </button>
   </h2>
-  <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#jsSupportAccordion">
-    <div class="accordion-body">
+  <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#modAccordion">
+    <div class="accordion-body p-3">
       <form>
-        <p class="fw-bold">📘 Learning Modules</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d4ProductSupport" onchange="saveProgress()"><label class="form-check-label" for="d4ProductSupport">Complete “Product Support” + “Jobseeker FAQs” (Lessonly) <span class="badge bg-secondary">Self-paced</span></label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d4JobHelp" onchange="saveProgress()"><label class="form-check-label" for="d4JobHelp">Help Center Review: Job Alerts, Trends, Demographics <span class="badge bg-secondary">Self-paced</span></label></div>
 
-        <p class="fw-bold mt-3">🧪 Practice & Shadowing</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d4PracticeCases" onchange="saveProgress()"><label class="form-check-label" for="d4PracticeCases">Complete 4 FAQ/Product-related practice cases <span class="badge bg-secondary">Self-paced</span></label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d4LiveQueue" onchange="saveProgress()"><label class="form-check-label" for="d4LiveQueue">Shadow agent in live queue: Jobseeker FAQs <span class="badge bg-secondary">Agent-led</span></label></div>
+        <p class="fw-bold">🧭 Recap & Highlights</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d4Recap">TL-led recap of Day 3 + tag clarifications <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="lessonlyProductSupport" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyProductSupport">Complete: “Product Support” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="lessonlyFAQs" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyFAQs">Complete: “Jobseeker FAQs” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📖 Guru Reference</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruFAQTagging" onchange="saveProgress()">
+          <label class="form-check-label" for="guruFAQTagging">Read: “FAQ Tagging & Escalation” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📚 Help Center Topics</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hcSalaryContent" onchange="saveProgress()">
+          <label class="form-check-label" for="hcSalaryContent">Explore: Salary Tools, Demographics, and D&I Features <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <ul>
+          <li>Glassdoor's Equity X-Ray</li>
+          <li>Demographics on Glassdoor</li>
+          <li>Company Trends & Salary Averages</li>
+          <li>Diversity & Inclusion Features</li>
+          <li>Interpreting Salary Demographics</li>
+        </ul>
+
+        <p class="fw-bold mt-3">🧪 Practice Cases</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="faqPracticeCases" onchange="saveProgress()">
+          <label class="form-check-label" for="faqPracticeCases">Complete 4 FAQ and product support cases <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">👀 Shadowing & Queue Time</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="liveFAQSession" onchange="saveProgress()">
+          <label class="form-check-label" for="liveFAQSession">Observe or review FAQ queue cases with TL <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Day 5 – Live Queue Practice & Review Handling -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day5Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day5Collapse" aria-expanded="false" aria-controls="day5Collapse">
+      🟧 Day 5 – Live Queue Practice & Review Handling
+    </button>
+  </h2>
+  <div id="day5Collapse" class="accordion-collapse collapse" aria-labelledby="day5Heading" data-bs-parent="#modAccordion">
+    <div class="accordion-body p-3">
+      <form>
+
+        <p class="fw-bold">🧭 Recap + Plan</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d5Recap">TL-led sync on outstanding FAQ or tag issues <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📘 Help Center Topics</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hcReviewHelp" onchange="saveProgress()">
+          <label class="form-check-label" for="hcReviewHelp">Explore: Review Moderation & Reporting Help Center pages <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <ul>
+          <li>Where is my review?</li>
+          <li>Helpful votes, filtering, editing reviews</li>
+          <li>Reporting a review</li>
+          <li>Employer response rights</li>
+          <li>Disputes and controversial content</li>
+        </ul>
+
+        <p class="fw-bold mt-3">📖 Guru Articles</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruReviewEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="guruReviewEscalation">Read: “Review Escalation Guidelines” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">🧪 Practice & Shadow</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewCases" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewCases">Complete 6 flagged or disputed review cases <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shadowReviewQueue" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowReviewQueue">Shadow review moderation queue + ask questions <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">🧰 Live Queue Time</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="liveReviewQueue" onchange="saveProgress()">
+          <label class="form-check-label" for="liveReviewQueue">Work from personal queue with TL live feedback <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
       </form>
     </div>
   </div>
