@@ -8,11 +8,8 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
-  ← Return to Menu
-</a>
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">← Return to Menu</a>
 
-<!-- Navbar -->
 <nav class="navbar navbar-dark bg-primary mb-4">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="../index.html">
@@ -23,7 +20,7 @@
 </nav>
 
 <div class="container">
-  <!-- Core Overview Card -->
+  <!-- Week Overview -->
   <div class="card mb-4">
     <div class="card-header bg-info text-white fw-bold">💼 Core Training – Week Overview</div>
     <div class="card-body bg-light">
@@ -38,140 +35,73 @@
     </div>
   </div>
 
-  <!-- Begin Day Accordion -->
+  <!-- Day Accordion -->
   <div class="accordion" id="dayAccordion">
 
     <!-- Day 1 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="day1Heading">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-          📘 Day 1 – Core Foundations & Tools
+          📘 Day 1 – Tools & Navigation
         </button>
       </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
+      <div id="day1Collapse" class="accordion-collapse collapse show" data-bs-parent="#dayAccordion">
         <div class="accordion-body p-0">
           <div class="card m-3">
             <div class="card-body">
               <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-              <div class="accordion" id="day1Accordion">
-
-                <!-- Recap -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d1_intro">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_introCollapse" aria-expanded="false" aria-controls="d1_introCollapse">
-                      🧭 Recap & Intro
-                    </button>
-                  </h2>
-                  <div id="d1_introCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="d1_recap" onchange="saveProgress()" />
-                          <label class="form-check-label" for="d1_recap">Attended TL-led recap & intro session</label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+              <form>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="recapIntro" onchange="saveProgress()">
+                  <label class="form-check-label" for="recapIntro">Joined Recap & Core Overview with TL</label>
                 </div>
-
-                <!-- Salesforce Module -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d1_sf">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_sfCollapse" aria-expanded="false" aria-controls="d1_sfCollapse">
-                      🛠️ Salesforce Training Module
-                    </button>
-                  </h2>
-                  <div id="d1_sfCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()" />
-                          <label class="form-check-label" for="sfModule">
-                            <a href="#" target="_blank">Complete Salesforce Module in Lessonly</a> <span class="text-muted">(Link coming soon)</span>
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()">
+                  <label class="form-check-label" for="sfModule">
+                    Completed <a href="#" target="_blank">Salesforce Training Module (Lessonly)</a> <span class="text-muted">(Link coming soon)</span>
+                  </label>
                 </div>
-
-                <!-- Salesforce Practice -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d1_practice">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_practiceCollapse" aria-expanded="false" aria-controls="d1_practiceCollapse">
-                      💼 Salesforce Practice Cases
-                    </button>
-                  </h2>
-                  <div id="d1_practiceCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="sfOmni" onchange="saveProgress()" />
-                          <label class="form-check-label" for="sfOmni">Omni setup and status changes</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="sfFormat" onchange="saveProgress()" />
-                          <label class="form-check-label" for="sfFormat">Case summary, subject line, formatting</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="sfHistory" onchange="saveProgress()" />
-                          <label class="form-check-label" for="sfHistory">Locating case history</label>
-                        </div>
-                        <div class="form-check mt-3">
-                          <input class="form-check-input" type="checkbox" id="sfCompleted" onchange="saveProgress()" />
-                          <label class="form-check-label" for="sfCompleted">Completed 3 Salesforce Practice Cases</label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="sfNavigation" onchange="saveProgress()">
+                  <label class="form-check-label" for="sfNavigation">Walked through Salesforce Navigation with TL</label>
                 </div>
-
-                <!-- Community Support: Tier 1 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d1_cs">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_csCollapse" aria-expanded="false" aria-controls="d1_csCollapse">
-                      🧠 Community Support Tools (Tier 1)
-                    </button>
-                  </h2>
-                  <div id="d1_csCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()" />
-                          <label class="form-check-label" for="csGuru">
-                            <a href="#" target="_blank">Reviewed Community Support Tier 1 Collection (Guru)</a> <span class="text-muted">(Link coming soon)</span>
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()">
+                  <label class="form-check-label" for="csGuru">
+                    Reviewed <a href="#" target="_blank">Community Support: Tier 1 Guru Collection</a> <span class="text-muted">(Link coming soon)</span>
+                  </label>
                 </div>
-
-                <!-- Alias -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d1_alias">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_aliasCollapse" aria-expanded="false" aria-controls="d1_aliasCollapse">
-                      🏷️ Alias Selection
-                    </button>
-                  </h2>
-                  <div id="d1_aliasCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="aliasPicked" onchange="saveProgress()" />
-                          <label class="form-check-label" for="aliasPicked">Submitted 3 external alias options</label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <p class="mt-4 fw-bold">Salesforce Practice Cases (Self-Led)</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="caseOmni" onchange="saveProgress()">
+                  <label class="form-check-label" for="caseOmni">Omni setup and status changes</label>
                 </div>
-
-              </div> <!-- end inner day1Accordion -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="caseFormat" onchange="saveProgress()">
+                  <label class="form-check-label" for="caseFormat">Case summary, subject line, formatting</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="caseHistory" onchange="saveProgress()">
+                  <label class="form-check-label" for="caseHistory">Finding and interpreting case history</label>
+                </div>
+                <div class="form-check mt-2">
+                  <input class="form-check-input" type="checkbox" id="casesComplete" onchange="saveProgress()">
+                  <label class="form-check-label" for="casesComplete">✅ Completed 3 Salesforce Practice Cases</label>
+                </div>
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" id="aliasPick" onchange="saveProgress()">
+                  <label class="form-check-label" for="aliasPick">Selected 3 external aliases for Salesforce</label>
+                </div>
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" id="d1wrap" onchange="saveProgress()">
+                  <label class="form-check-label" for="d1wrap">Completed Day 1 Wrap-Up / Check-In</label>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div> <!-- End Day 1 -->
+    </div>
 
     <!-- Day 2 -->
     <div class="accordion-item">
@@ -180,85 +110,71 @@
           📗 Day 2 – Support Concepts & Case Work
         </button>
       </h2>
-      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
+      <div id="day2Collapse" class="accordion-collapse collapse" data-bs-parent="#dayAccordion">
         <div class="accordion-body p-0">
           <div class="card m-3">
             <div class="card-body">
               <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
-              <div class="accordion" id="day2Accordion">
-
-                <!-- Jobseeker/Employer FAQs -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d2_faqs">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_faqsCollapse" aria-expanded="false" aria-controls="d2_faqsCollapse">
-                      🗂️ Jobseeker / Employer FAQs Module
-                    </button>
-                  </h2>
-                  <div id="d2_faqsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="faqsModule" onchange="saveProgress()" />
-                          <label class="form-check-label" for="faqsModule">
-                            <a href="#" target="_blank">Complete Jobseeker/Employer FAQ Module (Lessonly)</a> <span class="text-muted">(Link coming soon)</span>
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+              <form>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="d2recap" onchange="saveProgress()">
+                  <label class="form-check-label" for="d2recap">Joined Day 2 Recap & Check-in</label>
                 </div>
-
-                <!-- Case Practice -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d2_cases">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_casesCollapse" aria-expanded="false" aria-controls="d2_casesCollapse">
-                      💼 Practice Cases: FAQs & Feedback
-                    </button>
-                  </h2>
-                  <div id="d2_casesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="casesCompleted" onchange="saveProgress()" />
-                          <label class="form-check-label" for="casesCompleted">Completed 4 Jobseeker/Employer practice cases</label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="psfModule" onchange="saveProgress()">
+                  <label class="form-check-label" for="psfModule">
+                    Completed <a href="#" target="_blank">Product Support & Feedback Module (Lessonly)</a> <span class="text-muted">(Link coming soon)</span>
+                  </label>
                 </div>
-
-                <!-- Guru Support Types -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="d2_types">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_typesCollapse" aria-expanded="false" aria-controls="d2_typesCollapse">
-                      📋 Care Resource Types (Guru)
-                    </button>
-                  </h2>
-                  <div id="d2_typesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
-                    <div class="accordion-body">
-                      <form>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="typesReviewed" onchange="saveProgress()" />
-                          <label class="form-check-label" for="typesReviewed">
-                            <a href="#" target="_blank">Reviewed Case Types in Guru</a> <span class="text-muted">(Link coming soon)</span>
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="faqModule" onchange="saveProgress()">
+                  <label class="form-check-label" for="faqModule">
+                    Completed <a href="#" target="_blank">Jobseeker / Employer FAQs Module (Lessonly)</a> <span class="text-muted">(Link coming soon)</span>
+                  </label>
                 </div>
-
-              </div> <!-- end inner accordion -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="csT1DeepDive" onchange="saveProgress()">
+                  <label class="form-check-label" for="csT1DeepDive">Participated in T1 Tools & Feedback Deep Dive (TL-led)</label>
+                </div>
+                <p class="mt-4 fw-bold">Practice Cases – FAQs & Feedback</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="faqCase1" onchange="saveProgress()">
+                  <label class="form-check-label" for="faqCase1">✅ Completed 4 Practice Cases (Jobseeker/Employer)</label>
+                </div>
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" id="caseTypesGuru" onchange="saveProgress()">
+                  <label class="form-check-label" for="caseTypesGuru">
+                    Reviewed <a href="#" target="_blank">Support Case Types (Guru)</a> <span class="text-muted">(Link coming soon)</span>
+                  </label>
+                </div>
+                <p class="mt-4 fw-bold">Help Center Articles</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="salaryArticle" onchange="saveProgress()">
+                  <label class="form-check-label" for="salaryArticle">Read Company Salary Information</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="compareCompanies" onchange="saveProgress()">
+                  <label class="form-check-label" for="compareCompanies">How to Compare Companies</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="searchSalaries" onchange="saveProgress()">
+                  <label class="form-check-label" for="searchSalaries">Searching Salaries by Job Title</label>
+                </div>
+                <div class="form-check mt-4">
+                  <input class="form-check-input" type="checkbox" id="d2wrap" onchange="saveProgress()">
+                  <label class="form-check-label" for="d2wrap">Completed Day 2 Wrap-Up / Q&A</label>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div> <!-- End Day 2 -->
 
-  </div> <!-- end dayAccordion -->
-</div> <!-- end container -->
+  </div> <!-- End Accordion -->
+</div>
 
-<!-- Save Progress -->
+<!-- Scripts -->
 <script>
 function saveProgress() {
   document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
