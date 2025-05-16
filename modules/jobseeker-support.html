@@ -492,34 +492,61 @@
   <div id="day7Collapse" class="accordion-collapse collapse" aria-labelledby="day7Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
+
         <h6 class="fw-bold">Recap & Case Review</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d7Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Recap">Reviewed Day 6 + escalation insights with TL</label>
+          <label class="form-check-label" for="d7Recap">Attended TL-led recap of Day 6 and flagging discussion
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Help Center Content</h6>
-        <ul>
-          <li>What happens when a review is flagged?</li>
-          <li>Defamation and false claims</li>
-          <li>Reporting by employers and users</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Work</h6>
+        <h6 class="fw-bold mt-3">Learning Modules</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d7Cases" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Cases">Completed 8 Tier 1 flagged content cases</label>
+          <input class="form-check-input" type="checkbox" id="lessonlyFlaggedContent" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyFlaggedContent">Completed: “Tier 1 Flagged Content” (Lessonly)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruFlagNuance" onchange="saveProgress()">
+          <label class="form-check-label" for="guruFlagNuance">Read: “Flag Nuance Examples” (Guru)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Resources</h6>
+        <h6 class="fw-bold mt-3">Help Center Review</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d7Lessonly" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Lessonly">Completed: “Tier 1 Flagged Content” (Lessonly)</label>
+          <input class="form-check-input" type="checkbox" id="reportingContent" onchange="saveProgress()">
+          <label class="form-check-label" for="reportingContent">Reviewed: Reporting inappropriate content</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d7Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Guru">Read: “Flag Nuance Examples” (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="removeFlaggedReview" onchange="saveProgress()">
+          <label class="form-check-label" for="removeFlaggedReview">Reviewed: Will Glassdoor remove flagged reviews?</label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="falseClaims" onchange="saveProgress()">
+          <label class="form-check-label" for="falseClaims">Reviewed: False and defamatory claims</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="employerFlagPolicy" onchange="saveProgress()">
+          <label class="form-check-label" for="employerFlagPolicy">Reviewed: Employer flagging policies</label>
+        </div>
+
+        <h6 class="fw-bold mt-3">Practice + Live Work</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="flaggedCasesD7" onchange="saveProgress()">
+          <label class="form-check-label" for="flaggedCasesD7">Completed 8 Tier 1 flagged content practice cases
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="liveQAFlagSupport" onchange="saveProgress()">
+          <label class="form-check-label" for="liveQAFlagSupport">Shadowed TL or peer for live case handling
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+
       </form>
     </div>
   </div>
