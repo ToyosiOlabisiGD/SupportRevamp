@@ -53,12 +53,27 @@
         </div>
 
         <h6 class="fw-bold mt-3">Help Center Exploration</h6>
-        <ul>
-          <li>Create an account</li>
-          <li>Activate & verify email</li>
-          <li>Logins & access FAQs</li>
-          <li>Profile creation & editing</li>
-        </ul>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="hcOverview" onchange="saveProgress()">
+  <label class="form-check-label" for="hcOverview">Review key Help Center articles <span class="badge bg-info text-dark">Self-paced</span></label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="createAccount" onchange="saveProgress()">
+  <label class="form-check-label" for="createAccount">Create a Glassdoor account</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="activateAccount" onchange="saveProgress()">
+  <label class="form-check-label" for="activateAccount">Activate your account</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="loginFaqs" onchange="saveProgress()">
+  <label class="form-check-label" for="loginFaqs">Account types and login FAQs</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="profileSetup" onchange="saveProgress()">
+  <label class="form-check-label" for="profileSetup">Profile setup & editing</label>
+</div>
 
         <h6 class="fw-bold mt-3">Practice Activities</h6>
         <div class="form-check">
