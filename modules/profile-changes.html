@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile Changes</title>
+  <title>Profile Changes – Day 1</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -16,106 +16,89 @@
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="../index.html">
       <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
-      Customer Support Training
+      Customer Support Training – Profile Changes
     </a>
   </div>
 </nav>
 
 <div class="container">
   <div class="card mb-4">
-    <div class="card-header bg-info text-white">Profile Changes</div>
+    <div class="card-header bg-info text-white">📘 Profile Changes – Day 1: Foundations</div>
     <div class="card-body">
-      <div class="accordion" id="pcAccordion">
+      <form>
 
-        <!-- Section 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="pc_overview">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pc_overviewCollapse" aria-expanded="false" aria-controls="pc_overviewCollapse">
-              🗂️ Overview of Profile Change Requests
-            </button>
-          </h2>
-          <div id="pc_overviewCollapse" class="accordion-collapse collapse" data-bs-parent="#pcAccordion">
-            <div class="accordion-body">
-              <form id="pc_overviewChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_case_types" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_case_types">📁 Reviewed types of profile change requests (e.g. job title, location, ownership)</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_priority" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_priority">📊 Learned how to prioritize profile changes in queue</label>
-                </div>
-              </form>
-            </div>
-          </div>
+        <!-- Recap + Intro -->
+        <p class="fw-bold">🧭 Recap & Introduction</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Recap">TL-led recap of previous learning <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Intro" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Intro">Intro to Profile Changes Support Path <span class="badge bg-secondary">TL-led</span></label>
         </div>
 
-        <!-- Section 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="pc_tools">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pc_toolsCollapse" aria-expanded="false" aria-controls="pc_toolsCollapse">
-              🧰 Tools + Verification Steps
-            </button>
-          </h2>
-          <div id="pc_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#pcAccordion">
-            <div class="accordion-body">
-              <form id="pc_toolsChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_tool_walkthrough" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_tool_walkthrough">🖥️ Completed tool walkthrough (FEA, dashboard, etc.)</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_verify_steps" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_verify_steps">🔐 Practiced verification checklist (email, company domain)</label>
-                </div>
-              </form>
-            </div>
-          </div>
+        <!-- Core Content -->
+        <p class="fw-bold mt-3">📚 Core Concepts</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Welcome" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Welcome">Complete: “Welcome to PC” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Terminology" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Terminology">Read: Profile Changes Terminology (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Video" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Video">Watch: Glassdoor Profiles Overview video <span class="badge bg-info text-dark">Self-paced</span></label>
         </div>
 
-        <!-- Section 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="pc_shadow">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pc_shadowCollapse" aria-expanded="false" aria-controls="pc_shadowCollapse">
-              👀 Shadowing + Practice
-            </button>
-          </h2>
-          <div id="pc_shadowCollapse" class="accordion-collapse collapse" data-bs-parent="#pcAccordion">
-            <div class="accordion-body">
-              <form id="pc_shadowChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_shadow_sessions" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_shadow_sessions">📺 Shadowed 3+ profile change requests</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="pc_practice" onchange="saveProgress()">
-                  <label class="form-check-label" for="pc_practice">📝 Completed 2 mock profile change tickets</label>
-                </div>
-              </form>
-            </div>
-          </div>
+        <!-- Admin Overview -->
+        <p class="fw-bold mt-3">🧰 Admin Tools & Data</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Admin" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Admin">Complete: “Admin Details” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1AdminArticle" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1AdminArticle">Review: Admin Page Overview (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
         </div>
 
-        <!-- Section 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="pc_submit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pc_submitCollapse" aria-expanded="false" aria-controls="pc_submitCollapse">
-              📤 Submit Your Progress
-            </button>
-          </h2>
-          <div id="pc_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#pcAccordion">
-            <div class="accordion-body">
-              <p>Submit this form once you've completed the Profile Changes training:</p>
-              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-          </div>
+        <!-- Employer Center -->
+        <p class="fw-bold mt-3">🏢 Employer Center Structure</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1EmployerCenter" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1EmployerCenter">Complete: “Employer Center Details” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <ul>
+          <li>Employer Center Analytics</li>
+          <li>Profile & Partner IDs</li>
+          <li>Office location handling</li>
+          <li>Top-Level Domains (TLDs)</li>
+        </ul>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1ECDArticle" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1ECDArticle">Read: Employer Center Overview (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
         </div>
 
-      </div> <!-- end accordion -->
-    </div> <!-- end card-body -->
-  </div> <!-- end card -->
-</div> <!-- end container -->
+        <!-- Practice Time -->
+        <p class="fw-bold mt-3">🧪 Guided Practice (Salesforce)</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1Practice" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1Practice">Practice Set: Create profile, add messaging/banner, build subsidiary <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <!-- Submit -->
+        <p class="fw-bold mt-3">📤 Wrap-Up</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pc1WrapUp" onchange="saveProgress()">
+          <label class="form-check-label" for="pc1WrapUp">Wrap recap with TL: Questions, key takeaways <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
 
 <script>
   function saveProgress() {
