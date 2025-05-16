@@ -306,19 +306,40 @@
     <div class="accordion-body p-3">
       <form>
         <p class="fw-bold">🧭 Recap & TL Sync</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()"><label class="form-check-label" for="d5Recap">Recapped Day 4 and reviewed questions with TL <span class="badge bg-secondary">TL-led</span></label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d5Recap">Recapped Day 4 and reviewed questions <span class="badge badge-tl">TL-led</span></label>
+        </div>
 
         <p class="fw-bold mt-3">🚨 Sensitive Content Tags</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="personalAttack" onchange="saveProgress()"><label class="form-check-label" for="personalAttack">Reviewed personal attacks and when to escalate <span class="badge bg-secondary">TL-led</span></label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="legalContent" onchange="saveProgress()"><label class="form-check-label" for="legalContent">Reviewed legal threats or language</label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="internalSecrets" onchange="saveProgress()"><label class="form-check-label" for="internalSecrets">Tagged internal confidential info (names, emails, screenshots)</label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="personalAttack" onchange="saveProgress()">
+          <label class="form-check-label" for="personalAttack">Reviewed personal attacks and when to escalate <span class="badge badge-tl">TL-led</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="legalContent" onchange="saveProgress()">
+          <label class="form-check-label" for="legalContent">Reviewed legal threats or language <span class="badge badge-self">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="internalSecrets" onchange="saveProgress()">
+          <label class="form-check-label" for="internalSecrets">Tagged confidential info (emails, screenshots, etc.) <span class="badge badge-self">Self-paced</span></label>
+        </div>
 
         <p class="fw-bold mt-3">📚 Guru Reference</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="guruEscalation" onchange="saveProgress()"><label class="form-check-label" for="guruEscalation">Reviewed Guru Card: Content Escalation Protocol</label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="guruEscalation">Reviewed Guru: Content Escalation Protocol <span class="badge badge-self">Self-paced</span></label>
+        </div>
 
-        <p class="fw-bold mt-3">🧪 Practice + Shadow</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="modCasesD5" onchange="saveProgress()"><label class="form-check-label" for="modCasesD5">Completed 3 sensitive moderation cases (internal links)</label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="shadowSessionD5" onchange="saveProgress()"><label class="form-check-label" for="shadowSessionD5">Shadowed 2 live sensitive content reviews <span class="badge bg-secondary">TL-led</span></label></div>
+        <p class="fw-bold mt-3">🧪 Practice & Shadow</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modCasesD5" onchange="saveProgress()">
+          <label class="form-check-label" for="modCasesD5">Completed 3 sensitive content cases <span class="badge badge-self">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shadowSessionD5" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowSessionD5">Shadowed 2 live sensitive review sessions <span class="badge badge-tl">TL-led</span></label>
+        </div>
       </form>
     </div>
   </div>
@@ -335,20 +356,44 @@
     <div class="accordion-body p-3">
       <form>
         <p class="fw-bold">🧭 Recap & Case Review</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="d6Recap" onchange="saveProgress()"><label class="form-check-label" for="d6Recap">Recapped Day 5 and reviewed sensitive tags <span class="badge bg-secondary">TL-led</span></label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d6Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d6Recap">Recapped Day 5 and reviewed nuanced tags <span class="badge badge-tl">TL-led</span></label>
+        </div>
 
         <p class="fw-bold mt-3">🧠 Tagging Complex Violations</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="discriminationFlag" onchange="saveProgress()"><label class="form-check-label" for="discriminationFlag">Reviewed Discriminatory Content Guidelines</label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="guidelinesChallenge" onchange="saveProgress()"><label class="form-check-label" for="guidelinesChallenge">Handled “Challenging Glassdoor Guidelines” scenarios</label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="localLaw" onchange="saveProgress()"><label class="form-check-label" for="localLaw">Spotted content that may violate local law</label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="discriminationFlag" onchange="saveProgress()">
+          <label class="form-check-label" for="discriminationFlag">Reviewed Discriminatory Content Guidelines <span class="badge badge-self">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesChallenge" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesChallenge">Handled “Challenging Glassdoor Guidelines” examples <span class="badge badge-tl">TL-led</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="localLaw" onchange="saveProgress()">
+          <label class="form-check-label" for="localLaw">Spotted content that may violate local law <span class="badge badge-self">Self-paced</span></label>
+        </div>
 
         <p class="fw-bold mt-3">📚 Guru & Lessonly</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="modRejectionReasons" onchange="saveProgress()"><label class="form-check-label" for="modRejectionReasons">Completed: “Moderation Rejection Reasons” (Lessonly)</label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="guruFlagged" onchange="saveProgress()"><label class="form-check-label" for="guruFlagged">Reviewed Guru: “Flag Nuance Examples”</label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modRejectionReasons" onchange="saveProgress()">
+          <label class="form-check-label" for="modRejectionReasons">Completed: “Moderation Rejection Reasons” (Lessonly) <span class="badge badge-self">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruFlagged" onchange="saveProgress()">
+          <label class="form-check-label" for="guruFlagged">Reviewed Guru: Flag Nuance Examples <span class="badge badge-self">Self-paced</span></label>
+        </div>
 
         <p class="fw-bold mt-3">🧪 Shadow + Practice</p>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="shadowSessionD6" onchange="saveProgress()"><label class="form-check-label" for="shadowSessionD6">Shadowed Discrimination/Flagged Content <span class="badge bg-secondary">TL-led</span></label></div>
-        <div class="form-check"><input class="form-check-input" type="checkbox" id="modCasesD6" onchange="saveProgress()"><label class="form-check-label" for="modCasesD6">Completed 3 advanced moderation cases</label></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shadowSessionD6" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowSessionD6">Shadowed Flagged/Discriminatory Review Cases <span class="badge badge-tl">TL-led</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modCasesD6" onchange="saveProgress()">
+          <label class="form-check-label" for="modCasesD6">Completed 3 advanced moderation cases <span class="badge badge-self">Self-paced</span></label>
+        </div>
       </form>
     </div>
   </div>
