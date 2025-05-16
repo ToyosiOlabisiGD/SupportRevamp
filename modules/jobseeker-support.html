@@ -115,31 +115,69 @@
         <h6 class="fw-bold">Recap & Discussion</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Recap">Joined TL-led Q&A on Day 1 setup</label>
+          <label class="form-check-label" for="d2Recap">TL-led recap + Q&A on Day 1 tasks 
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Security & Settings</h6>
-        <ul>
-          <li>Password reset</li>
-          <li2FA setup</li>
-          <li>Managing email address</li>
-          <li>Login troubleshooting</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Cases</h6>
+        <h6 class="fw-bold mt-3">Help Center Exploration</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d2CasePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="d2CasePractice">Completed 7 test inbox/account setup cases</label>
+          <input class="form-check-input" type="checkbox" id="hcSecurity" onchange="saveProgress()">
+          <label class="form-check-label" for="hcSecurity">Review Account Settings & Security articles 
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="resetPassword" onchange="saveProgress()">
+          <label class="form-check-label" for="resetPassword">Reset my password</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="manage2FA" onchange="saveProgress()">
+          <label class="form-check-label" for="manage2FA">Manage Two-Factor Authentication</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="loginIssues" onchange="saveProgress()">
+          <label class="form-check-label" for="loginIssues">Why can't I log in?</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="forceReset" onchange="saveProgress()">
+          <label class="form-check-label" for="forceReset">Required password reset</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="updateEmail" onchange="saveProgress()">
+          <label class="form-check-label" for="updateEmail">Update email address</label>
+        </div>
+
+        <h6 class="fw-bold mt-3">Account Activity</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="emailReview" onchange="saveProgress()">
+          <label class="form-check-label" for="emailReview">Review job alerts and email behavior in test inbox 
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
 
         <h6 class="fw-bold mt-3">Resources</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d2Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Guru">Read: Password & Login Issues (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="lessonlyAcctMaint" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyAcctMaint">Completed “Account Maintenance Model” (Lessonly)</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d2Lessonly" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Lessonly">Completed: “Account Maintenance Model” (Lessonly)</label>
+          <input class="form-check-input" type="checkbox" id="guruLoginHelp" onchange="saveProgress()">
+          <label class="form-check-label" for="guruLoginHelp">Read: “Password, 2FA & Login Issues” (Guru)</label>
+        </div>
+
+        <h6 class="fw-bold mt-3">Queue Shadow & Practice</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="accountCasePractice" onchange="saveProgress()">
+          <label class="form-check-label" for="accountCasePractice">Complete 7 account setup/alert support cases 
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="accountShadow" onchange="saveProgress()">
+          <label class="form-check-label" for="accountShadow">Shadow 2 account-related live cases 
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
       </form>
     </div>
