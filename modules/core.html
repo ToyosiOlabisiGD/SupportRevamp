@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; right: 20px; z-index: 999;">
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
   ← Return to Menu
 </a>
 
@@ -24,98 +23,92 @@
 
 <div class="container">
   <div class="card mb-4">
-    <div class="card-header bg-primary text-white">Core Training</div>
+    <div class="card-header bg-info text-white">Core Training Modules</div>
     <div class="card-body">
       <div class="accordion" id="coreTrainingAccordion">
 
-        <!-- Day 1 -->
+        <!-- Module 1 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="coreDay1Header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreDay1Collapse" aria-expanded="false" aria-controls="coreDay1Collapse">
-              Day 1 – Overview & Introduction
+          <h2 class="accordion-header" id="coreIntroHeader">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreIntro" aria-expanded="false" aria-controls="coreIntro">
+              Week 1 – Foundations & Tools
             </button>
           </h2>
-          <div id="coreDay1Collapse" class="accordion-collapse collapse" data-bs-parent="#coreTrainingAccordion">
+          <div id="coreIntro" class="accordion-collapse collapse" data-bs-parent="">
             <div class="accordion-body">
-              <form id="coreDay1Checklist">
-                <p class="fw-bold">Welcome + Orientation</p>
+              <form>
+
+                <p class="fw-bold">Recap & Orientation</p>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD1Intro" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD1Intro">Complete Welcome Session <span class="badge bg-secondary">TL-led</span></label>
+                  <input class="form-check-input" type="checkbox" id="core_recap1" onchange="saveProgress()">
+                  <label class="form-check-label" for="core_recap1">Recap from onboarding and support structure overview <span class="badge bg-secondary">TL-led</span></label>
                 </div>
 
-                <p class="fw-bold mt-3">Company Tools Overview</p>
+                <p class="fw-bold mt-3">Tool Familiarization</p>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD1Tools" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD1Tools">Tool walkthrough: Gmail, Slack, Salesforce <span class="badge bg-info text-dark">Self-paced</span></label>
+                  <input class="form-check-input" type="checkbox" id="core_tools1" onchange="saveProgress()">
+                  <label class="form-check-label" for="core_tools1">Internal Tools Review (Omni, Salesforce, Guru) <span class="badge bg-info text-dark">Self-led</span></label>
                 </div>
 
-                <p class="fw-bold mt-3">Initial Case Tagging Practice</p>
+                <p class="fw-bold mt-3">Tone & Writing</p>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD1Tagging" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD1Tagging">Tagging practice walkthrough <span class="badge bg-info text-dark">Self-paced</span></label>
+                  <input class="form-check-input" type="checkbox" id="core_tone1" onchange="saveProgress()">
+                  <label class="form-check-label" for="core_tone1">Writing Basics and Brand Voice Training <span class="badge bg-info text-dark">Self-led</span></label>
                 </div>
+
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Day 2 -->
+        <!-- Module 2 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="coreDay2Header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreDay2Collapse" aria-expanded="false" aria-controls="coreDay2Collapse">
-              Day 2 – Help Center & Customer Experience
+          <h2 class="accordion-header" id="coreModule2Header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreModule2" aria-expanded="false" aria-controls="coreModule2">
+              Week 2 – Live Practice & Feedback
             </button>
           </h2>
-          <div id="coreDay2Collapse" class="accordion-collapse collapse" data-bs-parent="#coreTrainingAccordion">
+          <div id="coreModule2" class="accordion-collapse collapse" data-bs-parent="">
             <div class="accordion-body">
-              <form id="coreDay2Checklist">
-                <p class="fw-bold">Help Center Deep Dive</p>
+              <form>
+
+                <p class="fw-bold">Live Shadowing & Tag Review</p>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD2HCReview" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD2HCReview">Explore key Help Center categories <span class="badge bg-info text-dark">Self-paced</span></label>
+                  <input class="form-check-input" type="checkbox" id="core_shadow2" onchange="saveProgress()">
+                  <label class="form-check-label" for="core_shadow2">Queue Shadowing + Tagging Practice <span class="badge bg-secondary">TL-led</span></label>
                 </div>
 
-                <p class="fw-bold mt-3">Customer Service Foundations</p>
+                <p class="fw-bold mt-3">Feedback Calibration</p>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD2CustService" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD2CustService">Complete "Support Mindset" module <span class="badge bg-info text-dark">Self-paced</span></label>
+                  <input class="form-check-input" type="checkbox" id="core_calibration2" onchange="saveProgress()">
+                  <label class="form-check-label" for="core_calibration2">Team Calibration Review and Feedback Discussion <span class="badge bg-secondary">TL-led</span></label>
                 </div>
+
               </form>
             </div>
           </div>
         </div>
 
-        <!-- Day 3 -->
+        <!-- Submission -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="coreDay3Header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreDay3Collapse" aria-expanded="false" aria-controls="coreDay3Collapse">
-              Day 3 – Systems & Role Shadowing
+          <h2 class="accordion-header" id="coreSubmitHeader">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coreSubmit" aria-expanded="false" aria-controls="coreSubmit">
+              Submit Core Training Progress
             </button>
           </h2>
-          <div id="coreDay3Collapse" class="accordion-collapse collapse" data-bs-parent="#coreTrainingAccordion">
+          <div id="coreSubmit" class="accordion-collapse collapse" data-bs-parent="">
             <div class="accordion-body">
-              <form id="coreDay3Checklist">
-                <p class="fw-bold">Live System Access</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD3Access" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD3Access">Log into Okta, Salesforce, and Guru <span class="badge bg-info text-dark">Self-paced</span></label>
-                </div>
-
-                <p class="fw-bold mt-3">Shadowing Overview</p>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="coreD3Shadow" onchange="saveProgress()">
-                  <label class="form-check-label" for="coreD3Shadow">Complete 1:1 shadowing with TL or peer <span class="badge bg-secondary">TL-led</span></label>
-                </div>
-              </form>
+              <p>Submit this form after completing the core training weeks:</p>
+              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
           </div>
         </div>
 
-      </div> <!-- accordion -->
-    </div> <!-- card-body -->
-  </div> <!-- card -->
-</div> <!-- container -->
+      </div> <!-- end accordion -->
+    </div>
+  </div>
+</div> <!-- end container -->
 
 <script>
   function saveProgress() {
