@@ -260,7 +260,7 @@
   </div>
 </div>
 
-    <!-- Day 4 – FAQs, Salary Tools & Product Support -->
+<!-- Day 4 – FAQs, Salary Tools & Product Support -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="day4Heading">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
@@ -270,34 +270,67 @@
   <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
+
         <h6 class="fw-bold">Recap & Highlights</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Recap">Participated in tag clarifications + TL recap</label>
+          <label class="form-check-label" for="d4Recap">TL-led recap of Day 3 and tag clarifications 
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+
+        <h6 class="fw-bold mt-3">Training Modules</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="lessonlyProductSupport" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyProductSupport">Completed: “Product Support” (Lessonly)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="lessonlyFAQs" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyFAQs">Completed: “Jobseeker FAQs” (Lessonly)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruFAQTagging" onchange="saveProgress()">
+          <label class="form-check-label" for="guruFAQTagging">Read: “FAQ Tagging & Escalation” (Guru)</label>
         </div>
 
         <h6 class="fw-bold mt-3">Help Center Exploration</h6>
-        <ul>
-          <li>Salary averages and tools</li>
-          <li>Equity X-Ray & D&I features</li>
-          <li>Trends and demographics by company</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Work</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4FAQCases" onchange="saveProgress()">
-          <label class="form-check-label" for="d4FAQCases">Handled 4 FAQ/product support scenarios</label>
+          <input class="form-check-input" type="checkbox" id="hcSalaryContent" onchange="saveProgress()">
+          <label class="form-check-label" for="hcSalaryContent">Reviewed Salary Tools, Demographics, and D&I Help Center content 
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="equityXRay" onchange="saveProgress()">
+          <label class="form-check-label" for="equityXRay">Reviewed: Glassdoor's Equity X-Ray</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="salaryAverages" onchange="saveProgress()">
+          <label class="form-check-label" for="salaryAverages">Reviewed: Company Trends & Salary Averages</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="diversityInclusion" onchange="saveProgress()">
+          <label class="form-check-label" for="diversityInclusion">Reviewed: Diversity & Inclusion Features</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interpretingSalaries" onchange="saveProgress()">
+          <label class="form-check-label" for="interpretingSalaries">Reviewed: Interpreting Salary Demographics</label>
         </div>
 
-        <h6 class="fw-bold mt-3">Resources</h6>
+        <h6 class="fw-bold mt-3">Practice & Queue Time</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Guru">Read: “FAQ Tagging & Escalation” (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="faqPracticeCases" onchange="saveProgress()">
+          <label class="form-check-label" for="faqPracticeCases">Completed 4 FAQ and product support cases 
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Lessonly" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Lessonly">Completed: “Jobseeker FAQs” and “Product Support” (Lessonly)</label>
+          <input class="form-check-input" type="checkbox" id="liveFAQSession" onchange="saveProgress()">
+          <label class="form-check-label" for="liveFAQSession">Observed FAQ queue or reviewed tags with TL 
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
+
       </form>
     </div>
   </div>
