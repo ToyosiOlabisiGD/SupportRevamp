@@ -22,616 +22,151 @@
 </nav>
 
 <div class="container">
-
-  <!-- Header Card -->
   <div class="card mb-4">
-    <div class="card-header bg-info text-white fw-bold">🧑‍💻 Jobseeker Support – Week 1: Core Foundations & Tools</div>
+    <div class="card-header bg-info text-white fw-bold">Jobseeker Support – Week 1: Core Foundations & Tools</div>
     <div class="card-body bg-light">
       <p>This week introduces the most common jobseeker issues, tools, and communication practices. You’ll build a foundation in case types, support tone, and product fluency.</p>
-      <p class="fw-bold">⏱️ Estimated Time: 5 days (8 hrs/day)</p>
+      <p class="fw-bold">Estimated Time: 5 days (8 hrs/day)</p>
     </div>
   </div>
 
-  <!-- Accordion Start -->
   <div class="accordion" id="jsSupportAccordion">
 
-    <!-- Day 1 – Jobseeker Path Introduction -->
+    <<!-- Day 1 – Jobseeker Path Introduction -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="day1Heading">
-    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-      📘 Day 1 – Intro to Jobseeker Path
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      Day 1 – Introduction to Jobseeker Support
     </button>
   </h2>
-  <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
+  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading" data-bs-parent="#jsSupportAccordion">
+    <div class="accordion-body">
       <form>
-
-        <p class="fw-bold">🧭 Recap & Overview</p>
+        <h6 class="fw-bold">Recap & Overview</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d1Recap">TL-Led Recap Discussion <span class="badge bg-secondary">TL-led</span></label>
+          <label class="form-check-label" for="d1Recap">Attended TL-led intro to jobseeker path</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
-          <label class="form-check-label" for="d1Intro">Intro to Jobseeker Support Path <span class="badge bg-secondary">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="d1Overview" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Overview">Reviewed key goals and outcomes for the week</label>
         </div>
 
-        <p class="fw-bold mt-3">📚 Help Center Exploration</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcOverview" onchange="saveProgress()">
-          <label class="form-check-label" for="hcOverview">Review key Help Center articles <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+        <h6 class="fw-bold mt-3">Help Center Exploration</h6>
         <ul>
-          <li>Create a Glassdoor account</li>
-          <li>Activate your account</li>
-          <li>Account types and login FAQs</li>
-          <li>Profile setup & editing</li>
+          <li>Create an account</li>
+          <li>Activate & verify email</li>
+          <li>Logins & access FAQs</li>
+          <li>Profile creation & editing</li>
         </ul>
 
-        <p class="fw-bold mt-3">🧪 Role Play Activities</p>
+        <h6 class="fw-bold mt-3">Practice Activities</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="buildTestProfile" onchange="saveProgress()">
-          <label class="form-check-label" for="buildTestProfile">Create test profile & explore Community <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d1TestAccount" onchange="saveProgress()">
+          <label class="form-check-label" for="d1TestAccount">Created test profile</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="createResume" onchange="saveProgress()">
-          <label class="form-check-label" for="createResume">Create resume for test user <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="customEmailSettings" onchange="saveProgress()">
-          <label class="form-check-label" for="customEmailSettings">Customize test email alerts & subscriptions <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewEmailInbox" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewEmailInbox">Review job alerts and test inbox behavior <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d1Resume" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Resume">Uploaded sample resume to test profile</label>
         </div>
 
-        <p class="fw-bold mt-3">🧰 Action Steps</p>
+        <h6 class="fw-bold mt-3">Resources</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="contactSupport" onchange="saveProgress()">
-          <label class="form-check-label" for="contactSupport">Submit a mock support case for your test user <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d1Guru" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Guru">Read “Account Types & Access” (Guru)</label>
         </div>
-
-        <p class="fw-bold mt-3">📖 Guru References</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruAccountTypes" onchange="saveProgress()">
-          <label class="form-check-label" for="guruAccountTypes">Read: “Account Types & Access” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d1Lessonly" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Lessonly">Completed “Intro to Jobseeker Journey” (Lessonly)</label>
         </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Module</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyIntroJS" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyIntroJS">Complete: “Intro to Jobseeker Journey” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
       </form>
     </div>
   </div>
 </div>
 
-    <!-- Day 2 – Account Setup & Alerts -->
+<!-- Day 2 – Account Setup & Alerts -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="day2Heading">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-      📗 Day 2 – Account Setup & Alerts
+      Day 2 – Account Setup & Alerts
     </button>
   </h2>
-  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
+  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#jsSupportAccordion">
+    <div class="accordion-body">
       <form>
-
-        <p class="fw-bold">🧭 Recap & Discussion</p>
+        <h6 class="fw-bold">Recap & Discussion</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Recap">TL-led recap + Q&A on Day 1 tasks <span class="badge bg-secondary">TL-led</span></label>
+          <label class="form-check-label" for="d2Recap">Joined TL-led Q&A on Day 1 setup</label>
         </div>
 
-        <p class="fw-bold mt-3">📚 Help Center Exploration</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcSecurity" onchange="saveProgress()">
-          <label class="form-check-label" for="hcSecurity">Review Account Settings & Security articles <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+        <h6 class="fw-bold mt-3">Security & Settings</h6>
         <ul>
-          <li>Reset my password</li>
-          <li>Manage Two-Factor Authentication</li>
-          <li>Why can't I log in?</li>
-          <li>Required password reset</li>
-          <li>Update email address</li>
+          <li>Password reset</li>
+          <li2FA setup</li>
+          <li>Managing email address</li>
+          <li>Login troubleshooting</li>
         </ul>
 
-        <p class="fw-bold mt-3">🧪 Account Activity</p>
+        <h6 class="fw-bold mt-3">Practice Cases</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="emailReview" onchange="saveProgress()">
-          <label class="form-check-label" for="emailReview">Review job alerts and email behavior in test inbox <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d2CasePractice" onchange="saveProgress()">
+          <label class="form-check-label" for="d2CasePractice">Completed 7 test inbox/account setup cases</label>
         </div>
 
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
+        <h6 class="fw-bold mt-3">Resources</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyAcctMaint" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyAcctMaint">Complete: “Account Maintenance Model” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru References</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruLoginHelp" onchange="saveProgress()">
-          <label class="form-check-label" for="guruLoginHelp">Read: “Password, 2FA & Login Issues” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Queue Shadow & Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="accountCasePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="accountCasePractice">Complete 7 account setup/alert support cases <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d2Guru" onchange="saveProgress()">
+          <label class="form-check-label" for="d2Guru">Read: Password & Login Issues (Guru)</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="accountShadow" onchange="saveProgress()">
-          <label class="form-check-label" for="accountShadow">Shadow 2 account-related live cases <span class="badge bg-secondary">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="d2Lessonly" onchange="saveProgress()">
+          <label class="form-check-label" for="d2Lessonly">Completed: “Account Maintenance Model” (Lessonly)</label>
         </div>
-
       </form>
     </div>
   </div>
 </div>
 
-<!-- Day 3 – Account Maintenance + Community Cases -->
+<!-- Day 3 – Community & Sensitive Cases -->
 <div class="accordion-item">
   <h2 class="accordion-header" id="day3Heading">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
-      📙 Day 3 – Account Maintenance + Community Cases
+      Day 3 – Community Support & Sensitive Cases
     </button>
   </h2>
-  <div id="day3Collapse" class="accordion-collapse collapse" aria-labelledby="day3Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
+  <div id="day3Collapse" class="accordion-collapse collapse" aria-labelledby="day3Heading" data-bs-parent="#jsSupportAccordion">
+    <div class="accordion-body">
       <form>
-
-        <p class="fw-bold">🧭 Recap & Tag Review</p>
+        <h6 class="fw-bold">Recap & Tag Review</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d3Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d3Recap">TL-led recap of previous day’s queue cases <span class="badge bg-secondary">TL-led</span></label>
+          <label class="form-check-label" for="d3Recap">TL-led walkthrough of Day 2 tickets and common tags</label>
         </div>
 
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyCommunitySupport" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyCommunitySupport">Complete: “Community Support Email – Jobseeker” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru References</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruSensitiveCases" onchange="saveProgress()">
-          <label class="form-check-label" for="guruSensitiveCases">Read: “Sensitive Case Types – Jobseeker” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Help Center Readings</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcCommunity" onchange="saveProgress()">
-          <label class="form-check-label" for="hcCommunity">Review key Community & Fishbowl FAQs <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+        <h6 class="fw-bold mt-3">Help Center Focus</h6>
         <ul>
-          <li>About Bowls on Glassdoor</li>
-          <li>Using Community Features</li>
-          <li>Community Account Verification</li>
+          <li>Using Community (Fishbowl)</li>
+          <li>Posting permissions & moderation</li>
+          <li>Verification processes</li>
         </ul>
 
-        <p class="fw-bold mt-3">👀 Practice Cases</p>
+        <h6 class="fw-bold mt-3">Practice Cases</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="communityPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="communityPracticeCases">Complete 5 sensitive/community cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="calibrationActivity" onchange="saveProgress()">
-          <label class="form-check-label" for="calibrationActivity">Community Calibration Activity <span class="badge bg-info text-dark">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="d3Cases" onchange="saveProgress()">
+          <label class="form-check-label" for="d3Cases">Handled 5 community-related support scenarios</label>
         </div>
 
-        <p class="fw-bold mt-3">👀 Shadowing & Review</p>
+        <h6 class="fw-bold mt-3">Resources</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="communityShadow" onchange="saveProgress()">
-          <label class="form-check-label" for="communityShadow">Shadow live tagging for Community inbox <span class="badge bg-secondary">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="d3Guru" onchange="saveProgress()">
+          <label class="form-check-label" for="d3Guru">Read: “Sensitive Case Types – Jobseeker” (Guru)</label>
         </div>
-
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d3Lessonly" onchange="saveProgress()">
+          <label class="form-check-label" for="d3Lessonly">Completed “Community Support Email – Jobseeker”</label>
+        </div>
       </form>
     </div>
   </div>
 </div>
-
-<!-- Day 4 – FAQs, Salary Tools & Product Support -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day4Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
-      📕 Day 4 – FAQs, Salary Tools & Product Support
-    </button>
-  </h2>
-  <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap & Highlights</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Recap">TL-led recap of Day 3 + tag clarifications <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyProductSupport" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyProductSupport">Complete: “Product Support” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyFAQs" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyFAQs">Complete: “Jobseeker FAQs” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru Reference</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruFAQTagging" onchange="saveProgress()">
-          <label class="form-check-label" for="guruFAQTagging">Read: “FAQ Tagging & Escalation” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Help Center Topics</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcSalaryContent" onchange="saveProgress()">
-          <label class="form-check-label" for="hcSalaryContent">Explore: Salary Tools, Demographics, and D&I Features <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Glassdoor's Equity X-Ray</li>
-          <li>Demographics on Glassdoor</li>
-          <li>Company Trends & Salary Averages</li>
-          <li>Diversity & Inclusion Features</li>
-          <li>Interpreting Salary Demographics</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🧪 Practice Cases</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="faqPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="faqPracticeCases">Complete 4 FAQ and product support cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Shadowing & Queue Time</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveFAQSession" onchange="saveProgress()">
-          <label class="form-check-label" for="liveFAQSession">Observe or review FAQ queue cases with TL <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 5 – Live Queue Practice & Review Handling -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day5Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day5Collapse" aria-expanded="false" aria-controls="day5Collapse">
-      🟧 Day 5 – Live Queue Practice & Review Handling
-    </button>
-  </h2>
-  <div id="day5Collapse" class="accordion-collapse collapse" aria-labelledby="day5Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap + Plan</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Recap">TL-led sync on outstanding FAQ or tag issues <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Help Center Topics</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcReviewHelp" onchange="saveProgress()">
-          <label class="form-check-label" for="hcReviewHelp">Explore: Review Moderation & Reporting Help Center pages <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Where is my review?</li>
-          <li>Helpful votes, filtering, editing reviews</li>
-          <li>Reporting a review</li>
-          <li>Employer response rights</li>
-          <li>Disputes and controversial content</li>
-        </ul>
-
-        <p class="fw-bold mt-3">📖 Guru Articles</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruReviewEscalation" onchange="saveProgress()">
-          <label class="form-check-label" for="guruReviewEscalation">Read: “Review Escalation Guidelines” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧪 Practice & Shadow</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewCases" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewCases">Complete 6 flagged or disputed review cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="shadowReviewQueue" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowReviewQueue">Shadow review moderation queue + ask questions <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧰 Live Queue Time</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveReviewQueue" onchange="saveProgress()">
-          <label class="form-check-label" for="liveReviewQueue">Work from personal queue with TL live feedback <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-    <!-- Day 6 – Content Issues & Review Visibility -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day6Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day6Collapse" aria-expanded="false" aria-controls="day6Collapse">
-      🟨 Day 6 – Content Issues & Review Visibility
-    </button>
-  </h2>
-  <div id="day6Collapse" class="accordion-collapse collapse" aria-labelledby="day6Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap + Theme Preview</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d6Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Recap">TL-led recap & overview of content issues <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Module</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyContentIssues" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyContentIssues">Complete: “Content Issues” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru Resource</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruContentIssues" onchange="saveProgress()">
-          <label class="form-check-label" for="guruContentIssues">Read: “Content Rejection & Reporting” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Help Center Articles</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcWhereIsMyReview" onchange="saveProgress()">
-          <label class="form-check-label" for="hcWhereIsMyReview">Review Help Center articles on review visibility <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Where is my review?</li>
-          <li>My review was removed</li>
-          <li>Editing, deleting, or filtering reviews</li>
-          <li>Review marked helpful or submitted for wrong company</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🧪 Practice + Queue Shadowing</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="contentIssueCases" onchange="saveProgress()">
-          <label class="form-check-label" for="contentIssueCases">Complete 6 content visibility or flagging cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="queueObservationD6" onchange="saveProgress()">
-          <label class="form-check-label" for="queueObservationD6">Observe related queue work or Q&A with TL <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-  <!-- Day 7 – Tier 1 Flagged Content & Escalation -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day7Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day7Collapse" aria-expanded="false" aria-controls="day7Collapse">
-      🟩 Day 7 – Tier 1 Flagged Content & Escalation
-    </button>
-  </h2>
-  <div id="day7Collapse" class="accordion-collapse collapse" aria-labelledby="day7Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap & Case Review</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d7Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Recap">TL-led recap of Day 6 + flagging insights <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyFlaggedContent" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyFlaggedContent">Complete: “Tier 1 Flagged Content” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru Article</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruFlagNuance" onchange="saveProgress()">
-          <label class="form-check-label" for="guruFlagNuance">Read: “Flag Nuance Examples” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Help Center Content</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcFlaggingContent" onchange="saveProgress()">
-          <label class="form-check-label" for="hcFlaggingContent">Explore: Flagging process + user reporting FAQs <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Reporting inappropriate content</li>
-          <li>Will Glassdoor remove flagged reviews?</li>
-          <li>False and defamatory claims</li>
-          <li>Employer flagging policies</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🧪 Practice + Live Work</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="flaggedCasesD7" onchange="saveProgress()">
-          <label class="form-check-label" for="flaggedCasesD7">Complete 8 Tier 1 flagged content cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveQAFlagSupport" onchange="saveProgress()">
-          <label class="form-check-label" for="liveQAFlagSupport">Shadow TL or peer for real-time case handling <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-  <!-- Day 8 – Live Work: Jobseeker FAQ & Product Feedback -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day8Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day8Collapse" aria-expanded="false" aria-controls="day8Collapse">
-      🟦 Day 8 – Live Work: Jobseeker FAQ & Product Feedback
-    </button>
-  </h2>
-  <div id="day8Collapse" class="accordion-collapse collapse" aria-labelledby="day8Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 TL-Led Sync</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d8Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Recap">Daily recap and queue prep with TL <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Help Center Exploration</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcJSFaqs" onchange="saveProgress()">
-          <label class="form-check-label" for="hcJSFaqs">Explore FAQs about job search & alerts <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>How to apply to jobs on Glassdoor</li>
-          <li>Job alerts & app-based settings</li>
-          <li>Saved jobs & viewing application history</li>
-        </ul>
-
-        <p class="fw-bold mt-3">📖 Guru + Lessonly</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruJobAccess" onchange="saveProgress()">
-          <label class="form-check-label" for="guruJobAccess">Guru: Job Access + Product Support <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyProductSupport" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyProductSupport">Lessonly: Product Support Module <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧪 Practice + QA Time</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="faqPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="faqPracticeCases">Complete 4 job alert/product feedback cases <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveWorkD8" onchange="saveProgress()">
-          <label class="form-check-label" for="liveWorkD8">Live case handling with TL feedback <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 9 – Tier 1 Special Cases & Review Response -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day9Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day9Collapse" aria-expanded="false" aria-controls="day9Collapse">
-      🟪 Day 9 – Tier 1 Special Cases & Review Response
-    </button>
-  </h2>
-  <div id="day9Collapse" class="accordion-collapse collapse" aria-labelledby="day9Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 TL-Led Recap & Advanced Topics</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d9Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d9Recap">Discuss flagged edge cases and escalation workflows <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly & Guru</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="lessonlyTier1Flags" onchange="saveProgress()">
-          <label class="form-check-label" for="lessonlyTier1Flags">Complete: Tier 1 Flagged Content Module <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruFlagProtocol" onchange="saveProgress()">
-          <label class="form-check-label" for="guruFlagProtocol">Guru: Employer review flag protocol <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Help Center Articles</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hcFlagReviewFaqs" onchange="saveProgress()">
-          <label class="form-check-label" for="hcFlagReviewFaqs">Explore review flagging + legal policy FAQs <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Will Glassdoor remove a flagged review?</li>
-          <li>Flagged as false, defamatory, or policy-violating</li>
-          <li>Disputing or escalating a flagged review</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🧪 Practice & Shadow</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="specialCasePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="specialCasePractice">Complete 6 special-case flag reviews <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveEscalationD9" onchange="saveProgress()">
-          <label class="form-check-label" for="liveEscalationD9">Shadow flag escalation or QA huddle <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-  <!-- Day 10 – Final Live Work & Certification Wrap-Up -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day10Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day10Collapse" aria-expanded="false" aria-controls="day10Collapse">
-      ⬛ Day 10 – Final Live Work & Certification Wrap-Up
-    </button>
-  </h2>
-  <div id="day10Collapse" class="accordion-collapse collapse" aria-labelledby="day10Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 TL-Led Capstone Prep</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d10Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d10Recap">Team sync: What to expect, open Q&A <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Final Queue Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveQueueWrapup" onchange="saveProgress()">
-          <label class="form-check-label" for="liveQueueWrapup">Work full queue independently (8+ cases) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📋 Certification Checklist</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="certChecklist" onchange="saveProgress()">
-          <label class="form-check-label" for="certChecklist">Complete certification checklist (TL-reviewed) <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📣 Feedback Submission</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="submitFeedback" onchange="saveProgress()">
-          <label class="form-check-label" for="submitFeedback">Submit post-training reflection & feedback form <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-  </div> <!-- End Accordion -->
-
-</div> <!-- End Container -->
-
-<!-- JS: Save Progress -->
-<script>
-function saveProgress() {
-  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-    localStorage.setItem(cb.id, cb.checked);
-  });
-}
-function loadProgress() {
-  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-    cb.checked = localStorage.getItem(cb.id) === "true";
-  });
-}
-window.onload = loadProgress;
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
