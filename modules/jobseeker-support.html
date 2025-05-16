@@ -705,27 +705,43 @@
   <div id="day10Collapse" class="accordion-collapse collapse" aria-labelledby="day10Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
-        <h6 class="fw-bold">TL-Led Capstone & Q&A</h6>
+
+        <h6 class="fw-bold">TL-Led Capstone Prep</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d10Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d10Recap">Joined capstone discussion + TL Q&A</label>
+          <label class="form-check-label" for="d10Recap">
+            Team sync: What to expect, open Q&A
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Final Case Work</h6>
+        <h6 class="fw-bold mt-3">Final Queue Practice</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d10LiveQueue" onchange="saveProgress()">
-          <label class="form-check-label" for="d10LiveQueue">Completed 8+ cases in live queue</label>
+          <input class="form-check-input" type="checkbox" id="liveQueueWrapup" onchange="saveProgress()">
+          <label class="form-check-label" for="liveQueueWrapup">
+            Work full queue independently (8+ cases)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Certification & Feedback</h6>
+        <h6 class="fw-bold mt-3">Certification Checklist</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="certChecklist" onchange="saveProgress()">
-          <label class="form-check-label" for="certChecklist">Completed certification checklist (TL-reviewed)</label>
+          <label class="form-check-label" for="certChecklist">
+            Complete certification checklist (TL-reviewed)
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
+
+        <h6 class="fw-bold mt-3">Feedback Submission</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="submitFeedback" onchange="saveProgress()">
-          <label class="form-check-label" for="submitFeedback">Submitted feedback + reflection form</label>
+          <label class="form-check-label" for="submitFeedback">
+            Submit post-training reflection & feedback form
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
+
       </form>
     </div>
   </div>
