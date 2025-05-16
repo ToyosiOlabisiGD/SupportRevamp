@@ -422,34 +422,61 @@
   <div id="day6Collapse" class="accordion-collapse collapse" aria-labelledby="day6Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
-        <h6 class="fw-bold">Recap + Focus Themes</h6>
+
+        <h6 class="fw-bold">Recap + Theme Preview</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d6Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Recap">Recapped content issues & visibility themes</label>
+          <label class="form-check-label" for="d6Recap">Attended TL-led overview of content visibility issues
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Help Center Readings</h6>
-        <ul>
-          <li>Review visibility and status</li>
-          <li>Why a review was removed</li>
-          <li>Marking reviews helpful</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Cases</h6>
+        <h6 class="fw-bold mt-3">Learning Modules</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d6Cases" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Cases">Handled 6 content visibility/flagging cases</label>
+          <input class="form-check-input" type="checkbox" id="lessonlyContentIssues" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyContentIssues">Completed: “Content Issues” (Lessonly)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruContentIssues" onchange="saveProgress()">
+          <label class="form-check-label" for="guruContentIssues">Read: “Content Rejection & Reporting” (Guru)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Resources</h6>
+        <h6 class="fw-bold mt-3">Help Center Exploration</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d6Lessonly" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Lessonly">Completed: “Content Issues” (Lessonly)</label>
+          <input class="form-check-input" type="checkbox" id="hcWhereIsMyReview" onchange="saveProgress()">
+          <label class="form-check-label" for="hcWhereIsMyReview">Reviewed: Where is my review?</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d6Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Guru">Read: “Content Rejection & Reporting” (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="reviewRemoved" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewRemoved">Reviewed: My review was removed</label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="editDeleteReviews" onchange="saveProgress()">
+          <label class="form-check-label" for="editDeleteReviews">Reviewed: Editing, deleting, filtering reviews</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="wrongCompanyReview" onchange="saveProgress()">
+          <label class="form-check-label" for="wrongCompanyReview">Reviewed: Review submitted for wrong company</label>
+        </div>
+
+        <h6 class="fw-bold mt-3">Practice & Shadowing</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="contentIssueCases" onchange="saveProgress()">
+          <label class="form-check-label" for="contentIssueCases">Completed 6 visibility or flagging practice cases
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="queueObservationD6" onchange="saveProgress()">
+          <label class="form-check-label" for="queueObservationD6">Observed queue work or attended TL Q&A
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+
       </form>
     </div>
   </div>
