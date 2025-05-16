@@ -1,43 +1,481 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Onboarding Instructions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-<body>
-  <a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; right: 20px; z-index: 999;">
-    ← Return to Menu
-  </a>
-  <nav class="navbar navbar-dark bg-success mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
-        Customer Support Training
-      </a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Onboarding Instructions</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
+			← Return to Menu
+		</a>
+
+```
+	<nav class="navbar navbar-dark bg-success mb-4">
+		<div class="container-fluid">
+			<a class="navbar-brand d-flex align-items-center" href="../index.html">
+				<img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
+				Customer Support Training
+			</a>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- ⭐ Getting Started – Week Overview -->
+		<div class="card mb-4">
+			<div class="card-header bg-warning text-dark">⭐ Getting Started – Week Overview</div>
+			<div class="card-body">
+				<p>This week, you’ll meet your team, get oriented with our tools and values, and build a strong foundation in support fundamentals.</p>
+				<ul>
+					<li>📧 Confirm access to email, Slack, and logins</li>
+					<li>🏢 Learn about Glassdoor’s culture, mission, and privacy principles</li>
+					<li>🛠️ Explore the tools you'll be using — like Salesforce, Guru, and Looking Glass</li>
+					<li>🎯 Get clear on expectations for training and performance</li>
+				</ul>
+				<p class="fw-bold">⏱️ Estimated Time: 2 days (8 hrs/day)</p>
+			</div>
+		</div>
+```
+
+<!-- Begin Day Accordion -->
+
+<div class="accordion" id="dayAccordion">
+			<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      📘 Day 1 – Orientation & Culture
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
+    <div class="accordion-body p-0">
+      <div class="card mb-4">
+        <!-- keep this inner card, it maintains your existing style -->
+        <div class="card-body">
+				<p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
+				<div class="accordion" id="day1Accordion">
+					<!-- Meet the Team -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="d1_team">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_teamCollapse" aria-expanded="false" aria-controls="d1_teamCollapse">
+								👥 Meet Your Team & TL
+							</button>
+						</h2>
+						<div id="d1_teamCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+							<div class="accordion-body">
+								<form>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="meetTeam" onchange="saveProgress()" />
+										<label class="form-check-label" for="meetTeam">Attended TL & Team Welcome Session</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="vendorBio" onchange="saveProgress()" />
+										<label class="form-check-label" for="vendorBio">Completed Vendor Bio Book</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="nho" onchange="saveProgress()" />
+										<label class="form-check-label" for="nho">Joined NHO or Regional Orientation Session</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+```
+				<!-- Mission & Values -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="d1_mission">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_missionCollapse" aria-expanded="false" aria-controls="d1_missionCollapse">
+							💼 Company Mission, Values & Culture
+						</button>
+					</h2>
+					<div id="d1_missionCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+						<div class="accordion-body">
+							<form>
+								<div class="form-check mb-2">
+									<input class="form-check-input" type="checkbox" id="glassdoorOverview" onchange="saveProgress()" />
+									<label class="form-check-label" for="glassdoorOverview">
+										<a href="https://www.glassdoor.com/about-us/" target="_blank">Glassdoor Overview</a>
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input class="form-check-input" type="checkbox" id="companyValues" onchange="saveProgress()" />
+									<label class="form-check-label" for="companyValues">
+										<a href="https://www.glassdoor.com/about-us/company-values/" target="_blank">Company Values</a>
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input class="form-check-input" type="checkbox" id="cultureCode" onchange="saveProgress()" />
+									<label class="form-check-label" for="cultureCode">
+										<a href="https://www.glassdoor.com/employers/blog/inside-glassdoor-our-culture-code/" target="_blank">Culture Code</a>
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input class="form-check-input" type="checkbox" id="freedomSpeech" onchange="saveProgress()" />
+									<label class="form-check-label" for="freedomSpeech">
+										<a href="https://www.glassdoor.com/about-us/our-commitment-to-radical-transparency/" target="_blank">Glassdoor’s Commitment to Radical Transparency</a>
+									</label>
+								</div>
+								<div class="form-check mb-2">
+```
+
+  <input class="form-check-input" type="checkbox" id="reviewIntegrity" onchange="saveProgress()" />
+  <label class="form-check-label" for="reviewIntegrity">
+    <a href="https://help.glassdoor.com/s/article/Review-Integrity-Fraud-Detection?language=en_US" target="_blank">
+      Review Integrity & Fraud Detection
+    </a>
+  </label>
+</div>
+									<div class="form-check mb-2">
+  <input class="form-check-input" type="checkbox" id="legalFaqs" onchange="saveProgress()" />
+  <label class="form-check-label" for="legalFaqs">
+    <a href="https://help.glassdoor.com/s/article/How-does-Glassdoor-respond-to-legal-requests-or-legal-action-to-find-out-who-posted-a-review?language=en_US" target="_blank">
+      How does Glassdoor respond to legal requests?
+    </a>
+  </label>
+</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="glassdoorVsIndeed" onchange="saveProgress()" />
+										<label class="form-check-label" for="glassdoorVsIndeed">
+											<a href="https://www.glassdoor.com/employers/blog/glassdoor-vs-indeed/" target="_blank">Glassdoor vs. Indeed</a>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+```
+				<!-- Security & Privacy -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="d1_privacy">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_privacyCollapse" aria-expanded="false" aria-controls="d1_privacyCollapse">
+							🔐 Security, Privacy, & Anonymity
+						</button>
+					</h2>
+					<div id="d1_privacyCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+						<div class="accordion-body">
+							<form>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gdpr" onchange="saveProgress()" />
+									<label class="form-check-label" for="gdpr">Completed GDPR + Anonymity Training (Lessonly)</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="sensitiveCases" onchange="saveProgress()" />
+									<label class="form-check-label" for="sensitiveCases">Reviewed Sensitive Case Types</label>
+								</div>
+								<div class="form-check">
+<input class="form-check-input" type="checkbox" id="violentActs" onchange="saveProgress()" />
+<label class="form-check-label" for="violentActs">
+  <a href="https://help.glassdoor.com/s/article/Global-Safety-Support-Resources?language=en_US" target="_blank">Global Safety & Support Resources</a>
+  <span class="text-muted">(Link coming soon)</span>
+</label>
+```
+
+  </div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="security" onchange="saveProgress()" />
+<label class="form-check-label" for="security">Completed C&C Security Training (Lessonly)</label>
+</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="anonymityPolicy" onchange="saveProgress()" />
+										<label class="form-check-label" for="anonymityPolicy">
+											<a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Anonymity & Privacy Breach Escalation Policy (Outsourcing)</a>
+											<span class="text-muted">(Link coming soon)</span>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+```
+				<!-- Logins & Access -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="d1_access">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_accessCollapse" aria-expanded="false" aria-controls="d1_accessCollapse">
+							🧰 Access Setup & Login Check
+						</button>
+					</h2>
+					<div id="d1_accessCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+						<div class="accordion-body">
+							<form>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="chrome" onchange="saveProgress()" />
+									<label class="form-check-label" for="chrome">Chrome Profile, Slack & Gmail Setup</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="logins" onchange="saveProgress()" />
+									<label class="form-check-label" for="logins">Tested Salesforce, Guru, Omni Logins</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="guruIntro" onchange="saveProgress()" />
+									<label class="form-check-label" for="guruIntro"> <a href="https://app.getguru.com/" target="_blank">Watched Guru Intro</a> & Completed Account Setup </label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Regional Setup (Optional) -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="d1_region">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_regionCollapse" aria-expanded="false" aria-controls="d1_regionCollapse">
+							🌍 Regional Setup Tasks (If Applicable)
+						</button>
+					</h2>
+					<div id="d1_regionCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+						<div class="accordion-body">
+							<form>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="colombiaId" onchange="saveProgress()" />
+									<label class="form-check-label" for="colombiaId">
+										Activated access card + photo ID (Colombia only)
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="bulgariaVpn" onchange="saveProgress()" />
+									<label class="form-check-label" for="bulgariaVpn">
+										Verified VPN access (Bulgaria only)
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="sapCourses" onchange="saveProgress()" />
+									<label class="form-check-label" for="sapCourses">
+										Completed SAP regional courses (if required)
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Submit -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="d1_submit">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_submitCollapse" aria-expanded="false" aria-controls="d1_submitCollapse">
+							✅ Day 1 Wrap-Up & Submit
+						</button>
+					</h2>
+					<div id="d1_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+						<div class="accordion-body">
+							<p>You're almost done! Please complete the Day 1 checklist and submit your progress below:</p>
+							<iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+								Loading…
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Day 1 Accordion -->
+     </div> <!-- End .card-body inside card -->
+  </div> <!-- End inner card -->
+</div> <!-- End accordion-body -->
+```
+
+  </div> <!-- End collapse -->
+</div> <!-- End accordion-item for Day 1 -->
+
+<!-- Day 2 -->
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day2Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+      📗 Day 2 – Tools, Docs & Expectations
+    </button>
+  </h2>
+  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
+    <div class="accordion-body p-0">
+      <div class="card mb-4">
+        <div class="card-body">
+    <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
+    <div class="accordion" id="day2Accordion">
+
+```
+  <!-- Training Overview -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_overview">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_overviewCollapse" aria-expanded="false" aria-controls="d2_overviewCollapse">
+        🎯 Training Path & Performance Expectations
+      </button>
+    </h2>
+    <div id="d2_overviewCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <form>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="trainingPath" onchange="saveProgress()">
+            <label class="form-check-label" for="trainingPath">
+              <a href="https://docs.google.com/document/d/EXAMPLE" target="_blank">Reviewed Your Training Path</a>
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="productionRates" onchange="saveProgress()">
+            <label class="form-check-label" for="productionRates">
+              Reviewed Ramp-up Timelines & Production Rates
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()">
+            <label class="form-check-label" for="qaScorecard">
+              <a href="https://yourguru.link/qa-scorecard" target="_blank">Reviewed QA Scorecard (Looking Glass)</a>
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
-  </nav>
+  </div>
 
-  <!-- The main onboarding content here remains unchanged -->
+  <!-- Work Logistics -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_logistics">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_logisticsCollapse" aria-expanded="false" aria-controls="d2_logisticsCollapse">
+        📅 Work Logistics & Scheduling
+      </button>
+    </h2>
+    <div id="d2_logisticsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="staggeredShift" onchange="saveProgress()">
+            <label class="form-check-label" for="staggeredShift">
+              <a href="https://yourguru.link/staggered-shifts" target="_blank">Read the Staggered Shift Overview</a>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="createDoc" onchange="saveProgress()">
+            <label class="form-check-label" for="createDoc">Created 1:1 Doc to share with TL</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="expectations" onchange="saveProgress()">
+            <label class="form-check-label" for="expectations">Reviewed Training Expectations (Engagement, Questions, Notes)</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-  <script>
-    function saveProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        localStorage.setItem(cb.id, cb.checked);
-      });
-    }
+  <!-- Helpdesk + ServiceNow -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_support">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_supportCollapse" aria-expanded="false" aria-controls="d2_supportCollapse">
+        🆘 HelpDesk, Tickets & ServiceNow
+      </button>
+    </h2>
+    <div id="d2_supportCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="glassdoorHelpdesk" onchange="saveProgress()">
+            <label class="form-check-label" for="glassdoorHelpdesk">Learned When & How to Submit a HelpDesk Ticket</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="serviceNow" onchange="saveProgress()">
+            <label class="form-check-label" for="serviceNow">Completed ServiceNow Walkthrough</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    function loadProgress() {
-      document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-        cb.checked = localStorage.getItem(cb.id) === "true";
-      });
-    }
+  <!-- Tool Testing Block -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_tools">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_toolsCollapse" aria-expanded="false" aria-controls="d2_toolsCollapse">
+        🧪 Tools Testing Checklist
+      </button>
+    </h2>
+    <div id="d2_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <p>Test and verify access to each of the tools below:</p>
+        <form>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="jira" onchange="saveProgress()"><label class="form-check-label" for="jira">Jira</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="lessonly" onchange="saveProgress()"><label class="form-check-label" for="lessonly">Lessonly</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="tick" onchange="saveProgress()"><label class="form-check-label" for="tick">TICK</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlass" onchange="saveProgress()"><label class="form-check-label" for="lookingGlass">Looking Glass</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="zoom" onchange="saveProgress()"><label class="form-check-label" for="zoom">Zoom / Google Meet</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="slack" onchange="saveProgress()"><label class="form-check-label" for="slack">Slack</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="guru" onchange="saveProgress()"><label class="form-check-label" for="guru">Guru</label></div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    window.onload = loadProgress;
-  </script>
+  <!-- Training Policies & Docs -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_policies">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_policiesCollapse" aria-expanded="false" aria-controls="d2_policiesCollapse">
+        📄 Training Policies & Docs
+      </button>
+    </h2>
+    <div id="d2_policiesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="codeOfEthics" onchange="saveProgress()">
+            <label class="form-check-label" for="codeOfEthics">
+              <a href="https://guru.com/YOUR_LINK_HERE" target="_blank">OAM / Glassdoor Code of Ethics</a>
+              <span class="text-muted">(Link coming soon)</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="partnerPolicy" onchange="saveProgress()">
+            <label class="form-check-label" for="partnerPolicy">
+              <a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Policy for Partner Content & GD Admin Account Usage</a>
+              <span class="text-muted">(Link coming soon)</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Submit -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="d2_submit">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_submitCollapse" aria-expanded="false" aria-controls="d2_submitCollapse">
+        ✅ Day 2 Wrap-Up & Submit
+      </button>
+    </h2>
+    <div id="d2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+      <div class="accordion-body">
+        <p>Please submit this form once your Day 2 checklist is complete:</p>
+        <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
+                width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- End accordion -->
+    </div> <!-- End .card-body inside card -->
+  </div> <!-- End inner card -->
+</div> <!-- End accordion-body -->
+```
+
+  </div> <!-- End collapse -->
+</div> <!-- End accordion-item for Day 2 -->
+</div> <!-- End of #dayAccordion -->
+
+```
+	<script>
+		function saveProgress() {
+		  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+		    localStorage.setItem(cb.id, cb.checked);
+		  });
+		}
+
+		function loadProgress() {
+		  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+		    cb.checked = localStorage.getItem(cb.id) === "true";
+		  });
+		}
+
+		window.onload = loadProgress;
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+```
+
 </html>
