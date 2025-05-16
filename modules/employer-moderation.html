@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Employer Moderation</title>
+  <title>Employer Moderation – Training</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -22,215 +22,135 @@
 </nav>
 
 <div class="container">
-
-  <!-- Week 1 -->
   <div class="card mb-4">
-    <div class="card-header bg-info text-white">Employer Moderation – Week 1</div>
-    <div class="card-body">
-      <div class="accordion" id="emModWeek1">
-
-        <!-- Section 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_fea">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_feaCollapse" aria-expanded="false" aria-controls="em1_feaCollapse">
-              📌 Understanding FEAs + Employer Submissions
-            </button>
-          </h2>
-          <div id="em1_feaCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek1">
-            <div class="accordion-body">
-              <form id="em1_feaChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_fea_criteria" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_fea_criteria">📋 Reviewed Featured Employer Ad moderation criteria</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_submissions" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_submissions">🏢 Understood pending employer UGC workflows</label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Section 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_tools">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_toolsCollapse" aria-expanded="false" aria-controls="em1_toolsCollapse">
-              🧰 Tools + Queue Practice
-            </button>
-          </h2>
-          <div id="em1_toolsCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek1">
-            <div class="accordion-body">
-              <form id="em1_toolsChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_tools_demo" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_tools_demo">🖥️ Completed tool walkthrough + queue navigation</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_mock_cases" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_mock_cases">🧪 Practiced reviewing at least 3 mock cases</label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Section 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_shadowing">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_shadowCollapse" aria-expanded="false" aria-controls="em1_shadowCollapse">
-              👀 Shadowing Expectations
-            </button>
-          </h2>
-          <div id="em1_shadowCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek1">
-            <div class="accordion-body">
-              <form id="em1_shadowChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_shadow_sessions" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_shadow_sessions">👓 Completed at least 3 shadow sessions</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em1_shadow_notes" onchange="saveProgress()">
-                  <label class="form-check-label" for="em1_shadow_notes">📝 Logged findings and shared feedback</label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Section 4: Submit -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em1_submit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em1_submitCollapse" aria-expanded="false" aria-controls="em1_submitCollapse">
-              📤 Submit Your Progress
-            </button>
-          </h2>
-          <div id="em1_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek1">
-            <div class="accordion-body">
-              <p>Submit this form once you've completed Week 1:</p>
-              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <div class="card-header bg-warning text-dark fw-bold">🟢 Employer Moderation – Week 1</div>
+    <div class="card-body bg-light">
+      <p>This week focuses on moderating employer-submitted content such as Featured Employer Ads (FEAs), photos, and profile changes. You’ll also learn escalation flows and community standards.</p>
+      <p class="fw-bold">⏱️ Estimated Time: 10 days (8 hrs/day)</p>
     </div>
   </div>
 
-  <!-- Week 2 -->
-  <div class="card mb-4">
-    <div class="card-header bg-info text-white">Employer Moderation – Week 2</div>
-    <div class="card-body">
-      <div class="accordion" id="emModWeek2">
+  <!-- Begin Accordion -->
+  <div class="accordion" id="employerModAccordion">
 
-        <!-- Section 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_escalation">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_escalationCollapse" aria-expanded="false" aria-controls="em2_escalationCollapse">
-              🚨 Escalation & Risk Scenarios
-            </button>
-          </h2>
-          <div id="em2_escalationCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek2">
-            <div class="accordion-body">
-              <form id="em2_escalationChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_fake_flags" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_fake_flags">🚫 Learned how to flag fake, scammy, or risky employers</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_escalation_flow" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_escalation_flow">🛠️ Practiced escalation flow via mock cases</label>
-                </div>
-              </form>
+    <!-- Day 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day1Heading">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
+          📘 Day 1 – Intro to Moderation & Contributions
+        </button>
+      </h2>
+      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#employerModAccordion">
+        <div class="accordion-body p-3">
+          <form>
+
+            <p class="fw-bold">🧭 Recap & Intro</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+              <label class="form-check-label" for="d1Recap">TL-led recap & kickoff <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
-
-        <!-- Section 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_notes">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_notesCollapse" aria-expanded="false" aria-controls="em2_notesCollapse">
-              🗃️ Flag Accuracy & Note Quality
-            </button>
-          </h2>
-          <div id="em2_notesCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek2">
-            <div class="accordion-body">
-              <form id="em2_notesChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_flags_practice" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_flags_practice">🏷️ Completed tag + flag accuracy review</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_note_quality" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_note_quality">📄 Wrote at least 3 case notes for trainer feedback</label>
-                </div>
-              </form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1IntroMod" onchange="saveProgress()">
+              <label class="form-check-label" for="d1IntroMod">Overview of Employer Mod Training Path <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
 
-        <!-- Section 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_shadowing">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_shadowingCollapse" aria-expanded="false" aria-controls="em2_shadowingCollapse">
-              👀 Shadow & Practice Sessions
-            </button>
-          </h2>
-          <div id="em2_shadowingCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek2">
-            <div class="accordion-body">
-              <form id="em2_shadowChecklist">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_shadow_reviewed" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_shadow_reviewed">👁️ Reviewed 3 flagged cases + outcomes</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="em2_shadow_feedback" onchange="saveProgress()">
-                  <label class="form-check-label" for="em2_shadow_feedback">💬 Received feedback on 2 peer-reviewed notes</label>
-                </div>
-              </form>
+            <p class="fw-bold mt-3">📘 Contribution Foundations</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="giveToGet" onchange="saveProgress()">
+              <label class="form-check-label" for="giveToGet">Reviewed “Give to Get” Policy <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
-
-        <!-- Section 4: Submit -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="em2_submit">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#em2_submitCollapse" aria-expanded="false" aria-controls="em2_submitCollapse">
-              📤 Submit Your Progress
-            </button>
-          </h2>
-          <div id="em2_submitCollapse" class="accordion-collapse collapse" data-bs-parent="#emModWeek2">
-            <div class="accordion-body">
-              <p>Submit this form once you've completed Week 2:</p>
-              <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true"
-                      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="reviewRolePlay" onchange="saveProgress()">
+              <label class="form-check-label" for="reviewRolePlay">Role Play: “What would you want to know before applying?” <span class="badge bg-secondary">TL-led</span></label>
             </div>
-          </div>
-        </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="submitReviewWalkthrough" onchange="saveProgress()">
+              <label class="form-check-label" for="submitReviewWalkthrough">Walkthrough: Submit test content on Glassdoor <span class="badge bg-secondary">TL-led</span></label>
+            </div>
 
+            <p class="fw-bold mt-3">📚 Help Center Articles</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="hcCommunityGuidelines" onchange="saveProgress()">
+              <label class="form-check-label" for="hcCommunityGuidelines">Review Community Guidelines & content types <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <ul>
+              <li>Writing a company review</li>
+              <li>Interview & Salary Reviews</li>
+              <li>Benefits Reviews</li>
+              <li>Freelancer and MLM content</li>
+              <li>Tips to avoid guideline violations</li>
+            </ul>
+
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-</div> <!-- container -->
+    <!-- Day 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day2Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+          📗 Day 2 – Mod Tools, Tags & Guidelines
+        </button>
+      </h2>
+      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#employerModAccordion">
+        <div class="accordion-body p-3">
+          <form>
 
+            <p class="fw-bold">🧭 Tool Access & TL Demo</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="modToolsOverview" onchange="saveProgress()">
+              <label class="form-check-label" for="modToolsOverview">Logged into Admin Tool & explored queues <span class="badge bg-secondary">TL-led</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="modContentWalk" onchange="saveProgress()">
+              <label class="form-check-label" for="modContentWalk">Watched walkthrough: change history, fields, SLA basics <span class="badge bg-secondary">TL-led</span></label>
+            </div>
+
+            <p class="fw-bold mt-3">📚 Guru Review</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="guruTier1Mod" onchange="saveProgress()">
+              <label class="form-check-label" for="guruTier1Mod">Reviewed: Mod – Tier 1 Guidelines <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+
+            <p class="fw-bold mt-3">📘 Lessonly</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="lessonlyModContentTypes" onchange="saveProgress()">
+              <label class="form-check-label" for="lessonlyModContentTypes">Completed: Moderation Content Types (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+
+            <p class="fw-bold mt-3">🧠 Practice & Case Review</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="modCasePractice" onchange="saveProgress()">
+              <label class="form-check-label" for="modCasePractice">Reviewed 3 mock cases for field + tag understanding <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="meetTL" onchange="saveProgress()">
+              <label class="form-check-label" for="meetTL">Meet your Mod TL & Q&A <span class="badge bg-secondary">TL-led</span></label>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- End Accordion -->
+</div> <!-- End container -->
+
+<!-- Scripts -->
 <script>
-  function saveProgress() {
-    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-      localStorage.setItem(cb.id, cb.checked);
-    });
-  }
-
-  function loadProgress() {
-    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-      cb.checked = localStorage.getItem(cb.id) === "true";
-    });
-  }
-
-  window.onload = loadProgress;
+function saveProgress() {
+  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+    localStorage.setItem(cb.id, cb.checked);
+  });
+}
+function loadProgress() {
+  document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
+    cb.checked = localStorage.getItem(cb.id) === "true";
+  });
+}
+window.onload = loadProgress;
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
