@@ -1,86 +1,21 @@
 body {
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 900px;
 }
 
 .card-header {
+  font-size: 1.1rem;
   font-weight: bold;
-  font-size: 1.2rem;
 }
-
-.card-body {
-  background-color: #f0fdf4; /* light green */
-}
-
-/* Onboarding Spacing + Polish */
 
 .accordion-button {
-  font-size: 1.1rem;
-  padding: 0.75rem 1.25rem;
+  font-weight: 500;
 }
 
-.card-body {
-  padding: 1.5rem;
+.badge {
+  font-size: 0.75rem;
+  margin-left: 5px;
 }
-
-.form-check {
-  margin-bottom: 0.5rem;
-}
-
-.accordion-body a {
-  text-decoration: underline;
-}
-
-.accordion-body a:hover {
-  text-decoration: none;
-  color: #0d6efd;
-}
-
-.accordion-item {
-  border-radius: 0.25rem;
-  margin-bottom: 0.75rem;
-  border: 1px solid #dee2e6;
-}
-
-/* Onboarding Spacing + Style Polish */
-
-.accordion-button {
-  font-size: 1.1rem;
-  padding: 0.75rem 1.25rem;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-.form-check {
-  margin-bottom: 0.5rem;
-}
-
-.accordion-body a {
-  text-decoration: underline;
-}
-
-.accordion-body a:hover {
-  text-decoration: none;
-  color: #0d6efd;
-}
-
-.accordion-item {
-  border-radius: 0.25rem;
-  margin-bottom: 0.75rem;
-  border: 1px solid #dee2e6;
-}
-
-.badge-tl {
-  background-color: #6c757d; /* Bootstrap secondary */
-  color: white;
-}
-
-.badge-self {
-  background-color: #f8f9fa; /* Bootstrap light */
-  color: #212529;
-  border: 1px solid #ced4da;
-}
-
-.badge-tl { background-color: #6c757d; }     /* TL-led */
-.badge-self { background-color: #e0a800; }   /* Self-paced */
