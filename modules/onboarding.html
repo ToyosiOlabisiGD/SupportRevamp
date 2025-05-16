@@ -58,65 +58,42 @@
       Day 1 – Orientation & Culture
     </button>
   </h2>
-  <div id="day1Collapse" class="accordion-collapse collapse">
+  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading" data-bs-parent="#dayAccordion">
     <div class="accordion-body p-0">
       <div class="card m-3">
         <div class="card-body">
           <p class="text-muted mb-3"><strong>Estimated Time:</strong> 8 hours</p>
           <form>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="welcomeSession" onchange="saveProgress()">
-              <label class="form-check-label" for="welcomeSession">Attended TL & Team Welcome Session</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="vendorBio" onchange="saveProgress()">
-              <label class="form-check-label" for="vendorBio">Completed Vendor Bio Book</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="nhoSession" onchange="saveProgress()">
-              <label class="form-check-label" for="nhoSession">Joined NHO or Regional Orientation</label>
-            </div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="meetTeam" /><label class="form-check-label" for="meetTeam">Attended TL & Team Welcome Session</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="vendorBio" /><label class="form-check-label" for="vendorBio">Completed Vendor Bio Book</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="nho" /><label class="form-check-label" for="nho">Joined NHO or Regional Orientation Session</label></div>
 
-            <hr>
+            <p class="mt-4 fw-bold">Company Mission, Values & Culture</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="glassdoorOverview" /><label class="form-check-label" for="glassdoorOverview"><a href="https://www.glassdoor.com/about-us/" target="_blank">Glassdoor Overview</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="companyValues" /><label class="form-check-label" for="companyValues"><a href="https://www.glassdoor.com/about-us/company-values/" target="_blank">Company Values</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="cultureCode" /><label class="form-check-label" for="cultureCode"><a href="https://www.glassdoor.com/employers/blog/inside-glassdoor-our-culture-code/" target="_blank">Culture Code</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="freedomSpeech" /><label class="form-check-label" for="freedomSpeech"><a href="https://www.glassdoor.com/about-us/our-commitment-to-radical-transparency/" target="_blank">Radical Transparency</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="reviewIntegrity" /><label class="form-check-label" for="reviewIntegrity"><a href="https://help.glassdoor.com/s/article/Review-Integrity-Fraud-Detection" target="_blank">Review Integrity & Fraud Detection</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="legalFaqs" /><label class="form-check-label" for="legalFaqs"><a href="https://help.glassdoor.com/s/article/How-does-Glassdoor-respond-to-legal-requests-or-legal-action-to-find-out-who-posted-a-review" target="_blank">Legal FAQs about Reviews</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="glassdoorVsIndeed" /><label class="form-check-label" for="glassdoorVsIndeed"><a href="https://www.glassdoor.com/employers/blog/glassdoor-vs-indeed/" target="_blank">Glassdoor vs. Indeed</a></label></div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="glassdoorOverview" onchange="saveProgress()">
-              <label class="form-check-label" for="glassdoorOverview">
-                <a href="https://www.glassdoor.com/about-us/" target="_blank">Glassdoor Company Overview</a>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="cultureCode" onchange="saveProgress()">
-              <label class="form-check-label" for="cultureCode">
-                <a href="https://www.glassdoor.com/employers/blog/inside-glassdoor-our-culture-code/" target="_blank">Culture Code</a>
-              </label>
-            </div>
+            <p class="mt-4 fw-bold">Security, Privacy, & Access</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="gdpr" /><label class="form-check-label" for="gdpr">Completed GDPR + Anonymity Training (Lessonly)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="sensitiveCases" /><label class="form-check-label" for="sensitiveCases">Reviewed Sensitive Case Types</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="violentActs" /><label class="form-check-label" for="violentActs"><a href="https://help.glassdoor.com/s/article/Global-Safety-Support-Resources" target="_blank">Global Safety Resources</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="security" /><label class="form-check-label" for="security">Completed C&C Security Training (Lessonly)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="anonymityPolicy" /><label class="form-check-label" for="anonymityPolicy"><a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Anonymity Breach Escalation Policy</a></label></div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gdprTraining" onchange="saveProgress()">
-              <label class="form-check-label" for="gdprTraining">Completed GDPR + Anonymity Training (Lessonly)</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="securityTraining" onchange="saveProgress()">
-              <label class="form-check-label" for="securityTraining">Completed C&C Security Training</label>
-            </div>
+            <p class="mt-4 fw-bold">Login & Regional Setup</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="chrome" /><label class="form-check-label" for="chrome">Chrome Profile, Slack & Gmail Setup</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="logins" /><label class="form-check-label" for="logins">Tested Salesforce, Guru, Omni Logins</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="guruIntro" /><label class="form-check-label" for="guruIntro"><a href="https://app.getguru.com/" target="_blank">Guru Intro & Setup</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="colombiaId" /><label class="form-check-label" for="colombiaId">Access Card Setup (Colombia)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="bulgariaVpn" /><label class="form-check-label" for="bulgariaVpn">VPN Access Verified (Bulgaria)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="sapCourses" /><label class="form-check-label" for="sapCourses">Completed SAP Regional Courses</label></div>
 
-            <hr>
-
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="chromeSlackGmail" onchange="saveProgress()">
-              <label class="form-check-label" for="chromeSlackGmail">Setup Chrome Profile, Slack & Gmail</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="loginsCheck" onchange="saveProgress()">
-              <label class="form-check-label" for="loginsCheck">Tested Salesforce, Guru, and Omni logins</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="guruIntro" onchange="saveProgress()">
-              <label class="form-check-label" for="guruIntro">
-                Watched <a href="https://app.getguru.com/" target="_blank">Guru Intro</a> and completed setup
-              </label>
-            </div>
+            <p class="mt-4 fw-bold">Wrap-Up</p>
+            <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </form>
         </div>
       </div>
@@ -131,52 +108,38 @@
       Day 2 – Tools, Docs & Expectations
     </button>
   </h2>
-  <div id="day2Collapse" class="accordion-collapse collapse">
+  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
     <div class="accordion-body p-0">
       <div class="card m-3">
         <div class="card-body">
           <p class="text-muted mb-3"><strong>Estimated Time:</strong> 8 hours</p>
           <form>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="trainingPath" onchange="saveProgress()">
-              <label class="form-check-label" for="trainingPath">Reviewed Training Path Overview (Link TBD)</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="rampTimeline" onchange="saveProgress()">
-              <label class="form-check-label" for="rampTimeline">Reviewed Ramp-up Timeline & Production Rates</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="qaReview" onchange="saveProgress()">
-              <label class="form-check-label" for="qaReview">Reviewed QA Scorecard (Guru)</label>
-            </div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="trainingPath" /><label class="form-check-label" for="trainingPath"><a href="https://docs.google.com/document/d/EXAMPLE" target="_blank">Reviewed Training Path</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="productionRates" /><label class="form-check-label" for="productionRates">Reviewed Ramp Timelines & Production Rates</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="qaScorecard" /><label class="form-check-label" for="qaScorecard"><a href="https://yourguru.link/qa-scorecard" target="_blank">QA Scorecard</a></label></div>
 
-            <hr>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="createDoc" /><label class="form-check-label" for="createDoc">Created 1:1 Doc with TL</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="staggeredShift" /><label class="form-check-label" for="staggeredShift"><a href="https://yourguru.link/staggered-shifts" target="_blank">Staggered Shifts Overview</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="expectations" /><label class="form-check-label" for="expectations">Reviewed Training Expectations</label></div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="create1on1" onchange="saveProgress()">
-              <label class="form-check-label" for="create1on1">Created 1:1 document for TL</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="scheduleReview" onchange="saveProgress()">
-              <label class="form-check-label" for="scheduleReview">Reviewed Staggered Shift & Schedule Policies</label>
-            </div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="glassdoorHelpdesk" /><label class="form-check-label" for="glassdoorHelpdesk">HelpDesk Submission Process</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="serviceNow" /><label class="form-check-label" for="serviceNow">Completed ServiceNow Walkthrough</label></div>
 
-            <hr>
+            <p class="mt-4 fw-bold">Tool Access Checklist</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="jira" /><label class="form-check-label" for="jira">Jira</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="lessonly" /><label class="form-check-label" for="lessonly">Lessonly</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="tick" /><label class="form-check-label" for="tick">TICK</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlass" /><label class="form-check-label" for="lookingGlass">Looking Glass</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="zoom" /><label class="form-check-label" for="zoom">Zoom / Google Meet</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="slack" /><label class="form-check-label" for="slack">Slack</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="guru" /><label class="form-check-label" for="guru">Guru</label></div>
 
-            <p class="fw-bold">Tool Access Checks</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="jiraCheck" onchange="saveProgress()"><label class="form-check-label" for="jiraCheck">Jira</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="guruCheck" onchange="saveProgress()"><label class="form-check-label" for="guruCheck">Guru</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="tickCheck" onchange="saveProgress()"><label class="form-check-label" for="tickCheck">TICK</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="lookingGlassCheck" onchange="saveProgress()"><label class="form-check-label" for="lookingGlassCheck">Looking Glass</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="zoomCheck" onchange="saveProgress()"><label class="form-check-label" for="zoomCheck">Zoom / Meet</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="slackCheck" onchange="saveProgress()"><label class="form-check-label" for="slackCheck">Slack</label></div>
+            <p class="mt-4 fw-bold">Policies & Docs</p>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="codeOfEthics" /><label class="form-check-label" for="codeOfEthics"><a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Code of Ethics (OAM / Glassdoor)</a></label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="partnerPolicy" /><label class="form-check-label" for="partnerPolicy"><a href="https://guru.com/YOUR_LINK_HERE" target="_blank">Partner Content & Admin Policy</a></label></div>
 
-            <hr>
-
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="submitForm" onchange="saveProgress()">
-              <label class="form-check-label" for="submitForm">Submitted Day 2 Wrap-Up Form</label>
-            </div>
+            <p class="mt-4 fw-bold">Wrap-Up</p>
+            <iframe src="https://docs.google.com/forms/d/e/EXAMPLE_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </form>
         </div>
       </div>
