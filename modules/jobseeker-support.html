@@ -33,27 +33,79 @@
   <!-- Accordion Start -->
   <div class="accordion" id="jsSupportAccordion">
 
-    <!-- Day 1: Overview & Setup -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day1Heading">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-          📘 Day 1 – Overview of Cases, Profile & Help Center
-        </button>
-      </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#jsSupportAccordion">
-        <div class="accordion-body">
-          <form>
-            <p class="fw-bold">🔍 Intro + Setup</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()"><label class="form-check-label" for="d1Intro">Overview of Jobseeker Support Training <span class="badge bg-secondary">TL-led</span></label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1HelpCenter" onchange="saveProgress()"><label class="form-check-label" for="d1HelpCenter">Explore Help Center: Profiles, Accounts, Alerts <span class="badge bg-secondary">Self-paced</span></label></div>
+    <!-- Day 1 – Jobseeker Path Introduction -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
+      📘 Day 1 – Intro to Jobseeker Path
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#modAccordion">
+    <div class="accordion-body p-3">
+      <form>
 
-            <p class="fw-bold mt-3">🧪 Practice</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1PracticeProfile" onchange="saveProgress()"><label class="form-check-label" for="d1PracticeProfile">Create test user profile and explore community <span class="badge bg-secondary">Self-paced</span></label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1SubmitCase" onchange="saveProgress()"><label class="form-check-label" for="d1SubmitCase">Submit test case using your profile <span class="badge bg-secondary">Self-paced</span></label></div>
-          </form>
+        <p class="fw-bold">🧭 Recap & Overview</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Recap">TL-Led Recap Discussion <span class="badge bg-secondary">TL-led</span></label>
         </div>
-      </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Intro">Intro to Jobseeker Support Path <span class="badge bg-secondary">TL-led</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📚 Help Center Exploration</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hcOverview" onchange="saveProgress()">
+          <label class="form-check-label" for="hcOverview">Review key Help Center articles <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <ul>
+          <li>Create a Glassdoor account</li>
+          <li>Activate your account</li>
+          <li>Account types and login FAQs</li>
+          <li>Profile setup & editing</li>
+        </ul>
+
+        <p class="fw-bold mt-3">🧪 Role Play Activities</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="buildTestProfile" onchange="saveProgress()">
+          <label class="form-check-label" for="buildTestProfile">Create test profile & explore Community <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="createResume" onchange="saveProgress()">
+          <label class="form-check-label" for="createResume">Create resume for test user <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="customEmailSettings" onchange="saveProgress()">
+          <label class="form-check-label" for="customEmailSettings">Customize test email alerts & subscriptions <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewEmailInbox" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewEmailInbox">Review job alerts and test inbox behavior <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">🧰 Action Steps</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="contactSupport" onchange="saveProgress()">
+          <label class="form-check-label" for="contactSupport">Submit a mock support case for your test user <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📖 Guru References</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruAccountTypes" onchange="saveProgress()">
+          <label class="form-check-label" for="guruAccountTypes">Read: “Account Types & Access” (Guru) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+        <p class="fw-bold mt-3">📘 Lessonly Module</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="lessonlyIntroJS" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyIntroJS">Complete: “Intro to Jobseeker Journey” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
+        </div>
+
+      </form>
     </div>
+  </div>
+</div>
 
     <!-- Day 2: Account & Alerts -->
     <div class="accordion-item">
