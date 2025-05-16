@@ -81,3 +81,6 @@ body {
   color: #212529;
   border: 1px solid #ced4da;
 }
+
+.badge-tl { background-color: #6c757d; }     /* TL-led */
+.badge-self { background-color: #e0a800; }   /* Self-paced */
