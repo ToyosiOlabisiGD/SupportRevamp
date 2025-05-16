@@ -31,73 +31,141 @@
   <!-- Begin Accordion -->
   <div class="accordion" id="modAccordion">
 
-    <!-- Day 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day1Heading">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-          📘 Day 1 – Intro to Moderation & Jobseeker Content
-        </button>
-      </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#modAccordion">
-        <div class="accordion-body p-3">
-          <form>
-            <p class="fw-bold">🧭 Recap & Introduction</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()"><label class="form-check-label" for="d1Recap">Joined recap and TL-led discussion</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()"><label class="form-check-label" for="d1Intro">Overview of Moderation Training Path</label></div>
+<!-- Relevant inside your <body> and #modAccordion container -->
 
-            <p class="fw-bold mt-3">🛠️ Contributions & Tools</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()"><label class="form-check-label" for="giveGet">Reviewed “Give to Get” Policy</label></div>
-            <!-- Role Play Prompt -->
-<div class="form-check mt-2">
-  <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
-  <label class="form-check-label" for="rolePlay">
-    🤔 Completed Role Play: <br />
-    <em>“If you were a jobseeker, what kind of information would you want to know before applying to a company?”</em>
-  </label>
+<!-- Day 1 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
+      📘 Day 1 – Intro to Moderation & Jobseeker Content
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#modAccordion">
+    <div class="accordion-body p-3">
+      <form>
+        <p class="fw-bold">🧭 Recap & Introduction</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Recap">
+            Joined recap and TL-led discussion <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Intro">
+            Overview of Moderation Training Path <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">🛠️ Contributions & Tools</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()">
+          <label class="form-check-label" for="giveGet">
+            Reviewed “Give to Get” Policy <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
+          <label class="form-check-label" for="rolePlay">
+            🤔 Completed Role Play: <em>“If you were a jobseeker, what kind of information would you want to know before applying to a company?”</em>
+            <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()">
+          <label class="form-check-label" for="submitReview">
+            Practiced review submission with test profile <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">📚 Help Center Readings</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesHelpCenter" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesHelpCenter">
+            Read Community Guidelines articles <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+        <ul>
+          <li>Writing Company Reviews</li>
+          <li>Interview Reviews & Salary Contributions</li>
+          <li>Tips to Avoid Violations</li>
+        </ul>
+
+        <p class="fw-bold mt-3">🧪 Self-Reflection & Quiz</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()">
+          <label class="form-check-label" for="quizDay1">
+            Completed Self-Check Quiz: “Why Jobseekers Contribute” <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()"><label class="form-check-label" for="submitReview">Practiced review submission with test profile</label></div>
-            
-            <p class="fw-bold mt-3">📚 Help Center Readings</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="guidelinesHelpCenter" onchange="saveProgress()"><label class="form-check-label" for="guidelinesHelpCenter">Read Community Guidelines articles</label></div>
-            <ul>
-              <li>Writing Company Reviews</li>
-              <li>Interview Reviews & Salary Contributions</li>
-              <li>Tips to Avoid Violations</li>
-            </ul>
-
-            <p class="fw-bold mt-3">🧪 Self-Reflection & Quiz</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()"><label class="form-check-label" for="quizDay1">Completed Self-Check Quiz: “Why Jobseekers Contribute”</label></div>
-          </form>
+<!-- Day 2 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day2Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
+      📗 Day 2 – Tools, Queues & Review Moderation Basics
+    </button>
+  </h2>
+  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#modAccordion">
+    <div class="accordion-body p-3">
+      <form>
+        <p class="fw-bold">🧭 Recap & Queue Access</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d2Recap">
+            Recapped Day 1 and reviewed TL comments <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
         </div>
-      </div>
-    </div>
-
-    <!-- Day 2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day2Heading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-          📗 Day 2 – Tools, Queues & Review Moderation Basics
-        </button>
-      </h2>
-      <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#modAccordion">
-        <div class="accordion-body p-3">
-          <form>
-            <p class="fw-bold">🧭 Recap & Queue Access</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()"><label class="form-check-label" for="d2Recap">Recapped Day 1 and reviewed TL comments</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="adminTool" onchange="saveProgress()"><label class="form-check-label" for="adminTool">Logged into Admin Tool & explored Queues</label></div>
-
-            <p class="fw-bold mt-3">📘 Lessonly & Guru</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="tier1Lesson" onchange="saveProgress()"><label class="form-check-label" for="tier1Lesson">Completed “Processing Content – Tier 1” (Lessonly)</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="modGuidelinesGuru" onchange="saveProgress()"><label class="form-check-label" for="modGuidelinesGuru">Reviewed Guru: “Mod Tier 1 Guidelines”</label></div>
-
-            <p class="fw-bold mt-3">🎯 Practice Tagging & Queue Basics</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="queueBasics" onchange="saveProgress()"><label class="form-check-label" for="queueBasics">Practiced identifying guideline violations</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="modCaseReview" onchange="saveProgress()"><label class="form-check-label" for="modCaseReview">Completed 3 basic moderation cases (internal links)</label></div>
-          </form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="adminTool" onchange="saveProgress()">
+          <label class="form-check-label" for="adminTool">
+            Logged into Admin Tool & explored Queues <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
         </div>
-      </div>
+
+        <p class="fw-bold mt-3">📘 Lessonly & Guru</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="tier1Lesson" onchange="saveProgress()">
+          <label class="form-check-label" for="tier1Lesson">
+            Completed “Processing Content – Tier 1” (Lessonly) <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modGuidelinesGuru" onchange="saveProgress()">
+          <label class="form-check-label" for="modGuidelinesGuru">
+            Reviewed Guru: “Mod Tier 1 Guidelines” <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">🎯 Practice Tagging & Queue Basics</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="queueBasics" onchange="saveProgress()">
+          <label class="form-check-label" for="queueBasics">
+            Practiced identifying guideline violations <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modCaseReview" onchange="saveProgress()">
+          <label class="form-check-label" for="modCaseReview">
+            Completed 3 basic moderation cases (internal links) <span class="text-muted">🧘 Self-paced</span>
+          </label>
+        </div>
+
+        <!-- NEW: Shadow session placeholder -->
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" id="shadowPreview" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowPreview">
+            Shadowed 1 live case example (light preview of queue work) <span class="text-muted">🧑‍🏫 TL-led</span>
+          </label>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
   </div> <!-- End Accordion -->
 </div> <!-- End container -->
