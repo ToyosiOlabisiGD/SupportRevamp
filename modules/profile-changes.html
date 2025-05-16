@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
 <a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; left: 20px; z-index: 999;">
   ← Return to Menu
 </a>
@@ -16,89 +17,90 @@
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="../index.html">
       <img src="../assets/gdlogo.png" alt="GD Logo" height="30" class="me-2" />
-      Customer Support Training – Profile Changes
+      Customer Support Training
     </a>
   </div>
 </nav>
 
 <div class="container">
-  <div class="card mb-4">
-    <div class="card-header bg-info text-white">📘 Profile Changes – Day 1: Foundations</div>
-    <div class="card-body">
-      <form>
+  <div class="accordion" id="pcAccordion">
 
-        <!-- Recap + Intro -->
-        <p class="fw-bold">🧭 Recap & Introduction</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Recap">TL-led recap of previous learning <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Intro" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Intro">Intro to Profile Changes Support Path <span class="badge bg-secondary">TL-led</span></label>
-        </div>
+    <!-- Day 1 – Intro to Profile Changes -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="pcDay1Header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay1" aria-expanded="true" aria-controls="pcDay1">
+          🗂️ Day 1 – Intro to Profile Changes
+        </button>
+      </h2>
+      <div id="pcDay1" class="accordion-collapse collapse show" aria-labelledby="pcDay1Header" data-bs-parent="#pcAccordion">
+        <div class="accordion-body p-3">
+          <form>
 
-        <!-- Core Content -->
-        <p class="fw-bold mt-3">📚 Core Concepts</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Welcome" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Welcome">Complete: “Welcome to PC” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Terminology" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Terminology">Read: Profile Changes Terminology (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Video" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Video">Watch: Glassdoor Profiles Overview video <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+            <p class="fw-bold">🧭 Recap & Orientation</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Recap" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Recap">TL-led recap and intro discussion <span class="badge bg-secondary">TL-led</span></label>
+            </div>
 
-        <!-- Admin Overview -->
-        <p class="fw-bold mt-3">🧰 Admin Tools & Data</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Admin" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Admin">Complete: “Admin Details” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1AdminArticle" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1AdminArticle">Review: Admin Page Overview (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+            <p class="fw-bold mt-3">📘 Foundation: Profile Concepts</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Terminology" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Terminology">Review: “Profile Changes Terminology” (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Video" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Video">Watch: “Glassdoor Profiles Overview” video <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <!-- Employer Center -->
-        <p class="fw-bold mt-3">🏢 Employer Center Structure</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1EmployerCenter" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1EmployerCenter">Complete: “Employer Center Details” (Lessonly) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <ul>
-          <li>Employer Center Analytics</li>
-          <li>Profile & Partner IDs</li>
-          <li>Office location handling</li>
-          <li>Top-Level Domains (TLDs)</li>
-        </ul>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1ECDArticle" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1ECDArticle">Read: Employer Center Overview (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+            <p class="fw-bold mt-3">📚 Lessonly Assignments</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Welcome" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Welcome">Complete: “Welcome to Profile Changes” <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Admin" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Admin">Complete: “Admin Details” (Admin Page Overview) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <!-- Practice Time -->
-        <p class="fw-bold mt-3">🧪 Guided Practice (Salesforce)</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1Practice" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1Practice">Practice Set: Create profile, add messaging/banner, build subsidiary <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
+            <p class="fw-bold mt-3">🧰 Role-Based Product Exploration</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Tabs" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Tabs">Explore Employer Center tabs: overview, diversity, reviews, etc. <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-        <!-- Submit -->
-        <p class="fw-bold mt-3">📤 Wrap-Up</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc1WrapUp" onchange="saveProgress()">
-          <label class="form-check-label" for="pc1WrapUp">Wrap recap with TL: Questions, key takeaways <span class="badge bg-secondary">TL-led</span></label>
-        </div>
+            <p class="fw-bold mt-3">📥 Practice Case Work</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1CreateProfile" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1CreateProfile">Practice Case: Create new employer profile <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Subsidiary" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Subsidiary">Practice Case: Add subsidiary profile <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1Banner" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1Banner">Practice Case: Add profile messaging/banner <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
 
-      </form>
+            <p class="fw-bold mt-3">📖 Guru & Resource Review</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1GuruAdmin" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1GuruAdmin">Read: Admin Page Overview (Guru or Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
+            </div>
+
+            <p class="fw-bold mt-3">📤 Submit Progress</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="pc1SubmitForm" onchange="saveProgress()">
+              <label class="form-check-label" for="pc1SubmitForm">Submit Day 1 Progress via Form (Link TBD) <span class="badge bg-warning text-dark">Required</span></label>
+            </div>
+
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+  </div> <!-- end accordion -->
+</div> <!-- end container -->
 
 <script>
   function saveProgress() {
