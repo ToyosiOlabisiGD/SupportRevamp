@@ -70,3 +70,14 @@ body {
   margin-bottom: 0.75rem;
   border: 1px solid #dee2e6;
 }
+
+.badge-tl {
+  background-color: #6c757d; /* Bootstrap secondary */
+  color: white;
+}
+
+.badge-self {
+  background-color: #f8f9fa; /* Bootstrap light */
+  color: #212529;
+  border: 1px solid #ced4da;
+}
