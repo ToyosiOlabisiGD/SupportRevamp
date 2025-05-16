@@ -55,7 +55,26 @@
               <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
               <div class="accordion" id="day1Accordion">
 
-                <!-- Salesforce Training -->
+                <!-- Recap -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d1_intro">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_introCollapse" aria-expanded="false" aria-controls="d1_introCollapse">
+                      🧭 Recap & Intro
+                    </button>
+                  </h2>
+                  <div id="d1_introCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="d1_recap" onchange="saveProgress()" />
+                          <label class="form-check-label" for="d1_recap">Attended TL-led recap & intro session</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Salesforce Module -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="d1_sf">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_sfCollapse" aria-expanded="false" aria-controls="d1_sfCollapse">
@@ -85,7 +104,6 @@
                   </h2>
                   <div id="d1_practiceCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
                     <div class="accordion-body">
-                      <p>Practice using Salesforce by working 3 sample cases from your queue:</p>
                       <form>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="sfOmni" onchange="saveProgress()" />
@@ -129,6 +147,25 @@
                   </div>
                 </div>
 
+                <!-- Alias -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d1_alias">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d1_aliasCollapse" aria-expanded="false" aria-controls="d1_aliasCollapse">
+                      🏷️ Alias Selection
+                    </button>
+                  </h2>
+                  <div id="d1_aliasCollapse" class="accordion-collapse collapse" data-bs-parent="#day1Accordion">
+                    <div class="accordion-body">
+                      <form>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="aliasPicked" onchange="saveProgress()" />
+                          <label class="form-check-label" for="aliasPicked">Submitted 3 external alias options</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
               </div> <!-- end inner day1Accordion -->
             </div>
           </div>
@@ -140,7 +177,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header" id="day2Heading">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-          📗 Day 2 – Communication, Tagging & Support Skills
+          📗 Day 2 – Support Concepts & Case Work
         </button>
       </h2>
       <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#dayAccordion">
@@ -150,46 +187,61 @@
               <p class="text-muted mb-3"><strong>✅ Estimated Time:</strong> 8 hours</p>
               <div class="accordion" id="day2Accordion">
 
-                <!-- Email Writing -->
+                <!-- Jobseeker/Employer FAQs -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="d2_email">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_emailCollapse" aria-expanded="false" aria-controls="d2_emailCollapse">
-                      ✉️ Support Writing Essentials
+                  <h2 class="accordion-header" id="d2_faqs">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_faqsCollapse" aria-expanded="false" aria-controls="d2_faqsCollapse">
+                      🗂️ Jobseeker / Employer FAQs Module
                     </button>
                   </h2>
-                  <div id="d2_emailCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+                  <div id="d2_faqsCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
                     <div class="accordion-body">
                       <form>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="emailTips" onchange="saveProgress()" />
-                          <label class="form-check-label" for="emailTips">Writing Emails in Support: 6 Tips</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="perfectEmail" onchange="saveProgress()" />
-                          <label class="form-check-label" for="perfectEmail">How to Write a PERFECT Customer Service Email?</label>
+                          <input class="form-check-input" type="checkbox" id="faqsModule" onchange="saveProgress()" />
+                          <label class="form-check-label" for="faqsModule">
+                            <a href="#" target="_blank">Complete Jobseeker/Employer FAQ Module (Lessonly)</a> <span class="text-muted">(Link coming soon)</span>
+                          </label>
                         </div>
                       </form>
                     </div>
                   </div>
                 </div>
 
-                <!-- Empathy & Tone -->
+                <!-- Case Practice -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="d2_empathy">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_empathyCollapse" aria-expanded="false" aria-controls="d2_empathyCollapse">
-                      🧡 Empathy, Language & Tone
+                  <h2 class="accordion-header" id="d2_cases">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_casesCollapse" aria-expanded="false" aria-controls="d2_casesCollapse">
+                      💼 Practice Cases: FAQs & Feedback
                     </button>
                   </h2>
-                  <div id="d2_empathyCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+                  <div id="d2_casesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
                     <div class="accordion-body">
                       <form>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="empathy" onchange="saveProgress()" />
-                          <label class="form-check-label" for="empathy">This is How You Communicate Empathy</label>
+                          <input class="form-check-input" type="checkbox" id="casesCompleted" onchange="saveProgress()" />
+                          <label class="form-check-label" for="casesCompleted">Completed 4 Jobseeker/Employer practice cases</label>
                         </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Guru Support Types -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="d2_types">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2_typesCollapse" aria-expanded="false" aria-controls="d2_typesCollapse">
+                      📋 Care Resource Types (Guru)
+                    </button>
+                  </h2>
+                  <div id="d2_typesCollapse" class="accordion-collapse collapse" data-bs-parent="#day2Accordion">
+                    <div class="accordion-body">
+                      <form>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="phrases" onchange="saveProgress()" />
-                          <label class="form-check-label" for="phrases">Openers, Closers & Empathetic Phrases</label>
+                          <input class="form-check-input" type="checkbox" id="typesReviewed" onchange="saveProgress()" />
+                          <label class="form-check-label" for="typesReviewed">
+                            <a href="#" target="_blank">Reviewed Case Types in Guru</a> <span class="text-muted">(Link coming soon)</span>
+                          </label>
                         </div>
                       </form>
                     </div>
