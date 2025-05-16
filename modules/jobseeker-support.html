@@ -346,31 +346,67 @@
   <div id="day5Collapse" class="accordion-collapse collapse" aria-labelledby="day5Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
-        <h6 class="fw-bold">Recap & Review Handling</h6>
+
+        <h6 class="fw-bold">Recap + Plan</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Recap">Reviewed tag issues + escalation paths with TL</label>
+          <label class="form-check-label" for="d5Recap">TL-led sync on FAQ follow-ups and open tag issues
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Help Center Articles</h6>
-        <ul>
-          <li>Where is my review?</li>
-          <li>Helpful votes and filters</li>
-          <li>Reporting and disputes</li>
-          <li>Editing or deleting a review</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Work</h6>
+        <h6 class="fw-bold mt-3">Help Center Exploration</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d5Cases" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Cases">Handled 6 flagged or disputed review cases</label>
+          <input class="form-check-input" type="checkbox" id="hcReviewHelp" onchange="saveProgress()">
+          <label class="form-check-label" for="hcReviewHelp">Reviewed: Review Moderation & Reporting pages</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewVisibility" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewVisibility">Help article: Where is my review?</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="helpfulVotes" onchange="saveProgress()">
+          <label class="form-check-label" for="helpfulVotes">Help article: Helpful votes, filtering, editing</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reportingReview" onchange="saveProgress()">
+          <label class="form-check-label" for="reportingReview">Help article: Reporting a review</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="employerRights" onchange="saveProgress()">
+          <label class="form-check-label" for="employerRights">Help article: Employer response rights</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="controversialContent" onchange="saveProgress()">
+          <label class="form-check-label" for="controversialContent">Help article: Disputes & controversial content</label>
         </div>
 
-        <h6 class="fw-bold mt-3">Resources</h6>
+        <h6 class="fw-bold mt-3">Knowledge Resources</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d5Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Guru">Read: “Review Escalation Guidelines” (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="guruReviewEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="guruReviewEscalation">Read: “Review Escalation Guidelines” (Guru)</label>
         </div>
+
+        <h6 class="fw-bold mt-3">Practice & Queue Work</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewCases" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewCases">Completed 6 flagged or disputed review cases
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shadowReviewQueue" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowReviewQueue">Shadowed review queue & discussed cases with TL
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="liveReviewQueue" onchange="saveProgress()">
+          <label class="form-check-label" for="liveReviewQueue">Worked from queue with live TL feedback
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+
       </form>
     </div>
   </div>
