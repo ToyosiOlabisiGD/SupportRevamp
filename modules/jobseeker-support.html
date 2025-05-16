@@ -562,34 +562,57 @@
   <div id="day8Collapse" class="accordion-collapse collapse" aria-labelledby="day8Heading" data-bs-parent="#jsSupportAccordion">
     <div class="accordion-body">
       <form>
-        <h6 class="fw-bold">Recap & Queue Prep</h6>
+
+        <h6 class="fw-bold">TL-Led Sync</h6>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d8Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Recap">Synced with TL for live case goals</label>
+          <label class="form-check-label" for="d8Recap">Participated in TL-led recap and queue planning
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
         </div>
 
-        <h6 class="fw-bold mt-3">Help Center Exploration</h6>
-        <ul>
-          <li>How to apply for jobs</li>
-          <li>Managing alerts and app settings</li>
-          <li>Saved jobs and application history</li>
-        </ul>
-
-        <h6 class="fw-bold mt-3">Practice Work</h6>
+        <h6 class="fw-bold mt-3">Help Center Review</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d8Cases" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Cases">Completed 4 job alert or feedback cases</label>
+          <input class="form-check-input" type="checkbox" id="applyJobs" onchange="saveProgress()">
+          <label class="form-check-label" for="applyJobs">Reviewed: How to apply to jobs on Glassdoor</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="jobAlertsSettings" onchange="saveProgress()">
+          <label class="form-check-label" for="jobAlertsSettings">Reviewed: Job alerts & app-based settings</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="savedJobs" onchange="saveProgress()">
+          <label class="form-check-label" for="savedJobs">Reviewed: Saved jobs & viewing application history</label>
         </div>
 
-        <h6 class="fw-bold mt-3">Resources</h6>
+        <h6 class="fw-bold mt-3">Guru & Lessonly</h6>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d8Lessonly" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Lessonly">Completed: “Product Support” (Lessonly)</label>
+          <input class="form-check-input" type="checkbox" id="guruJobAccess" onchange="saveProgress()">
+          <label class="form-check-label" for="guruJobAccess">Read: Job Access + Product Support (Guru)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d8Guru" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Guru">Read: “Job Access + Product Support” (Guru)</label>
+          <input class="form-check-input" type="checkbox" id="lessonlyProductSupport" onchange="saveProgress()">
+          <label class="form-check-label" for="lessonlyProductSupport">Completed: Product Support Module (Lessonly)
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
         </div>
+
+        <h6 class="fw-bold mt-3">Practice + QA Time</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="faqPracticeCases" onchange="saveProgress()">
+          <label class="form-check-label" for="faqPracticeCases">Completed 4 job alert/product feedback cases
+            <span class="badge bg-info text-dark">Self-paced</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="liveWorkD8" onchange="saveProgress()">
+          <label class="form-check-label" for="liveWorkD8">Live case handling with TL feedback
+            <span class="badge bg-secondary">TL-led</span>
+          </label>
+        </div>
+
       </form>
     </div>
   </div>
