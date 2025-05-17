@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; right: 20px; z-index: 999;">
-  ← Return to Menu</a>
+<a href="../index.html" class="btn btn-success position-fixed" style="top: 20px; right: 20px; z-index: 999;">← Return to Menu</a>
 
 <nav class="navbar navbar-dark bg-success mb-4">
   <div class="container-fluid">
@@ -29,577 +28,69 @@
     </div>
   </div>
 
-  <!-- Begin Accordion -->
+  <!-- Accordion Container -->
   <div class="accordion" id="modAccordion">
 
-<!-- Relevant inside your <body> and #modAccordion container -->
+    <!-- Day 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="day1Heading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+          📘 Day 1 – Intro to Moderation & Jobseeker Content
+        </button>
+      </h2>
+      <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading">
+        <div class="accordion-body">
+          <form>
+            <p class="fw-bold">🧭 Recap & Introduction</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+              <label class="form-check-label" for="d1Recap">Joined recap and TL-led discussion <span class="badge badge-tl">TL-led</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
+              <label class="form-check-label" for="d1Intro">Overview of Moderation Training Path <span class="badge badge-tl">TL-led</span></label>
+            </div>
 
-<!-- Day 1 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day1Heading">
-    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="true" aria-controls="day1Collapse">
-      📘 Day 1 – Intro to Moderation & Jobseeker Content
-    </button>
-  </h2>
-  <div id="day1Collapse" class="accordion-collapse collapse show" aria-labelledby="day1Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Introduction</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d1Recap">
-            Joined recap and TL-led discussion <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
-          <label class="form-check-label" for="d1Intro">
-            Overview of Moderation Training Path <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
+            <p class="fw-bold mt-3">🛠️ Contributions & Tools</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()">
+              <label class="form-check-label" for="giveGet">Reviewed “Give to Get” Policy <span class="badge badge-self">Self-paced</span></label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
+              <label class="form-check-label" for="rolePlay">🤔 Completed Role Play: <em>“If you were a jobseeker...”</em> <span class="badge badge-tl">TL-led</span></label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()">
+              <label class="form-check-label" for="submitReview">Practiced review submission with test profile <span class="badge badge-tl">TL-led</span></label>
+            </div>
 
-        <p class="fw-bold mt-3">🛠️ Contributions & Tools</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()">
-          <label class="form-check-label" for="giveGet">
-            Reviewed “Give to Get” Policy <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-        <div class="form-check mt-2">
-          <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
-          <label class="form-check-label" for="rolePlay">
-            🤔 Completed Role Play: <em>“If you were a jobseeker, what kind of information would you want to know before applying to a company?”</em> <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()">
-          <label class="form-check-label" for="submitReview">
-            Practiced review submission with test profile <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
+            <p class="fw-bold mt-3">📚 Help Center Readings</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="guidelinesHelpCenter" onchange="saveProgress()">
+              <label class="form-check-label" for="guidelinesHelpCenter">Read Community Guidelines articles <span class="badge badge-self">Self-paced</span></label>
+            </div>
+            <ul>
+              <li>Writing Company Reviews</li>
+              <li>Interview Reviews & Salary Contributions</li>
+              <li>Tips to Avoid Violations</li>
+            </ul>
 
-        <p class="fw-bold mt-3">📚 Help Center Readings</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guidelinesHelpCenter" onchange="saveProgress()">
-          <label class="form-check-label" for="guidelinesHelpCenter">
-            Read Community Guidelines articles <span class="badge badge-self">Self-paced</span>
-          </label>
+            <p class="fw-bold mt-3">🧪 Self-Reflection & Quiz</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()">
+              <label class="form-check-label" for="quizDay1">Completed Self-Check Quiz: “Why Jobseekers Contribute” <span class="badge badge-self">Self-paced</span></label>
+            </div>
+          </form>
         </div>
-        <ul>
-          <li>Writing Company Reviews</li>
-          <li>Interview Reviews & Salary Contributions</li>
-          <li>Tips to Avoid Violations</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🧪 Self-Reflection & Quiz</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()">
-          <label class="form-check-label" for="quizDay1">
-            Completed Self-Check Quiz: “Why Jobseekers Contribute” <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-      </form>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Day 2 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day2Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2Collapse" aria-expanded="false" aria-controls="day2Collapse">
-      📗 Day 2 – Tools, Queues & Review Moderation Basics
-    </button>
-  </h2>
-  <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Queue Access</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Recap">
-            Recapped Day 1 and reviewed TL comments <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="adminTool" onchange="saveProgress()">
-          <label class="form-check-label" for="adminTool">
-            Logged into Admin Tool & explored Queues <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly & Guru</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="tier1Lesson" onchange="saveProgress()">
-          <label class="form-check-label" for="tier1Lesson">
-            Completed “Processing Content – Tier 1” (Lessonly) <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modGuidelinesGuru" onchange="saveProgress()">
-          <label class="form-check-label" for="modGuidelinesGuru">
-            Reviewed Guru: “Mod Tier 1 Guidelines” <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">🎯 Practice Tagging & Queue Basics</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="queueBasics" onchange="saveProgress()">
-          <label class="form-check-label" for="queueBasics">
-            Practiced identifying guideline violations <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modCaseReview" onchange="saveProgress()">
-          <label class="form-check-label" for="modCaseReview">
-            Completed 3 basic moderation cases <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <div class="form-check mt-2">
-          <input class="form-check-input" type="checkbox" id="shadowPreview" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowPreview">
-            Shadowed 1 live case example (light preview of queue work) <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-    
-<!-- Day 3 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day3Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
-      📙 Day 3 – Job Type, Titles & Basic Rejections
-    </button>
-  </h2>
-  <div id="day3Collapse" class="accordion-collapse collapse" aria-labelledby="day3Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Discussion</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d3Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d3Recap">
-            Reviewed Day 2 and TL-led check-in <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lesson: Tier 1 Rejection Types</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="tier1Rejections" onchange="saveProgress()">
-          <label class="form-check-label" for="tier1Rejections">
-            Completed “Tier 1 Rejections – Grammar, Irrelevant, Not Authentic” (Lessonly) <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">🧠 Tagging Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="jobTypePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="jobTypePractice">
-            Job Type: Independent Contractor vs Freelancer <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="bogusGrammar" onchange="saveProgress()">
-          <label class="form-check-label" for="bogusGrammar">
-            Tagged bogus for irrelevant/grammar-based content <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="jobTitleNotes" onchange="saveProgress()">
-          <label class="form-check-label" for="jobTitleNotes">
-            Identified inappropriate or invalid job titles <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru Review</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modGuruRef" onchange="saveProgress()">
-          <label class="form-check-label" for="modGuruRef">
-            Reviewed Guru: Job Type, Title, and Bogus Criteria <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">✅ Practice Cases</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="practiceJobTypeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="practiceJobTypeCases">
-            Completed 3 practice cases using bogus and job title tags <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 4 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day4Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
-      📕 Day 4 – Formatting Flags, Disclaimers & Live Observation
-    </button>
-  </h2>
-  <div id="day4Collapse" class="accordion-collapse collapse" aria-labelledby="day4Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Flag Types</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Recap">
-            Joined TL-led recap and questions <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingLesson" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingLesson">
-            Completed Formatting & Profanity Guidelines (Lessonly) <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">💡 Tagging Exercises</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="capitalization" onchange="saveProgress()">
-          <label class="form-check-label" for="capitalization">
-            Tagged excessive capitalization or all caps content <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="foreignLanguage" onchange="saveProgress()">
-          <label class="form-check-label" for="foreignLanguage">
-            Tagged foreign language & unsupported content <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru Reference</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingGuru" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingGuru">
-            Reviewed Guru: Formatting & Profanity Tag Reference <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">🎯 Practice & Shadowing</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingPracticeCases">
-            Completed 3 formatting tag practice cases <span class="badge badge-self">Self-paced</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="liveShadowSession" onchange="saveProgress()">
-          <label class="form-check-label" for="liveShadowSession">
-            Observed 1 live queue session with agent or TL <span class="badge badge-tl">TL-led</span>
-          </label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 5 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day5Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day5Collapse" aria-expanded="false" aria-controls="day5Collapse">
-      🟧 Day 5 – Personal Attacks, Legal, Internal Info & Escalation
-    </button>
-  </h2>
-  <div id="day5Collapse" class="accordion-collapse collapse" aria-labelledby="day5Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & TL Sync</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Recap">Recapped Day 4 and reviewed questions <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🚨 Sensitive Content Tags</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="personalAttack" onchange="saveProgress()">
-          <label class="form-check-label" for="personalAttack">Reviewed personal attacks and when to escalate <span class="badge badge-tl">TL-led</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="legalContent" onchange="saveProgress()">
-          <label class="form-check-label" for="legalContent">Reviewed legal threats or language <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="internalSecrets" onchange="saveProgress()">
-          <label class="form-check-label" for="internalSecrets">Tagged confidential info (emails, screenshots, etc.) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Guru Reference</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruEscalation" onchange="saveProgress()">
-          <label class="form-check-label" for="guruEscalation">Reviewed Guru: Content Escalation Protocol <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧪 Practice & Shadow</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modCasesD5" onchange="saveProgress()">
-          <label class="form-check-label" for="modCasesD5">Completed 3 sensitive content cases <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="shadowSessionD5" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowSessionD5">Shadowed 2 live sensitive review sessions <span class="badge badge-tl">TL-led</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 6 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day6Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day6Collapse" aria-expanded="false" aria-controls="day6Collapse">
-      🟨 Day 6 – Discrimination, Guidelines Challenges & Flagging Nuance
-    </button>
-  </h2>
-  <div id="day6Collapse" class="accordion-collapse collapse" aria-labelledby="day6Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Case Review</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d6Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d6Recap">Recapped Day 5 and reviewed nuanced tags <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧠 Tagging Complex Violations</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="discriminationFlag" onchange="saveProgress()">
-          <label class="form-check-label" for="discriminationFlag">Reviewed Discriminatory Content Guidelines <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guidelinesChallenge" onchange="saveProgress()">
-          <label class="form-check-label" for="guidelinesChallenge">Handled “Challenging Glassdoor Guidelines” examples <span class="badge badge-tl">TL-led</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="localLaw" onchange="saveProgress()">
-          <label class="form-check-label" for="localLaw">Spotted content that may violate local law <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📚 Guru & Lessonly</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modRejectionReasons" onchange="saveProgress()">
-          <label class="form-check-label" for="modRejectionReasons">Completed: “Moderation Rejection Reasons” (Lessonly) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruFlagged" onchange="saveProgress()">
-          <label class="form-check-label" for="guruFlagged">Reviewed Guru: Flag Nuance Examples <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🧪 Shadow + Practice</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="shadowSessionD6" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowSessionD6">Shadowed Flagged/Discriminatory Review Cases <span class="badge badge-tl">TL-led</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modCasesD6" onchange="saveProgress()">
-          <label class="form-check-label" for="modCasesD6">Completed 3 advanced moderation cases <span class="badge badge-self">Self-paced</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- Day 7 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day7Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day7Collapse" aria-expanded="false" aria-controls="day7Collapse">
-      🟦 Day 7 – Flags, Interview Content & Real-Time Practice
-    </button>
-  </h2>
-  <div id="day7Collapse" class="accordion-collapse collapse" aria-labelledby="day7Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Interview Focus</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d7Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d7Recap">Recapped Day 6 and introduced Interview moderation <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🎓 Interview Review Guidelines</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewGuidelines" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewGuidelines">Completed: “Interview Guidelines” (Lessonly) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewGuru" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewGuru">Reviewed Guru: Interview Flag Types <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📝 Practice Tagging – Interviews</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewQuestions" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewQuestions">Tagged inappropriate questions and flagged <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewAnswers" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewAnswers">Tagged incorrect or guideline-violating answers <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Shadow Session</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewShadow" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewShadow">Shadowed live interview queue session <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">✅ Practice Cases – Interviews</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="interviewPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="interviewPracticeCases">Completed 3 practice cases with interview flags <span class="badge badge-self">Self-paced</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 8 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day8Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day8Collapse" aria-expanded="false" aria-controls="day8Collapse">
-      🟩 Day 8 – Employer Responses, Photos & Salary Guidelines
-    </button>
-  </h2>
-  <div id="day8Collapse" class="accordion-collapse collapse" aria-labelledby="day8Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Multi-Content Review</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d8Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d8Recap">Recapped Day 7 and prepared for content variety <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📸 Photo, Salary & Employer Response</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="photoGuidelines" onchange="saveProgress()">
-          <label class="form-check-label" for="photoGuidelines">Reviewed Photo Guidelines (Lessonly or Guru) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="salaryGuidelines" onchange="saveProgress()">
-          <label class="form-check-label" for="salaryGuidelines">Reviewed Salary Guidelines <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="employerResponseGuidelines" onchange="saveProgress()">
-          <label class="form-check-label" for="employerResponseGuidelines">Reviewed Employer Response Guidelines <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">✅ Practice + Tagging</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="practicePhotoTagging" onchange="saveProgress()">
-          <label class="form-check-label" for="practicePhotoTagging">Tagged and explained photo moderation examples <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="salaryTagging" onchange="saveProgress()">
-          <label class="form-check-label" for="salaryTagging">Tagged salary violations in sample cases <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="employerResponsePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="employerResponsePractice">Tagged guideline issues in employer responses <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👥 Shadowing & Feedback</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="multiContentShadow" onchange="saveProgress()">
-          <label class="form-check-label" for="multiContentShadow">Shadowed multi-content moderation queue (Photos, Salaries, ERs) <span class="badge badge-tl">TL-led</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- Day 9 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day9Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day9Collapse" aria-expanded="false" aria-controls="day9Collapse">
-      🟪 Day 9 – Tier 2 Flags, MLMs, and Graduation Practice
-    </button>
-  </h2>
-  <div id="day9Collapse" class="accordion-collapse collapse" aria-labelledby="day9Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Tier 2 Topics</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d9Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d9Recap">Recapped Day 8 and introduced Tier 2 workflows <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🚩 Tier 2 Flag Nuances</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="flaggedContentModule" onchange="saveProgress()">
-          <label class="form-check-label" for="flaggedContentModule">Completed: “Flagged Content” (Lessonly) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="mlmGuidelines" onchange="saveProgress()">
-          <label class="form-check-label" for="mlmGuidelines">Reviewed MLM guideline exceptions and examples <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">✅ Practice & Verification</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="tier2Examples" onchange="saveProgress()">
-          <label class="form-check-label" for="tier2Examples">Worked through flagged content scenarios (Guru) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="tier2PracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="tier2PracticeCases">Completed 3 flagged or MLM practice cases <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Shadow Session</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="flagShadow" onchange="saveProgress()">
-          <label class="form-check-label" for="flagShadow">Shadowed flagged review moderation live session <span class="badge badge-tl">TL-led</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 10 -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="day10Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day10Collapse" aria-expanded="false" aria-controls="day10Collapse">
-      🎓 Day 10 – Assessment, Templates & Final Wrap-Up
-    </button>
-  </h2>
-  <div id="day10Collapse" class="accordion-collapse collapse" aria-labelledby="day10Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-        <p class="fw-bold">🧭 Recap & Graduation Prep</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d10Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d10Recap">Final recap and Q&A with TL <span class="badge badge-tl">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📄 Templates & Notes</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="templateReview" onchange="saveProgress()">
-          <label class="form-check-label" for="templateReview">Reviewed note writing templates (Guru) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="templatePractice" onchange="saveProgress()">
-          <label class="form-check-label" for="templatePractice">Wrote and submitted 2 practice notes for review <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📝 Final Assessments</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="assessmentReviews" onchange="saveProgress()">
-          <label class="form-check-label" for="assessmentReviews">Completed: Review Moderation Readiness Assessment <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="assessmentPhotos" onchange="saveProgress()">
-          <label class="form-check-label" for="assessmentPhotos">Completed: Photo or Flagged Content Assessment <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">🎉 Final Wrap-Up</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="wrapUpSession" onchange="saveProgress()">
-          <label class="form-check-label" for="wrapUpSession">Wrap-up & graduation session with TL <span class="badge badge-tl">TL-led</span></label>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+    <!-- Repeat this pattern for Days 2–10 -->
 
   </div> <!-- End Accordion -->
-</div> <!-- End container -->
+</div> <!-- End Container -->
 
-<!-- Scripts -->
 <script>
 function saveProgress() {
   document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
@@ -613,6 +104,7 @@ function loadProgress() {
 }
 window.onload = loadProgress;
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
