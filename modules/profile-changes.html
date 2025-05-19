@@ -23,75 +23,83 @@
 </nav>
 
 <div class="container">
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white fw-bold">Profile Changes</div>
+    <div class="card-body bg-light">
+      <p>This module introduces common profile change requests such as creating, updating, or merging employer profiles, and how to process them in Salesforce and Admin tools.</p>
+      <p class="fw-bold">Estimated Time: 4 days (8 hrs/day)</p>
+    </div>
+  </div>
+
   <div class="accordion" id="pcAccordion">
 
-    <!-- Day 1 – Intro to Profile Changes -->
+    <!-- Day 1 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="pcDay1Header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay1" aria-expanded="true" aria-controls="pcDay1">
-          🗂️ Day 1 – Intro to Profile Changes
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay1" aria-expanded="false" aria-controls="pcDay1">
+          Day 1 – Intro to Profile Changes
         </button>
       </h2>
-      <div id="pcDay1" class="accordion-collapse collapse show" aria-labelledby="pcDay1Header" data-bs-parent="#pcAccordion">
+      <div id="pcDay1" class="accordion-collapse collapse" aria-labelledby="pcDay1Header">
         <div class="accordion-body p-3">
           <form>
 
-            <p class="fw-bold">🧭 Recap & Orientation</p>
+            <p class="fw-bold">Recap & Orientation</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Recap" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Recap">TL-led recap and intro discussion <span class="badge bg-secondary">TL-led</span></label>
+              <label class="form-check-label" for="pc1Recap">TL-led recap and intro discussion <span class="badge badge-tl">TL-led</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📘 Foundation: Profile Concepts</p>
+            <p class="fw-bold mt-3">Foundation: Profile Concepts</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Terminology" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Terminology">Review: “Profile Changes Terminology” (Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Terminology">Review: “Profile Changes Terminology” (Looking Glass) <span class="badge badge-self">Self-paced</span></label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Video" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Video">Watch: “Glassdoor Profiles Overview” video <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Video">Watch: “Glassdoor Profiles Overview” video <span class="badge badge-self">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📚 Lessonly Assignments</p>
+            <p class="fw-bold mt-3">Lessonly Assignments</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Welcome" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Welcome">Complete: “Welcome to Profile Changes” <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Welcome">Complete: “Welcome to Profile Changes” <span class="badge badge-self">Self-paced</span></label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Admin" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Admin">Complete: “Admin Details” (Admin Page Overview) <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Admin">Complete: “Admin Details” (Admin Page Overview) <span class="badge badge-self">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">🧰 Role-Based Product Exploration</p>
+            <p class="fw-bold mt-3">Role-Based Product Exploration</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Tabs" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Tabs">Explore Employer Center tabs: overview, diversity, reviews, etc. <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Tabs">Explore Employer Center tabs: overview, diversity, reviews, etc. <span class="badge badge-self">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📥 Practice Case Work</p>
+            <p class="fw-bold mt-3">Practice Case Work</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1CreateProfile" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1CreateProfile">Practice Case: Create new employer profile <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1CreateProfile">Practice Case: Create new employer profile <span class="badge badge-self">Self-paced</span></label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Subsidiary" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Subsidiary">Practice Case: Add subsidiary profile <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Subsidiary">Practice Case: Add subsidiary profile <span class="badge badge-self">Self-paced</span></label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1Banner" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1Banner">Practice Case: Add profile messaging/banner <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1Banner">Practice Case: Add profile messaging/banner <span class="badge badge-self">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📖 Guru & Resource Review</p>
+            <p class="fw-bold mt-3">Guru & Resource Review</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1GuruAdmin" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1GuruAdmin">Read: Admin Page Overview (Guru or Looking Glass) <span class="badge bg-info text-dark">Self-paced</span></label>
+              <label class="form-check-label" for="pc1GuruAdmin">Read: Admin Page Overview (Guru or Looking Glass) <span class="badge badge-self">Self-paced</span></label>
             </div>
 
-            <p class="fw-bold mt-3">📤 Submit Progress</p>
+            <p class="fw-bold mt-3">Submit Progress</p>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="pc1SubmitForm" onchange="saveProgress()">
-              <label class="form-check-label" for="pc1SubmitForm">Submit Day 1 Progress via Form (Link TBD) <span class="badge bg-warning text-dark">Required</span></label>
+              <label class="form-check-label" for="pc1SubmitForm">Submit Day 1 Progress via Form (Link TBD) <span class="badge badge-final">Required</span></label>
             </div>
 
           </form>
@@ -99,205 +107,4 @@
       </div>
     </div>
 
-<!-- Day 2 – Deep Dive: Profile Workflows -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="pcDay2Header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay2" aria-expanded="false" aria-controls="pcDay2">
-      🧩 Day 2 – Profile Workflows & Systems
-    </button>
-  </h2>
-  <div id="pcDay2" class="accordion-collapse collapse" aria-labelledby="pcDay2Header" data-bs-parent="#pcAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap & Check-In</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2Recap">TL-led recap of Day 1 topics <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2EmployerCenter" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2EmployerCenter">Complete: “Employer Center Details” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2Subsidiaries" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2Subsidiaries">Complete: “Subsidiaries & Duplicates” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2Rebrands" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2Rebrands">Complete: “Rebrands and Acquisitions” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Article References</p>
-        <ul>
-          <li>Employer Center Overview (Looking Glass)</li>
-          <li>Customizing Top-Level Domains – Video</li>
-          <li>Subsidiaries, Duplicates, & Closed Company Profiles</li>
-          <li>Merged Profile Tracking Sheet</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🛠️ Practice Cases</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2OBVerification" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2OBVerification">Practice Case: Verify Out-of-Business status <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2MergeProfiles" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2MergeProfiles">Practice Case: Merge duplicate profiles <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2CreateSFDC" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2CreateSFDC">Practice Case: Create + update SFDC account <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Guru / Looking Glass</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2GuruMerged" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2GuruMerged">Read: Merged Profiles – Tracking Sheet & Guidelines <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📤 Submit Progress</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc2SubmitForm" onchange="saveProgress()">
-          <label class="form-check-label" for="pc2SubmitForm">Submit Day 2 Progress via Form (Link TBD) <span class="badge bg-warning text-dark">Required</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 3 – Salesforce Workflows & Completion -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="pcDay3Header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay3" aria-expanded="false" aria-controls="pcDay3">
-      🔧 Day 3 – Salesforce Workflows & Completion
-    </button>
-  </h2>
-  <div id="pcDay3" class="accordion-collapse collapse" aria-labelledby="pcDay3Header" data-bs-parent="#pcAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🧭 Recap & Check-In</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3Recap">TL-led recap of Day 2 topics <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📘 Lessonly Modules</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SFIntro" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SFIntro">Complete: “Salesforce Profile Changes: Basics” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SFAccounts" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SFAccounts">Complete: “Salesforce Accounts (SFDCs)” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SFUnderstanding" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SFUnderstanding">Complete: “Understanding Profile Cases” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SFCompletion" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SFCompletion">Complete: “Closing / Completing Cases” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SFTools" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SFTools">Complete: “Tools for Salesforce Requests” <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📖 Guru / Looking Glass Resources</p>
-        <ul>
-          <li>Profile Changes Cases in Salesforce</li>
-          <li>Escalating Profiles and Cases</li>
-          <li>Disambiguation Instructions Video</li>
-        </ul>
-
-        <p class="fw-bold mt-3">🛠️ Practice Cases</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3Practice1" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3Practice1">Practice Case: Verifying Out of Business status <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3Practice2" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3Practice2">Practice Case: Merging Profiles via SFDC <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3Practice3" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3Practice3">Practice Case: Salesforce Account Creation / Updates <span class="badge bg-info text-dark">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">📤 Submit Progress</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc3SubmitForm" onchange="saveProgress()">
-          <label class="form-check-label" for="pc3SubmitForm">Submit Day 3 Progress via Form (Link TBD) <span class="badge bg-warning text-dark">Required</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Day 4 – Profile Changes: Queue Practice & Wrap-Up -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="pcDay4Heading">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pcDay4Collapse" aria-expanded="false" aria-controls="pcDay4Collapse">
-      📘 Day 4 – Queue Practice & Wrap-Up
-    </button>
-  </h2>
-  <div id="pcDay4Collapse" class="accordion-collapse collapse" aria-labelledby="pcDay4Heading" data-bs-parent="#modAccordion">
-    <div class="accordion-body p-3">
-      <form>
-
-        <p class="fw-bold">🔁 Recap & Q&A</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc4_recap" onchange="saveProgress()">
-          <label class="form-check-label" for="pc4_recap">TL-led recap and topic refresh <span class="badge bg-secondary">TL-led</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">👀 Live Queue Shadowing</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc4_shadow" onchange="saveProgress()">
-          <label class="form-check-label" for="pc4_shadow">Observe PC agent handle Salesforce + profile cases live <span class="badge bg-info text-dark">Shadow</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">💼 Independent Queue Work</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc4_queue" onchange="saveProgress()">
-          <label class="form-check-label" for="pc4_queue">Work assigned cases in the Profile Changes queue with live TL feedback <span class="badge bg-success">Live Practice</span></label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="pc4_peer" onchange="saveProgress()">
-          <label class="form-check-label" for="pc4_peer">Peer discussion or tag decision check-in (if time allows) <span class="badge bg-info text-dark">Optional</span></label>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
-  </div> <!-- end accordion -->
-</div> <!-- end container -->
-
-<script>
-  function saveProgress() {
-    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-      localStorage.setItem(cb.id, cb.checked);
-    });
-  }
-
-  function loadProgress() {
-    document.querySelectorAll("form input[type='checkbox']").forEach(cb => {
-      cb.checked = localStorage.getItem(cb.id) === "true";
-    });
-  }
-
-  window.onload = loadProgress;
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    
