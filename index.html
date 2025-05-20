@@ -13,7 +13,6 @@
       padding-bottom: 4rem;
     }
     .timeline {
-      position: relative;
       margin: 2rem 1rem;
     }
     .timeline-step {
@@ -21,40 +20,50 @@
     }
     .bubble {
       background-color: #ffffff;
-      border: 1px solid #dee2e6;
-      border-left: 5px solid #198754;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-radius: 0.75rem;
+      border: 1px solid #e0e0e0;
+      padding: 1.25rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
       transition: 0.2s ease-in-out;
     }
     .bubble:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
     }
-    .bubble a {
-      text-decoration: none;
+    .bubble-title {
       font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
       color: #155724;
     }
     .timeline-duration {
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       color: #6c757d;
+      margin-bottom: 0.25rem;
+    }
+    .bubble-description {
+      font-size: 0.85rem;
+      color: #495057;
     }
     .track-heading {
       font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       padding: 0.5rem 1rem;
       border-radius: 0.375rem;
     }
     .jobseeker-heading {
-      background-color: #d1e7dd;
-      color: #0f5132;
+      background-color: #e2f0e8;
+      color: #155724;
     }
     .employer-heading {
-      background-color: #cfe2ff;
+      background-color: #e7f1fc;
       color: #084298;
+    }
+    .btn-start {
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      width: 100%;
     }
     .icon {
       margin-right: 0.5rem;
@@ -73,7 +82,8 @@
 </nav>
 
 <div class="container">
-  
+  <div class="text-center mb-5">
+    <h2>Training Timeline Overview</h2>
     <p class="text-muted"><em>Total duration per path: ~26–30 days (not cumulative)</em></p>
     <p>Select your assigned track to follow the appropriate training path.</p>
   </div>
@@ -82,22 +92,27 @@
     <!-- Jobseeker Track -->
     <div class="col-md-6">
       <div class="track-heading jobseeker-heading">Jobseeker Training Path</div>
+      <a href="./modules/onboarding.html" class="btn btn-success btn-start">Start Jobseeker Path</a>
       <div class="timeline">
         <div class="timeline-step bubble">
-          <div><i class="bi bi-person-circle icon text-success"></i><a href="./modules/onboarding.html" target="_blank">Onboarding</a></div>
+          <div class="bubble-title"><i class="bi bi-person-circle icon text-success"></i><a href="./modules/onboarding.html" target="_blank">Onboarding</a></div>
           <div class="timeline-duration">2 days | Shared</div>
+          <div class="bubble-description">Covers company overview, tools access, and foundational policies.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-shield-check icon text-danger"></i><a href="./modules/jobseeker-moderation.html" target="_blank">Jobseeker Moderation</a></div>
+          <div class="bubble-title"><i class="bi bi-shield-check icon text-danger"></i><a href="./modules/jobseeker-moderation.html" target="_blank">Jobseeker Moderation</a></div>
           <div class="timeline-duration">2 weeks | Jobseeker track</div>
+          <div class="bubble-description">Introduces moderation logic, redaction types, and escalation workflows.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-tools icon text-primary"></i><a href="./modules/core.html" target="_blank">Jobseeker Core Training</a></div>
+          <div class="bubble-title"><i class="bi bi-tools icon text-primary"></i><a href="./modules/core.html" target="_blank">Jobseeker Core Training</a></div>
           <div class="timeline-duration">4 days | Jobseeker track</div>
+          <div class="bubble-description">Focuses on writing quality, tagging, and case categorization.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-chat-left-dots icon text-info"></i><a href="./modules/jobseeker-support.html" target="_blank">Jobseeker Support</a></div>
+          <div class="bubble-title"><i class="bi bi-chat-left-dots icon text-info"></i><a href="./modules/jobseeker-support.html" target="_blank">Jobseeker Support</a></div>
           <div class="timeline-duration">2 weeks | Jobseeker track</div>
+          <div class="bubble-description">Live queue support, shadowing, and advanced case handling.</div>
         </div>
       </div>
     </div>
@@ -105,26 +120,32 @@
     <!-- Employer Track -->
     <div class="col-md-6">
       <div class="track-heading employer-heading">Employer / Profile Changes Training Path</div>
+      <a href="./modules/onboarding.html" class="btn btn-primary btn-start">Start Employer Path</a>
       <div class="timeline">
         <div class="timeline-step bubble">
-          <div><i class="bi bi-person-circle icon text-success"></i><a href="./modules/onboarding.html" target="_blank">Onboarding</a></div>
+          <div class="bubble-title"><i class="bi bi-person-circle icon text-success"></i><a href="./modules/onboarding.html" target="_blank">Onboarding</a></div>
           <div class="timeline-duration">2 days | Shared</div>
+          <div class="bubble-description">Covers company overview, tools access, and foundational policies.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-bank2 icon text-warning"></i><a href="./modules/employer-moderation.html" target="_blank">Employer Moderation</a></div>
+          <div class="bubble-title"><i class="bi bi-bank2 icon text-warning"></i><a href="./modules/employer-moderation.html" target="_blank">Employer Moderation</a></div>
           <div class="timeline-duration">2 weeks | Employer track</div>
+          <div class="bubble-description">Reviews employer-side moderation, content disputes, and flag resolution.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-tools icon text-primary"></i><a href="./modules/core.html" target="_blank">Employer Core Training</a></div>
+          <div class="bubble-title"><i class="bi bi-tools icon text-primary"></i><a href="./modules/core.html" target="_blank">Employer Core Training</a></div>
           <div class="timeline-duration">4 days | Employer track</div>
+          <div class="bubble-description">Covers response accuracy, tone, tooling, and tagging.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-briefcase icon text-secondary"></i><a href="./modules/employer-support.html" target="_blank">Employer Support</a></div>
+          <div class="bubble-title"><i class="bi bi-briefcase icon text-secondary"></i><a href="./modules/employer-support.html" target="_blank">Employer Support</a></div>
           <div class="timeline-duration">2 weeks | Employer track</div>
+          <div class="bubble-description">Covers live queue support, handling complex employer requests.</div>
         </div>
         <div class="timeline-step bubble">
-          <div><i class="bi bi-pencil-square icon text-dark"></i><a href="./modules/profile-changes.html" target="_blank">Profile Changes</a></div>
+          <div class="bubble-title"><i class="bi bi-pencil-square icon text-dark"></i><a href="./modules/profile-changes.html" target="_blank">Profile Changes</a></div>
           <div class="timeline-duration">4 days | Employer track</div>
+          <div class="bubble-description">Focuses on manual edits, identity verification, and account tooling.</div>
         </div>
       </div>
     </div>
