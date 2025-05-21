@@ -31,58 +31,122 @@
   <div class="accordion" id="modAccordion">
     <!-- Day 1 -->
     <div class="accordion-item">
-      <h2 class="accordion-header" id="day1Heading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
-           Day 1 – Intro to Moderation & Jobseeker Content
-        </button>
-      </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading">
-        <div class="accordion-body">
-          <form>
-            <p class="fw-bold">🧭 Recap & Introduction</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
-              <label class="form-check-label" for="d1Recap">Joined recap and TL-led discussion <span class="badge badge-tl">TL-led</span></label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
-              <label class="form-check-label" for="d1Intro">Overview of Moderation Training Path <span class="badge badge-tl">TL-led</span></label>
-            </div>
-
-            <p class="fw-bold mt-3">🛠️ Contributions & Tools</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()">
-              <label class="form-check-label" for="giveGet">Reviewed “Give to Get” Policy <span class="badge badge-self">Self-paced</span></label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
-              <label class="form-check-label" for="rolePlay"> Completed Role Play: <em>If you were a jobseeker...</em> <span class="badge badge-tl">TL-led</span></label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()">
-              <label class="form-check-label" for="submitReview">Practiced review submission with test profile <span class="badge badge-tl">TL-led</span></label>
-            </div>
-
-            <p class="fw-bold mt-3">Help Center Readings</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="guidelinesHelpCenter" onchange="saveProgress()">
-              <label class="form-check-label" for="guidelinesHelpCenter">Read Community Guidelines articles <span class="badge badge-self">Self-paced</span></label>
-            </div>
-            <ul>
-              <li>Writing Company Reviews</li>
-              <li>Interview Reviews & Salary Contributions</li>
-              <li>Tips to Avoid Violations</li>
-            </ul>
-
-            <p class="fw-bold mt-3">Self-Reflection & Quiz</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()">
-              <label class="form-check-label" for="quizDay1">Completed Self-Check Quiz: “Why Jobseekers Contribute” <span class="badge badge-self">Self-paced</span></label>
-            </div>
-          </form>
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      Day 1 – Intro to Moderation & Jobseeker Content
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse" aria-labelledby="day1Heading">
+    <div class="accordion-body">
+      <form>
+        <p class="fw-bold">Recap & Introduction</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Recap">Joined recap and TL-led discussion</label>
         </div>
-      </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="d1Intro" onchange="saveProgress()">
+          <label class="form-check-label" for="d1Intro">Overview of Moderation and how this training is structured</label>
+        </div>
+
+        <p class="fw-bold mt-3">Contributions & Tools</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="giveGet" onchange="saveProgress()">
+          <label class="form-check-label" for="giveGet">
+            Reviewed <a href="#" target="_blank">“Give to Get” Policy</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rolePlay" onchange="saveProgress()">
+          <label class="form-check-label" for="rolePlay">
+            Completed role play: If you were a jobseeker, what would you want to know?
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="submitReview" onchange="saveProgress()">
+          <label class="form-check-label" for="submitReview">
+            Practiced review submission using a test profile (<a href="#" target="_blank">how-to/FAQ</a>)
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Help Center Readings</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesCompanyReview" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesCompanyReview">
+            Read <a href="#" target="_blank">How to Write a Company Review</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesInterviewReview" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesInterviewReview">
+            Read <a href="#" target="_blank">How to Write an Interview Review</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesSalary" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesSalary">
+            Read <a href="#" target="_blank">How to Add a Salary</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesBenefitsReview" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesBenefitsReview">
+            Read <a href="#" target="_blank">How to Write a Benefits Review</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesContractor" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesContractor">
+            Read <a href="#" target="_blank">Contractor and Freelancer Reviews</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guidelinesTips" onchange="saveProgress()">
+          <label class="form-check-label" for="guidelinesTips">
+            Read <a href="#" target="_blank">Tips to Avoid Violating Community Guidelines</a>
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Product Exploration & Reflection</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="exploreJobseekerSite" onchange="saveProgress()">
+          <label class="form-check-label" for="exploreJobseekerSite">
+            Explored Glassdoor as a jobseeker (site navigation, finding reviews, interviews, salaries)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="exploreEmployerSite" onchange="saveProgress()">
+          <label class="form-check-label" for="exploreEmployerSite">
+            Explored Glassdoor as an employer (what profiles look like, employer features)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reflectionTakeaways" onchange="saveProgress()">
+          <label class="form-check-label" for="reflectionTakeaways">
+            Shared takeaways and questions from review/contribution practice with TL/team
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Self-Reflection & Quiz</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="quizDay1" onchange="saveProgress()">
+          <label class="form-check-label" for="quizDay1">
+            Completed self-check quiz: Why jobseekers contribute 
+            <!-- (If in Lessonly or Google Form, add the link here) -->
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Stuck? Know Your Resources</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="knowResources" onchange="saveProgress()">
+          <label class="form-check-label" for="knowResources">
+            Know who to contact if stuck during onboarding (TL, Guru, Slack, etc.)
+          </label>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
   <!-- Day 2 -->
 <div class="accordion-item">
