@@ -49,31 +49,40 @@
   <div id="day1Collapse" class="accordion-collapse collapse">
     <div class="accordion-body">
       <form>
-        <!-- Recap & Intro -->
+        <!-- Section: Recap & Intro -->
+        <p class="fw-bold mt-3">Kickoff: Recap & Intro (TL-Led)</p>
         <div class="form-check mb-2">
           <input class="form-check-input" type="checkbox" id="d1recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d1recap">Day 1 Recap & 1:1 Check-In with TL</label>
+          <label class="form-check-label" for="d1recap">Day 1 Recap – 1:1 Doc/Agent Questions/QA Feedback</label>
         </div>
-        <!-- Core Modules/Tasks -->
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="d1intro" onchange="saveProgress()">
+          <label class="form-check-label" for="d1intro">Intro: Core Training Path Overview with TL</label>
+        </div>
+
+        <!-- Section: Core Modules -->
+        <p class="fw-bold mt-3">Core Modules</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()">
           <label class="form-check-label" for="sfModule">
-            Completed Salesforce Training Module (Lessonly, found in C&amp;C Care Team)
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="sfNavigation" onchange="saveProgress()">
-          <label class="form-check-label" for="sfNavigation">
-            Salesforce Navigation walkthrough with TL
+            Completed Salesforce Training Module (Lessonly, C&amp;C Care Team)
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()">
           <label class="form-check-label" for="csGuru">
-            Reviewed Community Support: Tier 1 Guru Collection
+            Reviewed Community Support: Tier 1 Guru Collection (Guru, TL-Led)
           </label>
         </div>
-        <!-- Salesforce Practice Cases -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sfNavigation" onchange="saveProgress()">
+          <label class="form-check-label" for="sfNavigation">
+            Salesforce Tools & Navigation walkthrough (TL-Led)
+          </label>
+        </div>
+
+        <!-- Section: Salesforce Practice Cases -->
+        <p class="fw-bold mt-3">Salesforce Practice Cases</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="caseOmni" onchange="saveProgress()">
           <label class="form-check-label" for="caseOmni">
@@ -98,25 +107,22 @@
             Completed 3 Salesforce Practice Cases
           </label>
         </div>
-        <!-- Alias Selection -->
+
+        <!-- Section: Recap #2 -->
+        <p class="fw-bold mt-3">End of Day Recap (TL-Led)</p>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="d1wrap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1wrap">
+            Completed End-of-Day Recap – 1:1 Doc/Agent Questions/QA Feedback
+          </label>
+        </div>
+
+        <!-- Section: Alias Selection -->
+        <p class="fw-bold mt-3">Alias Selection</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="aliasPick" onchange="saveProgress()">
           <label class="form-check-label" for="aliasPick">
-            Selected 3 external aliases for Salesforce
-          </label>
-        </div>
-        <!-- Help Center Resource -->
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="helpCenterSalary" onchange="saveProgress()">
-          <label class="form-check-label" for="helpCenterSalary">
-            Reviewed Help Center: Company Salary Information
-          </label>
-        </div>
-        <!-- Wrap-up -->
-        <div class="form-check mt-2">
-          <input class="form-check-input" type="checkbox" id="d1wrap" onchange="saveProgress()">
-          <label class="form-check-label" for="d1wrap">
-            Completed Day 1 Wrap-Up & 1:1 Check-In with TL
+            Selected 3 external aliases for Salesforce (unique, not real or fictional names)
           </label>
         </div>
       </form>
