@@ -402,33 +402,96 @@
   </div>
 </div>
 
-    <!-- Day 4 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day4Heading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
-          Day 4 – Bugs, Case Flow & Final Workshop
-        </button>
-      </h2>
-      <div id="day4Collapse" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          <form>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="d4recap" onchange="saveProgress()"><label class="form-check-label" for="d4recap">Joined Day 4 Recap & Check-In</label></div>
+ <!-- Day 4 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day4Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4Collapse" aria-expanded="false" aria-controls="day4Collapse">
+      Day 4 – Bugs, Case Flow & Final Workshop
+    </button>
+  </h2>
+  <div id="day4Collapse" class="accordion-collapse collapse">
+    <div class="accordion-body">
 
-            <p class="fw-bold mt-3">Site Bug Process</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="siteBug" onchange="saveProgress()"><label class="form-check-label" for="siteBug">Completed Site Bug Process (Lessonly)</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="bugStatus" onchange="saveProgress()"><label class="form-check-label" for="bugStatus">Reviewed Bug Status Definitions (Guru)</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="adminBug" onchange="saveProgress()"><label class="form-check-label" for="adminBug">Reviewed C&C Admin Bug Process (Guru)</label></div>
-
-            <p class="fw-bold mt-3">Practice Cases – Bugs</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="bugCases" onchange="saveProgress()"><label class="form-check-label" for="bugCases">Completed 3 Bug Practice Cases</label></div>
-
-            <p class="fw-bold mt-3">Writing Workshop II – Personalization</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="workshop2" onchange="saveProgress()"><label class="form-check-label" for="workshop2">Completed Writing Workshop II – Advanced Scenarios</label></div>
-
-            <div class="form-check mt-3"><input class="form-check-input" type="checkbox" id="d4wrap" onchange="saveProgress()"><label class="form-check-label" for="d4wrap">Completed Final Wrap-Up with TL</label></div>
-          </form>
-        </div>
+      <!-- Recap -->
+      <p class="fw-bold mt-3">Kickoff: Recap</p>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="d4recap" onchange="saveProgress()">
+        <label class="form-check-label" for="d4recap">Joined Day 4 Recap – 1:1 Doc/Agent Questions/QA Feedback</label>
       </div>
+
+      <!-- Site Bug Process -->
+      <p class="fw-bold mt-3">Site Bug Process</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="siteBug" onchange="saveProgress()">
+        <label class="form-check-label" for="siteBug">
+          <a href="https://app.getguru.com/folders/cj9Bd5xi/User-Bug-Process" target="_blank" rel="noopener">
+            Completed Site Bug Process (Guru)
+          </a>
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="bugStatus" onchange="saveProgress()">
+        <label class="form-check-label" for="bugStatus">
+          Reviewed Bug Status Definitions (Guru)
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="adminBug" onchange="saveProgress()">
+        <label class="form-check-label" for="adminBug">
+          Reviewed C&C Admin Bug Process (Guru)
+        </label>
+      </div>
+
+      <!-- Practice Cases – Bugs -->
+      <p class="fw-bold mt-3">Practice Cases – Bugs</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="bugCases" onchange="saveProgress()">
+        <label class="form-check-label" for="bugCases">
+          <a href="https://glassdoor.lightning.force.com/lightning/o/Case/list?filterName=00B1E000009VLn7UAG" target="_blank" rel="noopener">
+            Completed 3 Bug Practice Cases
+          </a>
+        </label>
+      </div>
+
+      <!-- Troubleshooting/Help Center -->
+      <p class="fw-bold mt-3">Help Center Articles – Troubleshooting</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="troubleshootingTips" onchange="saveProgress()">
+        <label class="form-check-label" for="troubleshootingTips">
+          <a href="https://help.glassdoor.com/s/article/Troubleshooting-Tips?language=en_US" target="_blank" rel="noopener">
+            Troubleshooting Tips
+          </a>
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="hackerOne" onchange="saveProgress()">
+        <label class="form-check-label" for="hackerOne">
+          <a href="https://help.glassdoor.com/s/article/HackerOne-Program?language=en_US" target="_blank" rel="noopener">
+            HackerOne Program
+          </a>
+        </label>
+      </div>
+
+      <!-- Writing Workshop II -->
+      <p class="fw-bold mt-3">Writing Workshop II – Personalization</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="workshop2" onchange="saveProgress()">
+        <label class="form-check-label" for="workshop2">
+          Completed Writing Workshop II – Advanced Scenarios
+        </label>
+      </div>
+
+      <!-- End of Day Recap -->
+      <p class="fw-bold mt-3">End of Day Recap</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="d4wrap" onchange="saveProgress()">
+        <label class="form-check-label" for="d4wrap">
+          Completed Final Wrap-Up – 1:1 Doc/Agent Questions/QA Feedback
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
   </div> <!-- End Accordion -->
