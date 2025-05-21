@@ -220,49 +220,93 @@
   </div>
 
     <!-- Day 3 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day3Heading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
-          Day 3 – Writing Foundations
-        </button>
-      </h2>
-      <div id="day3Collapse" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          <form>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="d3recap" onchange="saveProgress()">
-              <label class="form-check-label" for="d3recap">Joined Day 3 Recap with TL</label>
-            </div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day3Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3Collapse" aria-expanded="false" aria-controls="day3Collapse">
+      Day 3 – Writing Foundations
+    </button>
+  </h2>
+  <div id="day3Collapse" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <!-- Recap -->
+      <p class="fw-bold mt-3">Kickoff: Recap</p>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="d3recap" onchange="saveProgress()">
+        <label class="form-check-label" for="d3recap">Joined Day 3 Recap – 1:1 Doc/Agent Questions/QA Feedback</label>
+      </div>
 
-            <p class="fw-bold mt-3">Writing Modules</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="tip6" onchange="saveProgress()"><label class="form-check-label" for="tip6">Completed “6 Tips” for Customer Support Emails</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="perfectEmail" onchange="saveProgress()"><label class="form-check-label" for="perfectEmail">Completed “How to Write a PERFECT Email”</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="exceptionalEmail" onchange="saveProgress()"><label class="form-check-label" for="exceptionalEmail">Reviewed “5 Ingredients of Exceptional Emails”</label></div>
+      <!-- Writing Modules -->
+      <p class="fw-bold mt-3">Writing Modules</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="tip6" onchange="saveProgress()">
+        <label class="form-check-label" for="tip6">Completed “6 Tips” for Customer Support Emails</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="perfectEmail" onchange="saveProgress()">
+        <label class="form-check-label" for="perfectEmail">Completed “How to Write a PERFECT Email”</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="exceptionalEmail" onchange="saveProgress()">
+        <label class="form-check-label" for="exceptionalEmail">Reviewed “5 Ingredients of Exceptional Emails”</label>
+      </div>
 
-            <p class="fw-bold mt-3">Support Service Skills – Empathy</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="empathy7" onchange="saveProgress()"><label class="form-check-label" for="empathy7">Completed “7 Ways to Show Empathy”</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="empathyExamples" onchange="saveProgress()"><label class="form-check-label" for="empathyExamples">Reviewed Empathetic Examples</label></div>
+      <!-- Empathy Modules -->
+      <p class="fw-bold mt-3">Support Service Skills – Empathy</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="empathy7" onchange="saveProgress()">
+        <label class="form-check-label" for="empathy7">Completed “7 Ways to Show Empathy”</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="empathyExamples" onchange="saveProgress()">
+        <label class="form-check-label" for="empathyExamples">Reviewed Empathetic Examples</label>
+      </div>
 
-            <p class="fw-bold mt-3">Navigating Difficult Situations</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="positiveLang" onchange="saveProgress()"><label class="form-check-label" for="positiveLang">The Power of Positive Language</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="acknowledge" onchange="saveProgress()"><label class="form-check-label" for="acknowledge">How to Acknowledge Customer Concern</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="noSolution" onchange="saveProgress()"><label class="form-check-label" for="noSolution">When There's No Solution, Try This</label></div>
+      <!-- Navigating Difficult Situations -->
+      <p class="fw-bold mt-3">Navigating Difficult Situations</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="positiveLang" onchange="saveProgress()">
+        <label class="form-check-label" for="positiveLang">The Power of Positive Language</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="acknowledge" onchange="saveProgress()">
+        <label class="form-check-label" for="acknowledge">How to Acknowledge Customer Concern</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="noSolution" onchange="saveProgress()">
+        <label class="form-check-label" for="noSolution">When There's No Solution, Try This</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="workshop1" onchange="saveProgress()">
+        <label class="form-check-label" for="workshop1">Completed Email Writing 101 + Tone/Grammar Practice</label>
+      </div>
 
-            <p class="fw-bold mt-3">Writing Workshop I</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="workshop1" onchange="saveProgress()"><label class="form-check-label" for="workshop1">Completed Email Writing 101 + Tone/Grammar Practice</label></div>
+      <!-- Quality Expectations -->
+      <p class="fw-bold mt-3">Quality Expectations</p>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()">
+        <label class="form-check-label" for="qaScorecard">Reviewed QA Scorecard (Lessonly)</label>
+      </div>
 
-            <p class="fw-bold mt-3">Quality Expectations</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="qaScorecard" onchange="saveProgress()"><label class="form-check-label" for="qaScorecard">Reviewed QA Scorecard (Lessonly)</label></div>
+      <!-- CSAT + Voice of Customer -->
+      <p class="fw-bold mt-3">CSAT + Voice of Customer</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="csatModule" onchange="saveProgress()">
+        <label class="form-check-label" for="csatModule">Completed CSAT Module (Lessonly)</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="vocGuru" onchange="saveProgress()">
+        <label class="form-check-label" for="vocGuru">Reviewed VOC Reports (Guru)</label>
+      </div>
 
-            <p class="fw-bold mt-3">CSAT + Voice of Customer</p>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="csatModule" onchange="saveProgress()"><label class="form-check-label" for="csatModule">Completed CSAT Module (Lessonly)</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="vocGuru" onchange="saveProgress()"><label class="form-check-label" for="vocGuru">Reviewed VOC Reports (Guru)</label></div>
-
-            <div class="form-check mt-3"><input class="form-check-input" type="checkbox" id="d3wrap" onchange="saveProgress()"><label class="form-check-label" for="d3wrap">Completed Day 3 Wrap-Up</label></div>
-          </form>
-        </div>
+      <!-- End of Day Recap -->
+      <p class="fw-bold mt-3">End of Day Recap</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="d3wrap" onchange="saveProgress()">
+        <label class="form-check-label" for="d3wrap">Completed Day 3 Wrap-Up</label>
       </div>
     </div>
+  </div>
+</div>
 
     <!-- Day 4 -->
     <div class="accordion-item">
