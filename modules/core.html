@@ -39,64 +39,91 @@
 
   <div class="accordion" id="dayAccordion">
 
-    <!-- Day 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="day1Heading">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
-          Day 1 – Tools & Navigation
-        </button>
-      </h2>
-      <div id="day1Collapse" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          <form>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="recapIntro" onchange="saveProgress()">
-              <label class="form-check-label" for="recapIntro">Joined Recap & Core Overview with TL</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()">
-              <label class="form-check-label" for="sfModule">Completed Salesforce Training Module (Lessonly)</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="sfNavigation" onchange="saveProgress()">
-              <label class="form-check-label" for="sfNavigation">Walked through Salesforce Navigation with TL</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()">
-              <label class="form-check-label" for="csGuru">Reviewed Community Support: Tier 1 Guru Collection</label>
-            </div>
-
-            <p class="fw-bold mt-3">Salesforce Practice Cases</p>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="caseOmni" onchange="saveProgress()">
-              <label class="form-check-label" for="caseOmni">Omni setup and status changes</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="caseFormat" onchange="saveProgress()">
-              <label class="form-check-label" for="caseFormat">Case summary, subject line, formatting</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="caseHistory" onchange="saveProgress()">
-              <label class="form-check-label" for="caseHistory">Finding and interpreting case history</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="casesComplete" onchange="saveProgress()">
-              <label class="form-check-label" for="casesComplete">Completed 3 Salesforce Practice Cases</label>
-            </div>
-
-            <div class="form-check mt-3">
-              <input class="form-check-input" type="checkbox" id="aliasPick" onchange="saveProgress()">
-              <label class="form-check-label" for="aliasPick">Selected 3 external aliases for Salesforce</label>
-            </div>
-
-            <div class="form-check mt-3">
-              <input class="form-check-input" type="checkbox" id="d1wrap" onchange="saveProgress()">
-              <label class="form-check-label" for="d1wrap">Completed Day 1 Wrap-Up / Check-In</label>
-            </div>
-          </form>
+<!-- Day 1 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="day1Heading">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day1Collapse" aria-expanded="false" aria-controls="day1Collapse">
+      Day 1 – Tools & Navigation
+    </button>
+  </h2>
+  <div id="day1Collapse" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <form>
+        <!-- Recap & Intro -->
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="d1recap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1recap">Day 1 Recap & 1:1 Check-In with TL</label>
         </div>
-      </div>
+        <!-- Core Modules/Tasks -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sfModule" onchange="saveProgress()">
+          <label class="form-check-label" for="sfModule">
+            Completed Salesforce Training Module (Lessonly, found in C&amp;C Care Team)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sfNavigation" onchange="saveProgress()">
+          <label class="form-check-label" for="sfNavigation">
+            Salesforce Navigation walkthrough with TL
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="csGuru" onchange="saveProgress()">
+          <label class="form-check-label" for="csGuru">
+            Reviewed Community Support: Tier 1 Guru Collection
+          </label>
+        </div>
+        <!-- Salesforce Practice Cases -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="caseOmni" onchange="saveProgress()">
+          <label class="form-check-label" for="caseOmni">
+            Omni setup and status changes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="caseFormat" onchange="saveProgress()">
+          <label class="form-check-label" for="caseFormat">
+            Case summary, subject line, formatting
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="caseHistory" onchange="saveProgress()">
+          <label class="form-check-label" for="caseHistory">
+            Finding and interpreting case history
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="casesComplete" onchange="saveProgress()">
+          <label class="form-check-label" for="casesComplete">
+            Completed 3 Salesforce Practice Cases
+          </label>
+        </div>
+        <!-- Alias Selection -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="aliasPick" onchange="saveProgress()">
+          <label class="form-check-label" for="aliasPick">
+            Selected 3 external aliases for Salesforce
+          </label>
+        </div>
+        <!-- Help Center Resource -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="helpCenterSalary" onchange="saveProgress()">
+          <label class="form-check-label" for="helpCenterSalary">
+            Reviewed Help Center: Company Salary Information
+          </label>
+        </div>
+        <!-- Wrap-up -->
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="checkbox" id="d1wrap" onchange="saveProgress()">
+          <label class="form-check-label" for="d1wrap">
+            Completed Day 1 Wrap-Up & 1:1 Check-In with TL
+          </label>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
+
     <!-- Day 2 -->
     <div class="accordion-item">
       <h2 class="accordion-header" id="day2Heading">
