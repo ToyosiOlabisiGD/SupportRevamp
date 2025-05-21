@@ -434,40 +434,94 @@
   <div id="day5Collapse" class="accordion-collapse collapse" aria-labelledby="day5Heading">
     <div class="accordion-body">
       <form>
-        <p class="fw-bold">Recap & TL Sync</p>
+        <p class="fw-bold">Recap & Sensitive Content Overview</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d5Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d5Recap">Recapped Day 4 and reviewed questions <span class="badge badge-tl">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="joinedRecap5" onchange="saveProgress()">
+          <label class="form-check-label" for="joinedRecap5">
+            Joined TL-led recap and questions
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="discussedSensitive" onchange="saveProgress()">
+          <label class="form-check-label" for="discussedSensitive">
+            Discussed sensitive content types and escalation process
+          </label>
         </div>
 
-        <p class="fw-bold mt-3">Sensitive Content Tags</p>
+        <p class="fw-bold mt-3">Personal Attacks & Threats</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="personalAttack" onchange="saveProgress()">
-          <label class="form-check-label" for="personalAttack">Reviewed personal attacks and when to escalate <span class="badge badge-tl">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="reviewedPersonalAttack" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewedPersonalAttack">
+            Reviewed how to identify personal attacks (Guru)
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="legalContent" onchange="saveProgress()">
-          <label class="form-check-label" for="legalContent">Reviewed legal threats or language <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="internalSecrets" onchange="saveProgress()">
-          <label class="form-check-label" for="internalSecrets">Tagged confidential info (emails, screenshots, etc.) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">Guru Reference</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="guruEscalation" onchange="saveProgress()">
-          <label class="form-check-label" for="guruEscalation">Reviewed Guru: Content Escalation Protocol <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="taggedPersonalAttack" onchange="saveProgress()">
+          <label class="form-check-label" for="taggedPersonalAttack">
+            Practiced tagging content for personal attacks in sample cases
+          </label>
         </div>
 
-        <p class="fw-bold mt-3">Practice & Shadow</p>
+        <p class="fw-bold mt-3">Legal Threats & Language</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="modCasesD5" onchange="saveProgress()">
-          <label class="form-check-label" for="modCasesD5">Completed 3 sensitive content cases <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="reviewedLegalThreats" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewedLegalThreats">
+            Reviewed how to recognize legal threats/legal language (Lessonly or Guru)
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="shadowSessionD5" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowSessionD5">Shadowed 2 live sensitive review sessions <span class="badge badge-tl">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="taggedLegalThreats" onchange="saveProgress()">
+          <label class="form-check-label" for="taggedLegalThreats">
+            Practiced tagging legal content in real or sample reviews
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Confidential/Internal Information</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewedInternalInfo" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewedInternalInfo">
+            Reviewed how to identify confidential/internal info (emails, screenshots, PII)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="taggedInternalInfo" onchange="saveProgress()">
+          <label class="form-check-label" for="taggedInternalInfo">
+            Practiced tagging reviews with internal or sensitive information
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Escalation Protocol</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="reviewedEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewedEscalation">
+            Reviewed Content Escalation Protocol (<a href="#" target="_blank">Guru</a>)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="followedEscalationSteps" onchange="saveProgress()">
+          <label class="form-check-label" for="followedEscalationSteps">
+            Walked through escalation steps for a sensitive case (demo or real)
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Practice & Shadowing</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="practiceSensitiveCases" onchange="saveProgress()">
+          <label class="form-check-label" for="practiceSensitiveCases">
+            Practiced tagging at least 3 sensitive content cases (personal, legal, internal) with support from TL/peer
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="shadowSensitiveSession" onchange="saveProgress()">
+          <label class="form-check-label" for="shadowSensitiveSession">
+            Observed 1–2 live sensitive content review sessions (TL-led)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="askedEscalationQuestions" onchange="saveProgress()">
+          <label class="form-check-label" for="askedEscalationQuestions">
+            Asked questions about escalation or edge cases to TL/team
+          </label>
         </div>
       </form>
     </div>
