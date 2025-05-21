@@ -356,38 +356,68 @@
       <form>
         <p class="fw-bold">Recap & Flag Types</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="d4Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d4Recap">Joined TL-led recap and questions <span class="badge badge-tl">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="joinedRecap" onchange="saveProgress()">
+          <label class="form-check-label" for="joinedRecap">
+            Joined TL-led recap and questions
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingLesson" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingLesson">Completed Formatting & Profanity Guidelines (Lessonly) <span class="badge badge-self">Self-paced</span></label>
-        </div>
-
-        <p class="fw-bold mt-3">Tagging Exercises</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="capitalization" onchange="saveProgress()">
-          <label class="form-check-label" for="capitalization">Tagged excessive capitalization or all caps content <span class="badge badge-self">Self-paced</span></label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="foreignLanguage" onchange="saveProgress()">
-          <label class="form-check-label" for="foreignLanguage">Tagged foreign language & unsupported content <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="discussedFlags" onchange="saveProgress()">
+          <label class="form-check-label" for="discussedFlags">
+            Discussed formatting flags and content tagging
+          </label>
         </div>
 
-        <p class="fw-bold mt-3">Guru Reference</p>
+        <p class="fw-bold mt-3">Formatting & Content Tagging</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingGuru" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingGuru">Reviewed Guru: Formatting & Profanity Tag Reference <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="taggingDemo" onchange="saveProgress()">
+          <label class="form-check-label" for="taggingDemo">
+            Reviewed Tagging Guidelines (<a href="#" target="_blank">Guru</a>)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="capitalizationTag" onchange="saveProgress()">
+          <label class="form-check-label" for="capitalizationTag">
+            Practiced tagging excessive capitalization/all caps content
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="foreignLanguageTag" onchange="saveProgress()">
+          <label class="form-check-label" for="foreignLanguageTag">
+            Practiced tagging foreign language & unsupported content
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bannedWordsTag" onchange="saveProgress()">
+          <label class="form-check-label" for="bannedWordsTag">
+            Checked and used the Banned Words list (<a href="#" target="_blank">Guru</a>)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="formattingProfanityLessonly" onchange="saveProgress()">
+          <label class="form-check-label" for="formattingProfanityLessonly">
+            Completed Formatting & Profanity Guidelines (Lessonly)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="profanityTag" onchange="saveProgress()">
+          <label class="form-check-label" for="profanityTag">
+            Practiced tagging profanity/obscenity content
+          </label>
         </div>
 
         <p class="fw-bold mt-3">Practice & Shadowing</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="formattingPracticeCases" onchange="saveProgress()">
-          <label class="form-check-label" for="formattingPracticeCases">Completed 3 formatting tag practice cases <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="taggingPracticeCases" onchange="saveProgress()">
+          <label class="form-check-label" for="taggingPracticeCases">
+            Practiced tagging 3+ sample cases with support from TL or peer
+          </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="liveShadowSession" onchange="saveProgress()">
-          <label class="form-check-label" for="liveShadowSession">Observed 1 live queue session with agent or TL <span class="badge badge-tl">TL-led</span></label>
+          <label class="form-check-label" for="liveShadowSession">
+            Observed live queue session with agent or TL (flag/tag demonstration)
+          </label>
         </div>
       </form>
     </div>
