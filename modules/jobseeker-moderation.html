@@ -448,59 +448,53 @@
           </label>
         </div>
 
-        <p class="fw-bold mt-3">Personal Attacks & Threats</p>
+        <p class="fw-bold mt-3">Sensitive Content & Escalation</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewedPersonalAttack" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewedPersonalAttack">
-            Reviewed how to identify personal attacks (Guru)
+          <input class="form-check-input" type="checkbox" id="personalAttack" onchange="saveProgress()">
+          <label class="form-check-label" for="personalAttack">
+            Reviewed handling of personal attacks (Guru)
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="taggedPersonalAttack" onchange="saveProgress()">
-          <label class="form-check-label" for="taggedPersonalAttack">
-            Practiced tagging content for personal attacks in sample cases
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">Legal Threats & Language</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewedLegalThreats" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewedLegalThreats">
-            Reviewed how to recognize legal threats/legal language (Lessonly or Guru)
+          <input class="form-check-input" type="checkbox" id="legalContent" onchange="saveProgress()">
+          <label class="form-check-label" for="legalContent">
+            Reviewed handling of legal threats or legal language (Lessonly or Guru)
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="taggedLegalThreats" onchange="saveProgress()">
-          <label class="form-check-label" for="taggedLegalThreats">
-            Practiced tagging legal content in real or sample reviews
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">Confidential/Internal Information</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewedInternalInfo" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewedInternalInfo">
-            Reviewed how to identify confidential/internal info (emails, screenshots, PII)
+          <input class="form-check-input" type="checkbox" id="internalSecrets" onchange="saveProgress()">
+          <label class="form-check-label" for="internalSecrets">
+            Reviewed how to identify and tag confidential/internal info (emails, screenshots, PII)
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="taggedInternalInfo" onchange="saveProgress()">
-          <label class="form-check-label" for="taggedInternalInfo">
-            Practiced tagging reviews with internal or sensitive information
-          </label>
-        </div>
-
-        <p class="fw-bold mt-3">Escalation Protocol</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="reviewedEscalation" onchange="saveProgress()">
-          <label class="form-check-label" for="reviewedEscalation">
+          <input class="form-check-input" type="checkbox" id="escalationProtocol" onchange="saveProgress()">
+          <label class="form-check-label" for="escalationProtocol">
             Reviewed Content Escalation Protocol (<a href="#" target="_blank">Guru</a>)
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="followedEscalationSteps" onchange="saveProgress()">
-          <label class="form-check-label" for="followedEscalationSteps">
-            Walked through escalation steps for a sensitive case (demo or real)
+          <input class="form-check-input" type="checkbox" id="reviewExamples" onchange="saveProgress()">
+          <label class="form-check-label" for="reviewExamples">
+            Reviewed real examples and edge cases for sensitive content
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="actionStepsUnclear" onchange="saveProgress()">
+          <label class="form-check-label" for="actionStepsUnclear">
+            Practiced action steps for unclear or ambiguous content
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="scenarioWalkthrough" onchange="saveProgress()">
+          <label class="form-check-label" for="scenarioWalkthrough">
+            Participated in scenario walkthrough (live or simulated)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="knowledgeCheckEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="knowledgeCheckEscalation">
+            Completed escalation knowledge check or quiz (<a href="#" target="_blank">Lessonly</a>)
           </label>
         </div>
 
@@ -508,19 +502,13 @@
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="practiceSensitiveCases" onchange="saveProgress()">
           <label class="form-check-label" for="practiceSensitiveCases">
-            Practiced tagging at least 3 sensitive content cases (personal, legal, internal) with support from TL/peer
+            Practiced tagging 3+ sensitive content cases with support from TL or peer
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="shadowSensitiveSession" onchange="saveProgress()">
           <label class="form-check-label" for="shadowSensitiveSession">
-            Observed 1–2 live sensitive content review sessions (TL-led)
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="askedEscalationQuestions" onchange="saveProgress()">
-          <label class="form-check-label" for="askedEscalationQuestions">
-            Asked questions about escalation or edge cases to TL/team
+            Observed 1-2 live sensitive content review sessions (TL-led)
           </label>
         </div>
       </form>
