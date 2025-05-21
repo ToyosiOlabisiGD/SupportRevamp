@@ -158,38 +158,84 @@
   <div id="day2Collapse" class="accordion-collapse collapse" aria-labelledby="day2Heading">
     <div class="accordion-body">
       <form>
-        <p class="fw-bold">Recap & Queue Access</p>
+        <p class="fw-bold">Recap & Admin Tool Access</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="d2Recap" onchange="saveProgress()">
-          <label class="form-check-label" for="d2Recap">Recapped Day 1 and reviewed TL comments <span class="badge badge-tl">TL-led</span></label>
+          <label class="form-check-label" for="d2Recap">
+            Recapped Day 1 and discussed questions with TL
+          </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="adminTool" onchange="saveProgress()">
-          <label class="form-check-label" for="adminTool">Logged into Admin Tool & explored Queues <span class="badge badge-tl">TL-led</span></label>
+          <input class="form-check-input" type="checkbox" id="adminLogin" onchange="saveProgress()">
+          <label class="form-check-label" for="adminLogin">
+            Logged into <a href="#" target="_blank">Glassdoor Admin Tool</a> and explored navigation/queues
+          </label>
         </div>
 
-        <p class="fw-bold mt-3">Lessonly & Guru</p>
+        <p class="fw-bold mt-3">Workflow & Guidelines</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="tier1Lesson" onchange="saveProgress()">
-          <label class="form-check-label" for="tier1Lesson">Completed “Processing Content – Tier 1” (Lessonly) <span class="badge badge-self">Self-paced</span></label>
+          <input class="form-check-input" type="checkbox" id="adminFields" onchange="saveProgress()">
+          <label class="form-check-label" for="adminFields">
+            Reviewed key fields in Glassdoor Admin Tool (including Change History section)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="slaExpectations" onchange="saveProgress()">
+          <label class="form-check-label" for="slaExpectations">
+            Reviewed Service Level Agreement (SLA) expectations for Tier 1 moderation
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="modSteps" onchange="saveProgress()">
+          <label class="form-check-label" for="modSteps">
+            Reviewed steps/chart for moderating reviews (<a href="#" target="_blank">Operational Guidelines</a>)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="guruEscalation" onchange="saveProgress()">
+          <label class="form-check-label" for="guruEscalation">
+            Reviewed <a href="#" target="_blank">Guru: Content Escalation Protocol</a>
+          </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="modGuidelinesGuru" onchange="saveProgress()">
-          <label class="form-check-label" for="modGuidelinesGuru">Reviewed Guru: “Mod Tier 1 Guidelines” <span class="badge badge-self">Self-paced</span></label>
+          <label class="form-check-label" for="modGuidelinesGuru">
+            Reviewed <a href="#" target="_blank">Guru: Mod Tier 1 Guidelines</a>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="tier1Lesson" onchange="saveProgress()">
+          <label class="form-check-label" for="tier1Lesson">
+            Completed <a href="#" target="_blank">Processing Content – Tier 1 (Lessonly)</a>
+          </label>
         </div>
 
-        <p class="fw-bold mt-3">Practice Tagging & Queue Basics</p>
+        <p class="fw-bold mt-3">Tagging & Practice</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="queueBasics" onchange="saveProgress()">
-          <label class="form-check-label" for="queueBasics">Practiced identifying guideline violations <span class="badge badge-tl">TL-led</span></label>
+          <label class="form-check-label" for="queueBasics">
+            Practiced identifying guideline violations in sample reviews (3 basic examples)
+          </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="modCaseReview" onchange="saveProgress()">
-          <label class="form-check-label" for="modCaseReview">Completed 3 basic moderation cases <span class="badge badge-self">Self-paced</span></label>
+          <label class="form-check-label" for="modCaseReview">
+            Completed 3 basic moderation cases (tag/reject/approve practice)
+          </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="shadowPreview" onchange="saveProgress()">
-          <label class="form-check-label" for="shadowPreview">Shadowed 1 live case example (light preview of queue work) <span class="badge badge-tl">TL-led</span></label>
+          <label class="form-check-label" for="shadowPreview">
+            Shadowed 1 live case example (guided by TL or experienced agent)
+          </label>
+        </div>
+
+        <p class="fw-bold mt-3">Stuck? Know Your Resources</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="knowResources2" onchange="saveProgress()">
+          <label class="form-check-label" for="knowResources2">
+            Know who to contact if stuck (TL, Guru, Slack, etc.)
+          </label>
         </div>
       </form>
     </div>
