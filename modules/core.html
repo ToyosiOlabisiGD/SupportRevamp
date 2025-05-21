@@ -139,85 +139,63 @@
   </h2>
   <div id="day2Collapse" class="accordion-collapse collapse">
     <div class="accordion-body">
-
-      <!-- Recap Section -->
-      <div class="card mb-3 border-primary">
-        <div class="card-header bg-primary text-white fw-bold">Kickoff: Recap & Check-in</div>
-        <div class="card-body">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="d2recap" onchange="saveProgress()">
-            <label class="form-check-label" for="d2recap">Joined Day 2 Recap & Check-in</label>
-          </div>
-        </div>
+      <!-- Recap -->
+      <p class="fw-bold mt-3">Kickoff: Recap & Check-in</p>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="d2recap" onchange="saveProgress()">
+        <label class="form-check-label" for="d2recap">Joined Day 2 Recap & Check-in</label>
       </div>
 
       <!-- Core Modules -->
-      <div class="card mb-3 border-info">
-        <div class="card-header bg-info text-white fw-bold">Core Modules</div>
-        <div class="card-body">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="psfModule" onchange="saveProgress()">
-            <label class="form-check-label" for="psfModule">Completed Product Support & Feedback Module (Lessonly)</label>
-          </div>
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="faqModule" onchange="saveProgress()">
-            <label class="form-check-label" for="faqModule">Completed Jobseeker / Employer FAQs Module (Lessonly)</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="csT1DeepDive" onchange="saveProgress()">
-            <label class="form-check-label" for="csT1DeepDive">Participated in T1 Tools & Feedback Deep Dive</label>
-          </div>
-        </div>
+      <p class="fw-bold mt-3">Core Modules</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="psfModule" onchange="saveProgress()">
+        <label class="form-check-label" for="psfModule">Completed Product Support & Feedback Module (Lessonly)</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="faqModule" onchange="saveProgress()">
+        <label class="form-check-label" for="faqModule">Completed Jobseeker / Employer FAQs Module (Lessonly)</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="csT1DeepDive" onchange="saveProgress()">
+        <label class="form-check-label" for="csT1DeepDive">Participated in T1 Tools & Feedback Deep Dive</label>
       </div>
 
-      <!-- Practice Cases Section -->
-      <div class="card mb-3 border-success">
-        <div class="card-header bg-success text-white fw-bold">Practice Cases – FAQs & Feedback</div>
-        <div class="card-body">
-          <div class="form-check mb-2">
-            <input class="form-check-input" type="checkbox" id="faqCase1" onchange="saveProgress()">
-            <label class="form-check-label" for="faqCase1">Completed 4 Practice Cases (Jobseeker/Employer)</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="caseTypesGuru" onchange="saveProgress()">
-            <label class="form-check-label" for="caseTypesGuru">Reviewed Support Case Types (Guru)</label>
-          </div>
-        </div>
+      <!-- Practice Cases -->
+      <p class="fw-bold mt-3">Practice Cases – FAQs & Feedback</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="faqCase1" onchange="saveProgress()">
+        <label class="form-check-label" for="faqCase1">Completed 4 Practice Cases (Jobseeker/Employer)</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="caseTypesGuru" onchange="saveProgress()">
+        <label class="form-check-label" for="caseTypesGuru">Reviewed Support Case Types (Guru)</label>
       </div>
 
-      <!-- Help Center Articles Section -->
-      <div class="card mb-3 border-warning">
-  <div class="card-header bg-warning text-dark fw-bold">Help Center Articles</div>
-  <div class="card-body">
-    <div class="form-check mb-2">
-      <input class="form-check-input" type="checkbox" id="salaryArticle" onchange="saveProgress()">
-      <label class="form-check-label" for="salaryArticle">Company Salary Information</label>
-    </div>
-    <div class="form-check mb-2">
-      <input class="form-check-input" type="checkbox" id="compareCompanies" onchange="saveProgress()">
-      <label class="form-check-label" for="compareCompanies">How to Compare Companies</label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="searchSalaries" onchange="saveProgress()">
-      <label class="form-check-label" for="searchSalaries">Searching Salaries by Job Title</label>
+      <!-- Help Center Articles -->
+      <p class="fw-bold mt-3">Help Center Articles</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="salaryArticle" onchange="saveProgress()">
+        <label class="form-check-label" for="salaryArticle">Company Salary Information</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="compareCompanies" onchange="saveProgress()">
+        <label class="form-check-label" for="compareCompanies">How to Compare Companies</label>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="searchSalaries" onchange="saveProgress()">
+        <label class="form-check-label" for="searchSalaries">Searching Salaries by Job Title</label>
+      </div>
+
+      <!-- Wrap-Up -->
+      <p class="fw-bold mt-3">End of Day Wrap-Up</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="d2wrap" onchange="saveProgress()">
+        <label class="form-check-label" for="d2wrap">Completed Day 2 Wrap-Up / Q&A</label>
+      </div>
     </div>
   </div>
 </div>
-      </div>
-
-      <!-- Wrap-Up Section -->
-      <div class="card border-secondary">
-        <div class="card-header bg-secondary text-white fw-bold">End of Day Wrap-Up</div>
-        <div class="card-body">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="d2wrap" onchange="saveProgress()">
-            <label class="form-check-label" for="d2wrap">Completed Day 2 Wrap-Up / Q&A</label>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
     <!-- Day 3 -->
 <div class="accordion-item">
